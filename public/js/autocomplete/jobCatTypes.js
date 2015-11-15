@@ -36,15 +36,19 @@ $(function() {
     select: function( event , ui ){
 
       var jobtitle = autocomplete[ui.item.value].JobTitles;
-      for(var i = 0; i < jobtitle.length; i++) {
-        // console.log(jobtitle[i].name);
-        var titles = jobtitle[i].name;
-        jobTitlesPerCat.push(titles);
-        // console.log(jobtitle[0].salary);
-      }
+      getJobList(jobtitle);
     }
   });
 
+
+function getJobList(jobtitle){
+
+  for(var i = 0; i < jobtitle.length; i++) {
+    // console.log(jobtitle[i].name);
+    var titles = jobtitle[i].name;
+    jobTitlesPerCat.push(titles);
+    // console.log(jobtitle[0].salary);
+  }
   $("#jobtitleTypes").autocomplete({
     source: function(request, response) {
       var country = $("#jobCatTypes").val();
@@ -55,6 +59,9 @@ $(function() {
       }));
     }
   });
+}
+
+
 
   $.cascadingAutocompletes(["#jobCatTypes", "#jobtitleTypes"]);
 
