@@ -15,6 +15,5 @@ $(function() {
 // toggle list bar
 $( "#jobTitle" ).click(function(){
   $( "#jobDetails" ).toggle( "slow", function(){
-    console.log('something');
   });
 });

@@ -3385,13 +3385,17 @@ body {
     border-bottom: 1px solid #2E2E2E;
     color: white;
     text-decoration: none;
-    padding: 15px; }
+    padding: 15px;
+    margin-bottom: -17px; }
+  /* line 94, stdin */
+  #jobDetails button {
+    background: orange; }
 
-/* line 94, stdin */
+/* line 98, stdin */
 #jobDetails:target {
   display: block; }
 
-/* line 98, stdin */
+/* line 102, stdin */
 .ui-autocomplete {
   max-height: 100px;
   overflow-y: auto;
@@ -3401,39 +3405,39 @@ body {
 /* IE 6 doesn't support max-height
    * we use height instead, but this forces the menu to always be this tall
    */
-/* line 107, stdin */
+/* line 111, stdin */
 * html .ui-autocomplete {
   height: 100px; }
 
-/* line 110, stdin */
+/* line 114, stdin */
 #salary-bar {
   background: green; }
 
-/* line 113, stdin */
+/* line 117, stdin */
 #map {
   background: brown; }
 
-/* line 116, stdin */
+/* line 120, stdin */
 #list {
   background: gray; }
 
-/* line 119, stdin */
+/* line 123, stdin */
 #footer {
   background: yellow; }
 
-/* line 123, stdin */
+/* line 127, stdin */
 #filter-bar {
   padding-top: 30px;
   background: white; }
 
-/* line 127, stdin */
+/* line 131, stdin */
 .jobCat {
   text-align: center; }
 
-/* line 131, stdin */
+/* line 135, stdin */
 * {
   box-sizing: border-box; }
 
-/* line 135, stdin */
+/* line 139, stdin */
 #apply {
-  margin-bottom: none; }
+  margin-top: 16px; }
