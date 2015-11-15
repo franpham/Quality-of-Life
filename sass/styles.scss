@@ -7,8 +7,21 @@
 @import 'foundation/components/side-nav';
 
 body{
-  background: aqua;
+  background: white;
 }
+
+body::after {
+  content: "";
+  background: url(http://images.all-free-download.com/images/graphiclarge/ocean_waves_207578.jpg);
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
 .main-header{
   background: blue;
 }

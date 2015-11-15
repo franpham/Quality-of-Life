@@ -3296,17 +3296,29 @@ th.hide-for-touch {
 
 /* line 9, stdin */
 body {
-  background: aqua; }
+  background: white; }
 
-/* line 12, stdin */
+/* line 13, stdin */
+body::after {
+  content: "";
+  background: url(http://images.all-free-download.com/images/graphiclarge/ocean_waves_207578.jpg);
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
+
+/* line 25, stdin */
 .main-header {
   background: blue; }
 
-/* line 15, stdin */
+/* line 28, stdin */
 .content {
   background: brown; }
 
-/* line 18, stdin */
+/* line 31, stdin */
 .main-nav {
   position: fixed;
   top: 0;
@@ -3315,7 +3327,7 @@ body {
   background: purple;
   overflow-y: auto;
   transition: width 0.3s ease; }
-  /* line 27, stdin */
+  /* line 40, stdin */
   .main-nav a {
     display: block;
     background: linear-gradient(#3E3E3E, #383838);
@@ -3324,10 +3336,10 @@ body {
     color: white;
     text-decoration: none;
     padding: 15px; }
-    /* line 35, stdin */
+    /* line 48, stdin */
     .main-nav a:hover, .main-nav a:focus {
       background: linear-gradient(#484848, #383838); }
-  /* line 39, stdin */
+  /* line 52, stdin */
   .main-nav:after {
     content: "";
     position: absolute;
@@ -3336,7 +3348,7 @@ body {
     height: 100%;
     width: 34px;
     background: linear-gradient(left, transparent, rgba(0, 0, 0, 0.4)); }
-  /* line 48, stdin */
+  /* line 61, stdin */
   .main-nav p {
     display: block;
     background: linear-gradient(#3E3E3E, #A4A4A4);
@@ -3346,38 +3358,38 @@ body {
     text-decoration: none;
     padding: 15px; }
 
-/* line 58, stdin */
+/* line 71, stdin */
 .close-menu {
   display: none; }
 
-/* line 61, stdin */
+/* line 74, stdin */
 .page-wrap {
   float: right;
   width: 100%;
   transition: width 0.3s ease; }
 
-/* line 66, stdin */
+/* line 79, stdin */
 #main-nav:target {
   width: 30%; }
 
-/* line 69, stdin */
+/* line 82, stdin */
 #main-nav:target + .page-wrap {
   width: 70%; }
-  /* line 71, stdin */
+  /* line 84, stdin */
   #main-nav:target + .page-wrap .open-menu {
     display: none; }
-  /* line 74, stdin */
+  /* line 87, stdin */
   #main-nav:target + .page-wrap .close-menu {
     display: block; }
-  /* line 77, stdin */
+  /* line 90, stdin */
   #main-nav:target + .page-wrap .main-header {
     width: 70%;
     left: 30%; }
 
-/* line 82, stdin */
+/* line 95, stdin */
 #jobDetails {
   display: none; }
-  /* line 84, stdin */
+  /* line 97, stdin */
   #jobDetails p {
     display: block;
     background: red;
@@ -3387,15 +3399,15 @@ body {
     text-decoration: none;
     padding: 15px;
     margin-bottom: -17px; }
-  /* line 94, stdin */
+  /* line 107, stdin */
   #jobDetails button {
     background: orange; }
 
-/* line 98, stdin */
+/* line 111, stdin */
 #jobDetails:target {
   display: block; }
 
-/* line 102, stdin */
+/* line 115, stdin */
 .ui-autocomplete {
   max-height: 100px;
   overflow-y: auto;
@@ -3405,39 +3417,39 @@ body {
 /* IE 6 doesn't support max-height
    * we use height instead, but this forces the menu to always be this tall
    */
-/* line 111, stdin */
+/* line 124, stdin */
 * html .ui-autocomplete {
   height: 100px; }
 
-/* line 114, stdin */
+/* line 127, stdin */
 #salary-bar {
   background: green; }
 
-/* line 117, stdin */
+/* line 130, stdin */
 #map {
   background: brown; }
 
-/* line 120, stdin */
+/* line 133, stdin */
 #list {
   background: gray; }
 
-/* line 123, stdin */
+/* line 136, stdin */
 #footer {
   background: yellow; }
 
-/* line 127, stdin */
+/* line 140, stdin */
 #filter-bar {
   padding-top: 30px;
   background: white; }
 
-/* line 131, stdin */
+/* line 144, stdin */
 .jobCat {
   text-align: center; }
 
-/* line 135, stdin */
+/* line 148, stdin */
 * {
   box-sizing: border-box; }
 
-/* line 139, stdin */
+/* line 152, stdin */
 #apply {
   margin-top: 16px; }
