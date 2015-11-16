@@ -46,11 +46,6 @@ router.get('/dbInit', function(req, res) {
 
   res.send('Finished creating collections and indexes for rentals, homes, and jobs.');
 });
-// jobs_list schema (11 fields): time, cityCode, state, category, jobtitle, company, url, date, snippet, lat, lng;
-// job_stats  schema (7 fields): time, cityCode, state, category, jobCounts, medianSalary, loc_quotient (density);
-// rent_stats schema (7 fields): time, cityCode, state, rentCounts, medianPrice, rentRatio, usTraffic (popularity);
-// home_stats schema (7 fields): time, cityCode, state, homeCounts, medianPrice, averagePrice, usTraffic (popularity);
-// for rentals PRR: larger values = cheaper renting; for rentals && homes usTraffic: larger values = more popular areas;
 
 router.get('/', function(req, res) {
   res.render('index', { jobs: jobs, homes: homes, rentals: rentals });
