@@ -3,13 +3,13 @@
 var express = require('express');
 var router = express.Router();
 
-var jobCats = require('../api_data/Indeed_jobCats.js');
-var jobs  = require('../api_data/job_listings.js');
-var homes = require('../api_data/home_data.js');
-var quandl= require('../api_data/Quandl_cityCodes.js');
-var rents = require('../api_data/rent_counts.js');
-var leases= require('../api_data/rent_prices.js');
-var ratio = require('../api_data/rent_ratio.js');
+var jobCats = require('./api_data/Indeed_jobCats.js');
+var jobs  = require('./api_data/job_listings.js');
+var homes = require('./api_data/home_data.js');
+var quandl= require('./api_data/Quandl_cityCodes.js');
+var rents = require('./api_data/rent_counts.js');
+var leases= require('./api_data/rent_prices.js');
+var ratio = require('./api_data/rent_ratio.js');
 var TESTCITY = 'Miami';
 var CITYCODE = quandl.codes[TESTCITY];
 

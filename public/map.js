@@ -1,3 +1,5 @@
+"use strict";
+
 //Define Variables
 // var state = stateId;
 // var color = val; // ?
@@ -10,27 +12,33 @@ $("#map-container").load("Blank_US_Map.svg", function() {
 
 });
 
-//job cat states
-// var stateId = stateies.map(function(obj) {
-//   var var = obj.house;
-// })
-
-
 // //job cat salaries
-// var salaryCss = salaries.map(function(obj) {
-//   var val = obj.salary;
-//   return val <= 30000 ? '#E0EEEE' :
-//     (val <= 60000 ? '#D1EEEE' :
-//     (val <= 90000 ? '#96CDCD' :
-//     (val <= 120000 ? '#388E8E' :
-//     (val <= 150000 ? '#008080' :
-//     'white'))));
-// });
+var salaryCss = salaries.map(function(obj) {
+  var val = obj.salary;
+  return val <= 30000 ? '#E0EEEE' :
+    (val <= 60000 ? '#D1EEEE' :
+    (val <= 90000 ? '#96CDCD' :
+    (val <= 120000 ? '#388E8E' :
+    (val <= 150000 ? '#008080' :
+    (val <= 180000 ? 'blue' :
+    'white')))));
+});
 
+$.getJSON('http://localhost:3000/us/careers', function(data) {
+    // data is an array of objects; to get salary of each job category: var salary = data[i].salary;
+});
 
+$.getJSON('http://localhost:3000/us/jobs', function(data) {
+    // data is an array of objects; to get medianPrice of each home: var price = data[i].medianPrice;
+});
 
-// var salaries = [ sample data here ]
+$.getJSON('http://localhost:3000/us/homes', function(data) {
+    // data is an array of objects; to get medianPrice of each rental: var price data[i].medianPrice;
+});
 
+$.getJSON('http://localhost:3000/us/rentals', function(data) {
+    // data is an array of objects; to get jobtitle of each job: var title = data[i].jobtitle;
+});
 
 /**
  * Job Cat
