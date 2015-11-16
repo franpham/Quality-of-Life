@@ -3424,35 +3424,31 @@ body::after {
   height: 100px; }
 
 /* line 129, stdin */
-#salary-bar {
-  background: green; }
+#list {
+  background: #3BAF58; }
 
 /* line 132, stdin */
-#list {
-  background: gray; }
-
-/* line 135, stdin */
 #footer {
   background: #86A0B1; }
 
-/* line 139, stdin */
+/* line 136, stdin */
 #filter-bar {
   padding-top: 30px;
   background: #86A0B1; }
 
-/* line 143, stdin */
+/* line 140, stdin */
 .jobCat {
   text-align: center; }
 
-/* line 147, stdin */
+/* line 144, stdin */
 * {
   box-sizing: border-box; }
 
-/* line 151, stdin */
+/* line 148, stdin */
 #apply {
   margin-top: 16px; }
 
-/* line 154, stdin */
+/* line 151, stdin */
 #map-container {
   background: white;
   height: 850px; }
