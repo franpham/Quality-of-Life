@@ -3325,7 +3325,7 @@ body::after {
   top: 0;
   width: 0;
   height: 100%;
-  background: #E6E6E6;
+  background: #3BAF58;
   overflow-y: auto;
   transition: width 0.3s ease; }
   /* line 41, stdin */
@@ -3424,31 +3424,27 @@ body::after {
   height: 100px; }
 
 /* line 129, stdin */
-#list {
-  background: #3BAF58; }
-
-/* line 132, stdin */
 #footer {
   background: #86A0B1; }
 
-/* line 136, stdin */
+/* line 133, stdin */
 #filter-bar {
   padding-top: 30px;
   background: #86A0B1; }
 
-/* line 140, stdin */
+/* line 137, stdin */
 .jobCat {
   text-align: center; }
 
-/* line 144, stdin */
+/* line 141, stdin */
 * {
   box-sizing: border-box; }
 
-/* line 148, stdin */
+/* line 145, stdin */
 #apply {
   margin-top: 16px; }
 
-/* line 151, stdin */
+/* line 148, stdin */
 #map-container {
   background: white;
   height: 850px; }

@@ -34,7 +34,7 @@ body::after {
   top: 0;
   width: 0;
   height: 100%;
-  background: #E6E6E6;
+  background: #3BAF58;
   overflow-y: auto;
   transition: width 0.3s ease;
 
@@ -125,9 +125,6 @@ body::after {
    */
 * html .ui-autocomplete {
   height: 100px;
-}
-#list{
-  background: #3BAF58;
 }
 #footer{
   background: #86A0B1;

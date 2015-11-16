@@ -37,25 +37,24 @@ $(function() {
 
       var jobtitle = autocomplete[ui.item.value].JobTitles;
       for(var i = 0; i < jobtitle.length; i++) {
-    // console.log(jobtitle[i].name);
-    var titles = jobtitle[i].name;
-      console.log(titles);
-
-    jobTitlesPerCat.push(titles);
-    // console.log(jobtitle[0].salary);
+      // console.log(jobtitle[i].name);
+      var titles = jobtitle[i].name;
+        console.log(titles);
+      jobTitlesPerCat.push(titles);
+      // console.log(jobtitle[0].salary);
   }
-      getJobList(jobtitle);
+
+        console.log('dump');
+        getJobList(jobtitle);
     }
   });
 
 
 function getJobList(jobtitle){
-
-
   $("#jobtitleTypes").autocomplete({
     source: function(request, response) {
       var country = $("#jobCatTypes").val();
-          console.log(jobTitlesPerCat);
+          console.log('HIHIHI', jobTitlesPerCat);
       var matcher = new RegExp($.ui.autocomplete.escapeRegex(request.term ), "i" );
       response($.grep(jobTitlesPerCat, function(value) {
           return matcher.test(value);
