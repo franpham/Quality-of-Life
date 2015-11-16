@@ -3325,7 +3325,7 @@ body::after {
   top: 0;
   width: 0;
   height: 100%;
-  background: purple;
+  background: #E6E6E6;
   overflow-y: auto;
   transition: width 0.3s ease; }
   /* line 41, stdin */
@@ -3367,30 +3367,31 @@ body::after {
 .page-wrap {
   float: right;
   width: 100%;
-  transition: width 0.3s ease; }
+  transition: width 0.3s ease;
+  height: 100%; }
 
-/* line 80, stdin */
+/* line 81, stdin */
 #main-nav:target {
-  width: 30%; }
+  width: 25%; }
 
-/* line 83, stdin */
+/* line 84, stdin */
 #main-nav:target + .page-wrap {
-  width: 70%; }
-  /* line 85, stdin */
+  width: 75%; }
+  /* line 86, stdin */
   #main-nav:target + .page-wrap .open-menu {
     display: none; }
-  /* line 88, stdin */
+  /* line 89, stdin */
   #main-nav:target + .page-wrap .close-menu {
     display: block; }
-  /* line 91, stdin */
-  #main-nav:target + .page-wrap .main-header {
-    width: 70%;
-    left: 30%; }
+  /* line 92, stdin */
+  #main-nav:target + .page-wrap .page-wrap {
+    width: 75%;
+    left: 25%; }
 
-/* line 96, stdin */
+/* line 97, stdin */
 #jobDetails {
   display: none; }
-  /* line 98, stdin */
+  /* line 99, stdin */
   #jobDetails p {
     display: block;
     background: red;
@@ -3400,15 +3401,15 @@ body::after {
     text-decoration: none;
     padding: 15px;
     margin-bottom: -17px; }
-  /* line 108, stdin */
+  /* line 109, stdin */
   #jobDetails button {
     background: orange; }
 
-/* line 112, stdin */
+/* line 113, stdin */
 #jobDetails:target {
   display: block; }
 
-/* line 116, stdin */
+/* line 117, stdin */
 .ui-autocomplete {
   max-height: 100px;
   overflow-y: auto;
@@ -3418,43 +3419,40 @@ body::after {
 /* IE 6 doesn't support max-height
    * we use height instead, but this forces the menu to always be this tall
    */
-/* line 125, stdin */
+/* line 126, stdin */
 * html .ui-autocomplete {
   height: 100px; }
 
-/* line 128, stdin */
+/* line 129, stdin */
 #salary-bar {
   background: green; }
 
-/* line 131, stdin */
-#map {
-  background: brown; }
-
-/* line 134, stdin */
+/* line 132, stdin */
 #list {
   background: gray; }
 
-/* line 137, stdin */
+/* line 135, stdin */
 #footer {
   background: #86A0B1; }
 
-/* line 141, stdin */
+/* line 139, stdin */
 #filter-bar {
   padding-top: 30px;
   background: #86A0B1; }
 
-/* line 145, stdin */
+/* line 143, stdin */
 .jobCat {
   text-align: center; }
 
-/* line 149, stdin */
+/* line 147, stdin */
 * {
   box-sizing: border-box; }
 
-/* line 153, stdin */
+/* line 151, stdin */
 #apply {
   margin-top: 16px; }
 
-/* line 156, stdin */
+/* line 154, stdin */
 #map-container {
-  background: white; }
+  background: white;
+  height: 850px; }

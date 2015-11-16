@@ -34,7 +34,7 @@ body::after {
   top: 0;
   width: 0;
   height: 100%;
-  background: purple;
+  background: #E6E6E6;
   overflow-y: auto;
   transition: width 0.3s ease;
 
@@ -76,21 +76,22 @@ body::after {
   float: right;
   width: 100%;
   transition: width 0.3s ease;
+  height: 100%;
 }
 #main-nav:target {
-  width: 30%;
+  width: 25%;
 }
 #main-nav:target + .page-wrap {
-  width: 70%;
+  width: 75%;
   .open-menu {
      display: none;
   }
   .close-menu {
      display: block;
   }
-  .main-header {
-    width: 70%;
-    left: 30%;
+  .page-wrap {
+    width: 75%;
+    left: 25%;
   }
 }
 #jobDetails{
@@ -128,9 +129,6 @@ body::after {
 #salary-bar{
   background: green;
 }
-#map{
-  background: brown;
-}
 #list{
   background: gray;
 }
@@ -155,4 +153,5 @@ body::after {
 }
 #map-container{
   background: white;
+  height: 850px;
 }
