@@ -1,6 +1,27 @@
 "use strict";
 
-var topics = [
+var json = { "dataset": {
+"id": 20145251,
+"dataset_code": "C00033_HR",
+"database_code": "ZILL",
+"name": "Zillow Home Value Index (Cities): Homes for Rent (Beta) - Miami, FL",
+"description": "",
+"refreshed_at": "2015-10-28T16:11:50.760Z",
+"newest_available_date": "2015-09-30",
+"oldest_available_date": "2010-02-28",
+"column_names": [
+  "Date",
+  "Value"
+],
+"frequency": "monthly",
+"type": "Time Series",
+"premium": false,
+"limit": null,
+"transform": null,
+"column_index": null,
+"start_date": "2013-09-01",
+"end_date": "2015-09-30",
+"data": [
 [
 "2015-09-30",
 6090
@@ -100,194 +121,22 @@ var topics = [
 [
 "2013-09-30",
 6333
-],
-[
-"2013-08-31",
-9119
-],
-[
-"2013-07-31",
-10719
-],
-[
-"2013-06-30",
-6823
-],
-[
-"2013-05-31",
-6097
-],
-[
-"2013-04-30",
-6023
-],
-[
-"2013-03-31",
-6227
-],
-[
-"2013-02-28",
-6207
-],
-[
-"2013-01-31",
-6138
-],
-[
-"2012-12-31",
-5639
-],
-[
-"2012-11-30",
-5040
-],
-[
-"2012-10-31",
-5317
-],
-[
-"2012-09-30",
-6504
-],
-[
-"2012-08-31",
-6628
-],
-[
-"2012-07-31",
-5928
-],
-[
-"2012-06-30",
-5832
-],
-[
-"2012-05-31",
-5173
-],
-[
-"2012-04-30",
-4823
-],
-[
-"2012-03-31",
-4655
-],
-[
-"2012-02-29",
-4623
-],
-[
-"2012-01-31",
-4442
-],
-[
-"2011-12-31",
-4395
-],
-[
-"2011-11-30",
-4394
-],
-[
-"2011-10-31",
-4289
-],
-[
-"2011-09-30",
-4670
-],
-[
-"2011-08-31",
-4240
-],
-[
-"2011-07-31",
-3542
-],
-[
-"2011-06-30",
-3178
-],
-[
-"2011-05-31",
-4402
-],
-[
-"2011-04-30",
-4899
-],
-[
-"2011-03-31",
-7069
-],
-[
-"2011-02-28",
-6675
-],
-[
-"2011-01-31",
-3970
-],
-[
-"2010-12-31",
-2986
-],
-[
-"2010-11-30",
-1723
-],
-[
-"2010-10-31",
-1918
-],
-[
-"2010-09-30",
-1889
-],
-[
-"2010-08-31",
-1291
-],
-[
-"2010-07-31",
-1763
-],
-[
-"2010-06-30",
-1787
-],
-[
-"2010-05-31",
-2189
-],
-[
-"2010-04-30",
-2095
-],
-[
-"2010-03-31",
-2016
-],
-[
-"2010-02-28",
-1557
 ]
-];
+],
+"collapse": null,
+"order": "desc",
+"database_id": 13018
+}};
 
-var url = 'http://www.quandl.com/api/v3/datasets/ZILL/C00033_HR.json?limit=60';
-
-var counts = [];
-for (var i = 0; i < topics.length; i++) {
-  var num = topics[i][0].substring(0, 7);
-  counts[i] = { name: num, val: topics[i][1] };
+var items = json.dataset.data;
+var countObj = {};
+for (var i = 0; i < items.length; i++) {
+  var num = items[i][0].substring(0, 7);
+  var val = items[i][1];
+  countObj[num] = val;
 }
-var formatter = new Intl.NumberFormat('en-US');
+module.exports = countObj;
 
-for (var i = 0; i < counts.length; i++) {
-  counts[i].val = formatter.format(counts[i].val);
-}
-module.exports = counts;
-
-// http://www.quandl.com/api/v3/datasets/ZILL/C00033_HR.json?limit=60
+// initialize the database with 2 yrs of data (-2 months), then search again every 1st Sat of month (-2 months) when month # changes; Quandl's data lags by 2 months;
+// http://www.quandl.com/api/v3/datasets/ZILL/C00033_HR.json?start_date=2013-09-01&end_date=2015-09-30
 // C00033 = city code for Miami, _HR = # of homes rented; https IS PREFERRED OVER http;
