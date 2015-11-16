@@ -5,7 +5,7 @@
 <style type="text/css">
 .state
 {
-  fill:white;
+  fill:green;
   stroke:#646464;
   stroke-width:1;
   stroke-opacity:1;

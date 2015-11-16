@@ -135,12 +135,12 @@ body::after {
   background: gray;
 }
 #footer{
-  background: yellow;
+  background: #86A0B1;
 }
 // Filter Bar
 #filter-bar{
   padding-top: 30px;
-  background: white;
+  background: #86A0B1;
 }
 .jobCat{
   text-align: center;
@@ -152,4 +152,7 @@ body::after {
 
 #apply{
   margin-top: 16px;
+}
+#map-container{
+  background: white;
 }

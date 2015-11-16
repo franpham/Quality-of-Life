@@ -3436,12 +3436,12 @@ body::after {
 
 /* line 137, stdin */
 #footer {
-  background: yellow; }
+  background: #86A0B1; }
 
 /* line 141, stdin */
 #filter-bar {
   padding-top: 30px;
-  background: white; }
+  background: #86A0B1; }
 
 /* line 145, stdin */
 .jobCat {
@@ -3454,3 +3454,7 @@ body::after {
 /* line 153, stdin */
 #apply {
   margin-top: 16px; }
+
+/* line 156, stdin */
+#map-container {
+  background: white; }
