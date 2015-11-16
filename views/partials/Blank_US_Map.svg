@@ -5,7 +5,7 @@
 <style type="text/css">
 .state
 {
-  fill:transparent;
+  fill:white;
   stroke:#646464;
   stroke-width:1;
   stroke-opacity:1;
@@ -36,13 +36,13 @@
   stroke-width:2;
 }
 
-<!-- .circle
+.circle
 {
    opacity:1;
-   fill:#E0E0E0;
-   stroke:#646464;
-   stroke-width:1;
-} -->
+   fill:transparent;
+   <!-- stroke:#646464;
+   stroke-width:1; -->
+}
 
 </style>
 

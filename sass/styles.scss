@@ -13,6 +13,7 @@ body{
 body::after {
   content: "";
   background: url(http://images.all-free-download.com/images/graphiclarge/ocean_waves_207578.jpg);
+  background-size: cover;
   opacity: 0.5;
   top: 0;
   left: 0;
