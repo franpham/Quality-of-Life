@@ -3,15 +3,19 @@
 var matchedCities = [
   [
     'Los Angeles',
-    'San Jose-Sunnyvale-Santa Clara, CA',
+    'Los Angeles-Long Beach-Santa Ana, CA',
      '00002'
+  ],[
+    'Detroit',
+    'Detroit-Warren-Livonia, MI',
+    '00012'
   ],[
     'San Jose',
     'San Jose-Sunnyvale-Santa Clara',
     '00008'
   ],[
     'San Francisco',
-    'San Francisco-San Mateo-Redwood City',
+    'San Francisco-Oakland-Fremont',
     '00010'
   ],[
     'Washington',
@@ -23,11 +27,31 @@ var matchedCities = [
     '00016'
   ],[
     'Miami',
-    'Miami-Miami Beach-Kendall',
+    'Miami-Fort Lauderdale-Pompano Beach',
     '00033'
   ],[
     'New Orleans',
     'New Orleans-Metairie-Kenner',
     '09993'
+  ],[
+    'Seattle',
+    'Seattle-Tacoma-Bellevue',
+    '00017'
+  ],[
+    'New York',
+    'New York-Northern New Jersey-Long Island',
+    '00001'
+  ],[
+    'Dallas',
+    'Dallas-Fort Worth-Arlington',
+    '10446'
+  ],[
+    'Philadelphia',
+    'Philadelphia-Camden-Wilmington',
+    '00004'
+  ],[
+    'Chicago',
+    'Chicago-Joliet-Naperville',
+    '00003'
   ]
  ];
