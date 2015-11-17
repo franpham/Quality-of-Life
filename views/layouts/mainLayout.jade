@@ -7,3 +7,102 @@ html
     include ../html/header.html
   body
     block content
+
+    .main-nav#main-nav
+      a.button(href="#")#searchSubmit Close
+      .jobCat
+        h2
+          a(href='#main-nav') Transportation
+      .jobTitle#jobTitle
+        h3
+          p CDL Driver
+
+      .jobDetails#jobDetails
+
+        #comp
+          p YHata
+        #cityState
+          p Honolulu, HI
+        #snippet
+          p.
+            It’s all about playing four quarters# I think we played well but the other team played well too# They took advantage of certain circumstances that arose# It’s a physical game#
+        #date-apply
+          .date
+            p Nov. 13, 2015
+          .apply
+            a.button(href="#")#apply Apply
+
+    .page-wrap
+      //- .row.main-header
+      //-   .large-12.columns
+      //-   h1 cssPanelMenu
+      //-     a.open-menu(href='#main-nav')
+      //-       button button
+      //-     a.close-menu(href='#')
+      //-       button button
+
+      //- filter bar
+      .row#filter-bar
+        .large-2.columns
+          .ui-widget#jobCategorySearch
+            label(for='jobCatTypes') Job Category:
+            input#jobCatTypes
+        .large-2.columns
+          .ui-widget.allTypes#jobtitleSearch
+            label(for='jobtitleTypes', value='Job Title') Job Title:
+            input#jobtitleTypes
+        .large-2.columns
+          .ui-widget#citySearch
+            label(for='cityTypes') City:
+            input#cityTypes
+        .large-2.columns
+          .ui-widget#salarySearch
+            label(for='salaryTypes') Salary:
+            input#salaryTypes
+        .large-2.columns
+          .ui-widget#houseSearch
+            label(for='houseTypes') House Type:
+            input#houseTypes
+        .large-2.columns
+          a.button(href="#main-nav").open-menu#searchSubmit Submit
+          a.button(href="#").close-menu#searchSubmit Submit
+
+
+       .row
+        .large-12.columns#map-container
+         include ../partials/Blank_US_Map.svg
+         include ../partials/map-fills.jade
+
+      //- footer
+      footer.row
+        .large-12.columns#footer
+          hr
+
+          .row
+            .large-6.columns
+              p &copy; Copyright no one at all. Go to town.
+
+            //- .large-6.columns
+            //-   ul.inline-list.right
+            //-     a(href='#') Link 1
+
+            //-     a(href='#') Link 2
+
+            //-     a(href='#') Link 3
+
+            //-     a(href='#') Link 4
+
+    //- script(src='//code.jquery.com/jquery-1.10.2.js')
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.8/d3.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.0.5/bluebird.js")
+    script(src="/js/modernizr.js")
+    script(src="/js/jquery.js")
+    script(src="/js/foundation.min.js")
+    script(src='//code.jquery.com/ui/1.11.4/jquery-ui.js')
+    script(src="/js/autocomplete/cityTypes.js")
+    script(src="/js/autocomplete/jobTypes.js")
+    script(src="/js/autocomplete/salaryTypes.js")
+    script(src="/js/autocomplete/houseTypes.js")
+    script(src="/js/autocomplete/jobCatTypes.js")
+    script.
+      $(document).foundation();
