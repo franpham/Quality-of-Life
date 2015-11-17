@@ -7,8 +7,22 @@
 @import 'foundation/components/side-nav';
 
 body{
-  background: aqua;
+  background: white;
 }
+
+body::after {
+  content: "";
+  background: url(http://images.all-free-download.com/images/graphiclarge/ocean_waves_207578.jpg);
+  background-size: cover;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
 .main-header{
   background: blue;
 }
@@ -20,7 +34,7 @@ body{
   top: 0;
   width: 0;
   height: 100%;
-  background: purple;
+  background: #3BAF58;
   overflow-y: auto;
   transition: width 0.3s ease;
 
@@ -62,21 +76,22 @@ body{
   float: right;
   width: 100%;
   transition: width 0.3s ease;
+  height: 100%;
 }
 #main-nav:target {
-  width: 30%;
+  width: 25%;
 }
 #main-nav:target + .page-wrap {
-  width: 70%;
+  width: 75%;
   .open-menu {
      display: none;
   }
   .close-menu {
      display: block;
   }
-  .main-header {
-    width: 70%;
-    left: 30%;
+  .page-wrap {
+    width: 75%;
+    left: 25%;
   }
 }
 #jobDetails{
@@ -111,22 +126,13 @@ body{
 * html .ui-autocomplete {
   height: 100px;
 }
-#salary-bar{
-  background: green;
-}
-#map{
-  background: brown;
-}
-#list{
-  background: gray;
-}
 #footer{
-  background: yellow;
+  background: #86A0B1;
 }
 // Filter Bar
 #filter-bar{
   padding-top: 30px;
-  background: white;
+  background: #86A0B1;
 }
 .jobCat{
   text-align: center;
@@ -138,4 +144,8 @@ body{
 
 #apply{
   margin-top: 16px;
+}
+#map-container{
+  background: white;
+  height: 850px;
 }
