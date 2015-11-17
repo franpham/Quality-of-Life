@@ -135,7 +135,6 @@ WA,Washington,Manufacturing / Mechanical,Adhesive Bonding Machine Operators and 
 WV,West Virginia,Manufacturing / Mechanical,Adhesive Bonding Machine Operators and Tenders,26250
 WI,Wisconsin,Manufacturing / Mechanical,Adhesive Bonding Machine Operators and Tenders,33770
 PR,Puerto Rico,Manufacturing / Mechanical,Adhesive Bonding Machine Operators and Tenders,21170
-
 AL,Alabama,Legal / Paralegal,Administrative Law Judges, Adjudicators, and Hearing Officers,121110
 AZ,Arizona,Legal / Paralegal,Administrative Law Judges, Adjudicators, and Hearing Officers,93380
 AR,Arkansas,Legal / Paralegal,Administrative Law Judges, Adjudicators, and Hearing Officers,65760
@@ -182,9 +181,6 @@ WA,Washington,Legal / Paralegal,Administrative Law Judges, Adjudicators, and Hea
 WV,West Virginia,Legal / Paralegal,Administrative Law Judges, Adjudicators, and Hearing Officers,98180
 WI,Wisconsin,Legal / Paralegal,Administrative Law Judges, Adjudicators, and Hearing Officers,114180
 PR,Puerto Rico,Legal / Paralegal,Administrative Law Judges, Adjudicators, and Hearing Officers,83580
-
-
-
 AL,Alabama,Upper Management / Consulting,Administrative Services Managers,101200
 AK,Alaska,Upper Management / Consulting,Administrative Services Managers,90310
 AZ,Arizona,Upper Management / Consulting,Administrative Services Managers,85730
@@ -239,7 +235,6 @@ WY,Wyoming,Upper Management / Consulting,Administrative Services Managers,78310
 GU,Guam,Upper Management / Consulting,Administrative Services Managers,50710
 PR,Puerto Rico,Upper Management / Consulting,Administrative Services Managers,55000
 VI,Virgin Islands,Upper Management / Consulting,Administrative Services Managers,62330
-
 AL,Alabama,Education / Training,Adult Basic and Secondary Education and Literacy Teachers and Instructors,40440
 AK,Alaska,Education / Training,Adult Basic and Secondary Education and Literacy Teachers and Instructors,44600
 AZ,Arizona,Education / Training,Adult Basic and Secondary Education and Literacy Teachers and Instructors,50430
@@ -292,7 +287,6 @@ WV,West Virginia,Education / Training,Adult Basic and Secondary Education and Li
 WI,Wisconsin,Education / Training,Adult Basic and Secondary Education and Literacy Teachers and Instructors,49060
 WY,Wyoming,Education / Training,Adult Basic and Secondary Education and Literacy Teachers and Instructors,49670
 PR,Puerto Rico,Education / Training,Adult Basic and Secondary Education and Literacy Teachers and Instructors,33330
-
 AL,Alabama,Marketing / Advertising,Advertising and Promotions Managers,93350
 AK,Alaska,Marketing / Advertising,Advertising and Promotions Managers,77490
 AZ,Arizona,Marketing / Advertising,Advertising and Promotions Managers,84630
@@ -344,7 +338,6 @@ WV,West Virginia,Marketing / Advertising,Advertising and Promotions Managers,665
 WI,Wisconsin,Marketing / Advertising,Advertising and Promotions Managers,94200
 GU,Guam,Marketing / Advertising,Advertising and Promotions Managers,57310
 PR,Puerto Rico,Marketing / Advertising,Advertising and Promotions Managers,66190
-
 AL,Alabama,Marketing / Advertising,Advertising Sales Agents,43760
 AK,Alaska,Marketing / Advertising,Advertising Sales Agents,49710
 AZ,Arizona,Marketing / Advertising,Advertising Sales Agents,53680
@@ -398,7 +391,6 @@ WI,Wisconsin,Marketing / Advertising,Advertising Sales Agents,47920
 WY,Wyoming,Marketing / Advertising,Advertising Sales Agents,35890
 GU,Guam,Marketing / Advertising,Advertising Sales Agents,27550
 PR,Puerto Rico,Marketing / Advertising,Advertising Sales Agents,37710
-
 AL,Alabama,Engineering / Architecture,Aerospace Engineering and Operations Technicians,58790
 AZ,Arizona,Engineering / Architecture,Aerospace Engineering and Operations Technicians,50570
 CA,California,Engineering / Architecture,Aerospace Engineering and Operations Technicians,71390
@@ -426,7 +418,6 @@ TN,Tennessee,Engineering / Architecture,Aerospace Engineering and Operations Tec
 TX,Texas,Engineering / Architecture,Aerospace Engineering and Operations Technicians,61260
 UT,Utah,Engineering / Architecture,Aerospace Engineering and Operations Technicians,66600
 VA,Virginia,Engineering / Architecture,Aerospace Engineering and Operations Technicians,59410
-
 AL,Alabama,Engineering / Architecture,Aerospace Engineers,106240
 AK,Alaska,Engineering / Architecture,Aerospace Engineers,87510
 AZ,Arizona,Engineering / Architecture,Aerospace Engineers,85550
@@ -466,7 +457,6 @@ UT,Utah,Engineering / Architecture,Aerospace Engineers,76230
 VA,Virginia,Engineering / Architecture,Aerospace Engineers,126320
 WA,Washington,Engineering / Architecture,Aerospace Engineers,108850
 WI,Wisconsin,Engineering / Architecture,Aerospace Engineers,105070
-
 AL,Alabama,Upper Management / Consulting,Agents and Business Managers of Artists, Performers, and Athletes,63320
 AZ,Arizona,Upper Management / Consulting,Agents and Business Managers of Artists, Performers, and Athletes,0
 CA,California,Upper Management / Consulting,Agents and Business Managers of Artists, Performers, and Athletes,126330
@@ -501,7 +491,6 @@ VT,Vermont,Upper Management / Consulting,Agents and Business Managers of Artists
 VA,Virginia,Upper Management / Consulting,Agents and Business Managers of Artists, Performers, and Athletes,92130
 WA,Washington,Upper Management / Consulting,Agents and Business Managers of Artists, Performers, and Athletes,36540
 WI,Wisconsin,Upper Management / Consulting,Agents and Business Managers of Artists, Performers, and Athletes,0
-
 AL,Alabama,Pharmaceutical / Bio-tech,Agricultural and Food Science Technicians,43670
 AZ,Arizona,Pharmaceutical / Bio-tech,Agricultural and Food Science Technicians,31180
 AR,Arkansas,Pharmaceutical / Bio-tech,Agricultural and Food Science Technicians,34010
@@ -546,7 +535,6 @@ VA,Virginia,Pharmaceutical / Bio-tech,Agricultural and Food Science Technicians,
 WA,Washington,Pharmaceutical / Bio-tech,Agricultural and Food Science Technicians,36780
 WI,Wisconsin,Pharmaceutical / Bio-tech,Agricultural and Food Science Technicians,37630
 PR,Puerto Rico,Pharmaceutical / Bio-tech,Agricultural and Food Science Technicians,30430
-
 AR,Arkansas,Engineering / Architecture,Agricultural Engineers,75960
 CA,California,Engineering / Architecture,Agricultural Engineers,86640
 FL,Florida,Engineering / Architecture,Agricultural Engineers,49610
@@ -567,7 +555,6 @@ VA,Virginia,Engineering / Architecture,Agricultural Engineers,0
 WA,Washington,Engineering / Architecture,Agricultural Engineers,74080
 WI,Wisconsin,Engineering / Architecture,Agricultural Engineers,77560
 PR,Puerto Rico,Engineering / Architecture,Agricultural Engineers,51020
-
 AL,Alabama,Transportation / Logistics,Agricultural Equipment Operators,30580
 AZ,Arizona,Transportation / Logistics,Agricultural Equipment Operators,21180
 AR,Arkansas,Transportation / Logistics,Agricultural Equipment Operators,24090
@@ -608,7 +595,6 @@ VA,Virginia,Transportation / Logistics,Agricultural Equipment Operators,24150
 WA,Washington,Transportation / Logistics,Agricultural Equipment Operators,33690
 WI,Wisconsin,Transportation / Logistics,Agricultural Equipment Operators,31610
 PR,Puerto Rico,Transportation / Logistics,Agricultural Equipment Operators,18230
-
 AL,Alabama,Customer Service,Agricultural Inspectors,39660
 AZ,Arizona,Customer Service,Agricultural Inspectors,35620
 AR,Arkansas,Customer Service,Agricultural Inspectors,43720
@@ -650,7 +636,6 @@ VA,Virginia,Customer Service,Agricultural Inspectors,36820
 WA,Washington,Customer Service,Agricultural Inspectors,49950
 WI,Wisconsin,Customer Service,Agricultural Inspectors,43200
 PR,Puerto Rico,Customer Service,Agricultural Inspectors,0
-
 AL,Alabama,Education / Training,Agricultural Sciences Teachers, Postsecondary,92780
 AZ,Arizona,Education / Training,Agricultural Sciences Teachers, Postsecondary,0
 AR,Arkansas,Education / Training,Agricultural Sciences Teachers, Postsecondary,85580
@@ -686,7 +671,6 @@ VA,Virginia,Education / Training,Agricultural Sciences Teachers, Postsecondary,5
 WV,West Virginia,Education / Training,Agricultural Sciences Teachers, Postsecondary,83990
 WI,Wisconsin,Education / Training,Agricultural Sciences Teachers, Postsecondary,90300
 WY,Wyoming,Education / Training,Agricultural Sciences Teachers, Postsecondary,77690
-
 AL,Alabama,Customer Service,Agricultural Workers,22310
 AZ,Arizona,Customer Service,Agricultural Workers,37990
 AR,Arkansas,Customer Service,Agricultural Workers,31490
@@ -716,7 +700,6 @@ VA,Virginia,Customer Service,Agricultural Workers,26840
 WA,Washington,Customer Service,Agricultural Workers,36470
 WI,Wisconsin,Customer Service,Agricultural Workers,31510
 PR,Puerto Rico,Customer Service,Agricultural Workers,31490
-
 AL,Alabama,Transportation / Logistics,Air Traffic Controllers,93010
 AK,Alaska,Transportation / Logistics,Air Traffic Controllers,105940
 AZ,Arizona,Transportation / Logistics,Air Traffic Controllers,101520
@@ -759,7 +742,6 @@ WI,Wisconsin,Transportation / Logistics,Air Traffic Controllers,103020
 WY,Wyoming,Transportation / Logistics,Air Traffic Controllers,71060
 GU,Guam,Transportation / Logistics,Air Traffic Controllers,76700
 PR,Puerto Rico,Transportation / Logistics,Air Traffic Controllers,99640
-
 AL,Alabama,Transportation / Logistics,Aircraft Cargo Handling Supervisors,46940
 AK,Alaska,Transportation / Logistics,Aircraft Cargo Handling Supervisors,0
 AZ,Arizona,Transportation / Logistics,Aircraft Cargo Handling Supervisors,49690
@@ -792,7 +774,6 @@ VA,Virginia,Transportation / Logistics,Aircraft Cargo Handling Supervisors,50900
 WA,Washington,Transportation / Logistics,Aircraft Cargo Handling Supervisors,39420
 WI,Wisconsin,Transportation / Logistics,Aircraft Cargo Handling Supervisors,49210
 PR,Puerto Rico,Transportation / Logistics,Aircraft Cargo Handling Supervisors,36630
-
 AL,Alabama,Manufacturing / Mechanical,Aircraft Mechanics and Service Technicians,63470
 AK,Alaska,Manufacturing / Mechanical,Aircraft Mechanics and Service Technicians,62950
 AZ,Arizona,Manufacturing / Mechanical,Aircraft Mechanics and Service Technicians,56190
@@ -845,7 +826,6 @@ WI,Wisconsin,Manufacturing / Mechanical,Aircraft Mechanics and Service Technicia
 WY,Wyoming,Manufacturing / Mechanical,Aircraft Mechanics and Service Technicians,51070
 PR,Puerto Rico,Manufacturing / Mechanical,Aircraft Mechanics and Service Technicians,44260
 VI,Virgin Islands,Manufacturing / Mechanical,Aircraft Mechanics and Service Technicians,47970
-
 AL,Alabama,Manufacturing / Mechanical,Aircraft Structure, Surfaces, Rigging, and Systems Assemblers,49080
 AZ,Arizona,Manufacturing / Mechanical,Aircraft Structure, Surfaces, Rigging, and Systems Assemblers,51310
 CA,California,Manufacturing / Mechanical,Aircraft Structure, Surfaces, Rigging, and Systems Assemblers,54180
@@ -868,7 +848,6 @@ PA,Pennsylvania,Manufacturing / Mechanical,Aircraft Structure, Surfaces, Rigging
 SC,South Carolina,Manufacturing / Mechanical,Aircraft Structure, Surfaces, Rigging, and Systems Assemblers,38810
 TX,Texas,Manufacturing / Mechanical,Aircraft Structure, Surfaces, Rigging, and Systems Assemblers,46550
 UT,Utah,Manufacturing / Mechanical,Aircraft Structure, Surfaces, Rigging, and Systems Assemblers,34280
-
 AL,Alabama,Transportation / Logistics,Airfield Operations Specialists,51160
 AK,Alaska,Transportation / Logistics,Airfield Operations Specialists,68590
 AZ,Arizona,Transportation / Logistics,Airfield Operations Specialists,49110
@@ -906,7 +885,6 @@ VA,Virginia,Transportation / Logistics,Airfield Operations Specialists,37600
 WA,Washington,Transportation / Logistics,Airfield Operations Specialists,55500
 WV,West Virginia,Transportation / Logistics,Airfield Operations Specialists,42140
 WI,Wisconsin,Transportation / Logistics,Airfield Operations Specialists,33800
-
 AL,Alabama,Transportation / Logistics,Airline Pilots, Copilots, and Flight Engineers,99770
 AK,Alaska,Transportation / Logistics,Airline Pilots, Copilots, and Flight Engineers,135850
 AZ,Arizona,Transportation / Logistics,Airline Pilots, Copilots, and Flight Engineers,132640
@@ -944,7 +922,6 @@ WI,Wisconsin,Transportation / Logistics,Airline Pilots, Copilots, and Flight Eng
 WY,Wyoming,Transportation / Logistics,Airline Pilots, Copilots, and Flight Engineers,63280
 PR,Puerto Rico,Transportation / Logistics,Airline Pilots, Copilots, and Flight Engineers,72860
 VI,Virgin Islands,Transportation / Logistics,Airline Pilots, Copilots, and Flight Engineers,51300
-
 AL,Alabama,General,All Occupations,40890
 AK,Alaska,General,All Occupations,54040
 AZ,Arizona,General,All Occupations,44580
@@ -999,7 +976,6 @@ WY,Wyoming,General,All Occupations,44930
 GU,Guam,General,All Occupations,33280
 PR,Puerto Rico,General,All Occupations,27510
 VI,Virgin Islands,General,All Occupations,34960
-
 AL,Alabama,Healthcare,Ambulance Drivers and Attendants, Except Emergency Medical Technicians,22480
 AZ,Arizona,Healthcare,Ambulance Drivers and Attendants, Except Emergency Medical Technicians,25880
 AR,Arkansas,Healthcare,Ambulance Drivers and Attendants, Except Emergency Medical Technicians,26840
@@ -1046,7 +1022,6 @@ WA,Washington,Healthcare,Ambulance Drivers and Attendants, Except Emergency Medi
 WV,West Virginia,Healthcare,Ambulance Drivers and Attendants, Except Emergency Medical Technicians,18600
 WI,Wisconsin,Healthcare,Ambulance Drivers and Attendants, Except Emergency Medical Technicians,23800
 PR,Puerto Rico,Healthcare,Ambulance Drivers and Attendants, Except Emergency Medical Technicians,17130
-
 AL,Alabama,Customer Service,Amusement and Recreation Attendants,18300
 AK,Alaska,Customer Service,Amusement and Recreation Attendants,28120
 AZ,Arizona,Customer Service,Amusement and Recreation Attendants,19700
@@ -1101,7 +1076,6 @@ WY,Wyoming,Customer Service,Amusement and Recreation Attendants,22550
 GU,Guam,Customer Service,Amusement and Recreation Attendants,17320
 PR,Puerto Rico,Customer Service,Amusement and Recreation Attendants,17330
 VI,Virgin Islands,Customer Service,Amusement and Recreation Attendants,20600
-
 AL,Alabama,Healthcare,Anesthesiologists,258760
 AK,Alaska,Healthcare,Anesthesiologists,0
 AZ,Arizona,Healthcare,Anesthesiologists,251990
@@ -1149,7 +1123,6 @@ WV,West Virginia,Healthcare,Anesthesiologists,247150
 WI,Wisconsin,Healthcare,Anesthesiologists,0
 WY,Wyoming,Healthcare,Anesthesiologists,0
 PR,Puerto Rico,Healthcare,Anesthesiologists,76200
-
 CA,California,General,Animal Breeders,39240
 IA,Iowa,General,Animal Breeders,38020
 KY,Kentucky,General,Animal Breeders,36900
@@ -1159,7 +1132,6 @@ SD,South Dakota,General,Animal Breeders,33090
 TX,Texas,General,Animal Breeders,32410
 WA,Washington,General,Animal Breeders,70630
 WI,Wisconsin,General,Animal Breeders,42210
-
 AL,Alabama,Customer Service,Animal Control Workers,30050
 AK,Alaska,Customer Service,Animal Control Workers,45640
 AZ,Arizona,Customer Service,Animal Control Workers,34060
@@ -1208,7 +1180,6 @@ WA,Washington,Customer Service,Animal Control Workers,45020
 WV,West Virginia,Customer Service,Animal Control Workers,22020
 WI,Wisconsin,Customer Service,Animal Control Workers,31670
 WY,Wyoming,Customer Service,Animal Control Workers,39240
-
 AR,Arkansas,Pharmaceutical / Bio-tech,Animal Scientists,58600
 CA,California,Pharmaceutical / Bio-tech,Animal Scientists,0
 CO,Colorado,Pharmaceutical / Bio-tech,Animal Scientists,0
@@ -1229,7 +1200,6 @@ OK,Oklahoma,Pharmaceutical / Bio-tech,Animal Scientists,53880
 SD,South Dakota,Pharmaceutical / Bio-tech,Animal Scientists,56590
 TX,Texas,Pharmaceutical / Bio-tech,Animal Scientists,61300
 WI,Wisconsin,Pharmaceutical / Bio-tech,Animal Scientists,76760
-
 AL,Alabama,Customer Service,Animal Trainers,34710
 AK,Alaska,Customer Service,Animal Trainers,26570
 AZ,Arizona,Customer Service,Animal Trainers,26290
@@ -1273,7 +1243,6 @@ VA,Virginia,Customer Service,Animal Trainers,31280
 WA,Washington,Customer Service,Animal Trainers,26830
 WV,West Virginia,Customer Service,Animal Trainers,31830
 WI,Wisconsin,Customer Service,Animal Trainers,31210
-
 AL,Alabama,Government / Military,Anthropologists and Archeologists,44890
 AK,Alaska,Government / Military,Anthropologists and Archeologists,77230
 AZ,Arizona,Government / Military,Anthropologists and Archeologists,62990
@@ -1312,7 +1281,6 @@ VA,Virginia,Government / Military,Anthropologists and Archeologists,65040
 WA,Washington,Government / Military,Anthropologists and Archeologists,68770
 WI,Wisconsin,Government / Military,Anthropologists and Archeologists,58900
 WY,Wyoming,Government / Military,Anthropologists and Archeologists,61520
-
 AZ,Arizona,Education / Training,Anthropology and Archeology Teachers, Postsecondary,83410
 AR,Arkansas,Education / Training,Anthropology and Archeology Teachers, Postsecondary,76830
 CA,California,Education / Training,Anthropology and Archeology Teachers, Postsecondary,89540
@@ -1347,7 +1315,6 @@ UT,Utah,Education / Training,Anthropology and Archeology Teachers, Postsecondary
 VA,Virginia,Education / Training,Anthropology and Archeology Teachers, Postsecondary,69880
 WA,Washington,Education / Training,Anthropology and Archeology Teachers, Postsecondary,64870
 WI,Wisconsin,Education / Training,Anthropology and Archeology Teachers, Postsecondary,68460
-
 AL,Alabama,Real Estate,Appraisers and Assessors of Real Estate,52410
 AK,Alaska,Real Estate,Appraisers and Assessors of Real Estate,70300
 AZ,Arizona,Real Estate,Appraisers and Assessors of Real Estate,52550
@@ -1400,7 +1367,6 @@ WI,Wisconsin,Real Estate,Appraisers and Assessors of Real Estate,59880
 WY,Wyoming,Real Estate,Appraisers and Assessors of Real Estate,50240
 GU,Guam,Real Estate,Appraisers and Assessors of Real Estate,31510
 PR,Puerto Rico,Real Estate,Appraisers and Assessors of Real Estate,29630
-
 AL,Alabama,Upper Management / Consulting,Arbitrators, Mediators, and Conciliators,57500
 AZ,Arizona,Upper Management / Consulting,Arbitrators, Mediators, and Conciliators,41750
 CA,California,Upper Management / Consulting,Arbitrators, Mediators, and Conciliators,74500
@@ -1435,7 +1401,6 @@ WA,Washington,Upper Management / Consulting,Arbitrators, Mediators, and Concilia
 WV,West Virginia,Upper Management / Consulting,Arbitrators, Mediators, and Conciliators,38440
 WI,Wisconsin,Upper Management / Consulting,Arbitrators, Mediators, and Conciliators,85410
 PR,Puerto Rico,Upper Management / Consulting,Arbitrators, Mediators, and Conciliators,37920
-
 AL,Alabama,Engineering / Architecture,Architects, Except Landscape and Naval,77970
 AK,Alaska,Engineering / Architecture,Architects, Except Landscape and Naval,87090
 AZ,Arizona,Engineering / Architecture,Architects, Except Landscape and Naval,65980
@@ -1489,7 +1454,6 @@ WI,Wisconsin,Engineering / Architecture,Architects, Except Landscape and Naval,7
 WY,Wyoming,Engineering / Architecture,Architects, Except Landscape and Naval,75030
 GU,Guam,Engineering / Architecture,Architects, Except Landscape and Naval,62780
 PR,Puerto Rico,Engineering / Architecture,Architects, Except Landscape and Naval,57740
-
 AL,Alabama,Engineering / Architecture,Architectural and Civil Drafters,49430
 AK,Alaska,Engineering / Architecture,Architectural and Civil Drafters,55580
 AZ,Arizona,Engineering / Architecture,Architectural and Civil Drafters,48880
@@ -1543,7 +1507,6 @@ WI,Wisconsin,Engineering / Architecture,Architectural and Civil Drafters,48090
 WY,Wyoming,Engineering / Architecture,Architectural and Civil Drafters,43490
 GU,Guam,Engineering / Architecture,Architectural and Civil Drafters,38640
 PR,Puerto Rico,Engineering / Architecture,Architectural and Civil Drafters,28980
-
 AL,Alabama,Upper Management / Consulting,Architectural and Engineering Managers,131900
 AK,Alaska,Upper Management / Consulting,Architectural and Engineering Managers,153540
 AZ,Arizona,Upper Management / Consulting,Architectural and Engineering Managers,134770
@@ -1597,7 +1560,6 @@ WI,Wisconsin,Upper Management / Consulting,Architectural and Engineering Manager
 WY,Wyoming,Upper Management / Consulting,Architectural and Engineering Managers,114000
 GU,Guam,Upper Management / Consulting,Architectural and Engineering Managers,84550
 PR,Puerto Rico,Upper Management / Consulting,Architectural and Engineering Managers,96280
-
 AL,Alabama,Engineering / Architecture,Architecture and Engineering Occupations,82670
 AK,Alaska,Engineering / Architecture,Architecture and Engineering Occupations,100840
 AZ,Arizona,Engineering / Architecture,Architecture and Engineering Occupations,77310
@@ -1652,7 +1614,6 @@ WY,Wyoming,Engineering / Architecture,Architecture and Engineering Occupations,7
 GU,Guam,Engineering / Architecture,Architecture and Engineering Occupations,57530
 PR,Puerto Rico,Engineering / Architecture,Architecture and Engineering Occupations,53820
 VI,Virgin Islands,Engineering / Architecture,Architecture and Engineering Occupations,56230
-
 AL,Alabama,Education / Training,Architecture Teachers, Postsecondary,80400
 AZ,Arizona,Education / Training,Architecture Teachers, Postsecondary,68760
 AR,Arkansas,Education / Training,Architecture Teachers, Postsecondary,62630
@@ -1685,7 +1646,6 @@ UT,Utah,Education / Training,Architecture Teachers, Postsecondary,86700
 VA,Virginia,Education / Training,Architecture Teachers, Postsecondary,77470
 WI,Wisconsin,Education / Training,Architecture Teachers, Postsecondary,75710
 PR,Puerto Rico,Education / Training,Architecture Teachers, Postsecondary,51280
-
 AL,Alabama,Government / Military,Archivists,59860
 AZ,Arizona,Government / Military,Archivists,44670
 AR,Arkansas,Government / Military,Archivists,47610
@@ -1723,7 +1683,6 @@ VA,Virginia,Government / Military,Archivists,56090
 WA,Washington,Government / Military,Archivists,62790
 WI,Wisconsin,Government / Military,Archivists,43330
 PR,Puerto Rico,Government / Military,Archivists,24530
-
 AZ,Arizona,Education / Training,Area, Ethnic, and Cultural Studies Teachers, Postsecondary,70900
 CA,California,Education / Training,Area, Ethnic, and Cultural Studies Teachers, Postsecondary,77790
 CO,Colorado,Education / Training,Area, Ethnic, and Cultural Studies Teachers, Postsecondary,51140
@@ -1761,7 +1720,6 @@ VA,Virginia,Education / Training,Area, Ethnic, and Cultural Studies Teachers, Po
 WA,Washington,Education / Training,Area, Ethnic, and Cultural Studies Teachers, Postsecondary,69880
 WV,West Virginia,Education / Training,Area, Ethnic, and Cultural Studies Teachers, Postsecondary,66430
 WI,Wisconsin,Education / Training,Area, Ethnic, and Cultural Studies Teachers, Postsecondary,61550
-
 AL,Alabama,Marketing / Advertising,Art Directors,72910
 AZ,Arizona,Marketing / Advertising,Art Directors,78260
 AR,Arkansas,Marketing / Advertising,Art Directors,51900
@@ -1809,7 +1767,6 @@ WA,Washington,Marketing / Advertising,Art Directors,102590
 WV,West Virginia,Marketing / Advertising,Art Directors,61860
 WI,Wisconsin,Marketing / Advertising,Art Directors,77830
 PR,Puerto Rico,Marketing / Advertising,Art Directors,57590
-
 AL,Alabama,Art, Drama, and Music Teachers, Postsecondary,59370
 AK,Alaska,Art, Drama, and Music Teachers, Postsecondary,82060
 AZ,Arizona,Art, Drama, and Music Teachers, Postsecondary,63760
@@ -1862,7 +1819,6 @@ WV,West Virginia,Art, Drama, and Music Teachers, Postsecondary,62670
 WI,Wisconsin,Art, Drama, and Music Teachers, Postsecondary,57750
 WY,Wyoming,Art, Drama, and Music Teachers, Postsecondary,57220
 PR,Puerto Rico,Art, Drama, and Music Teachers, Postsecondary,40670
-
 AL,Alabama,Arts / Publishing,Artists and Related Workers, All Other,52710
 AK,Alaska,Arts / Publishing,Artists and Related Workers, All Other,47860
 AZ,Arizona,Arts / Publishing,Artists and Related Workers, All Other,52160
@@ -1894,7 +1850,6 @@ VA,Virginia,Arts / Publishing,Artists and Related Workers, All Other,78540
 WA,Washington,Arts / Publishing,Artists and Related Workers, All Other,55330
 WV,West Virginia,Arts / Publishing,Artists and Related Workers, All Other,40580
 WI,Wisconsin,Arts / Publishing,Artists and Related Workers, All Other,57210
-
 AL,Alabama,Arts / Publishing,Arts, Design, Entertainment, Sports, and Media Occupations,41750
 AK,Alaska,Arts / Publishing,Arts, Design, Entertainment, Sports, and Media Occupations,51840
 AZ,Arizona,Arts / Publishing,Arts, Design, Entertainment, Sports, and Media Occupations,46250
@@ -1949,7 +1904,6 @@ WY,Wyoming,Arts / Publishing,Arts, Design, Entertainment, Sports, and Media Occu
 GU,Guam,Arts / Publishing,Arts, Design, Entertainment, Sports, and Media Occupations,30260
 PR,Puerto Rico,Arts / Publishing,Arts, Design, Entertainment, Sports, and Media Occupations,35190
 VI,Virgin Islands,Arts / Publishing,Arts, Design, Entertainment, Sports, and Media Occupations,42210
-
 AL,Alabama,Manufacturing / Mechanical,Assemblers and Fabricators, All Other,23440
 AK,Alaska,Manufacturing / Mechanical,Assemblers and Fabricators, All Other,37110
 AZ,Arizona,Manufacturing / Mechanical,Assemblers and Fabricators, All Other,29440
@@ -2001,14 +1955,12 @@ WV,West Virginia,Manufacturing / Mechanical,Assemblers and Fabricators, All Othe
 WI,Wisconsin,Manufacturing / Mechanical,Assemblers and Fabricators, All Other,28480
 WY,Wyoming,Manufacturing / Mechanical,Assemblers and Fabricators, All Other,24550
 PR,Puerto Rico,Manufacturing / Mechanical,Assemblers and Fabricators, All Other,17670
-
 CA,California,Engineering / Architecture,Astronomers,127690
 CO,Colorado,Engineering / Architecture,Astronomers,106150
 HI,Hawaii,Engineering / Architecture,Astronomers,111820
 MD,Maryland,Engineering / Architecture,Astronomers,119600
 NM,New Mexico,Engineering / Architecture,Astronomers,110180
 TX,Texas,Engineering / Architecture,Astronomers,113100
-
 AZ,Arizona,Hospitality / Entertainment,Athletes and Sports Competitors,68950
 AR,Arkansas,Hospitality / Entertainment,Athletes and Sports Competitors,34050
 CA,California,Hospitality / Entertainment,Athletes and Sports Competitors,120920
@@ -2039,7 +1991,6 @@ UT,Utah,Hospitality / Entertainment,Athletes and Sports Competitors,72480
 VA,Virginia,Hospitality / Entertainment,Athletes and Sports Competitors,0
 WA,Washington,Hospitality / Entertainment,Athletes and Sports Competitors,101160
 WI,Wisconsin,Hospitality / Entertainment,Athletes and Sports Competitors,90580
-
 AL,Alabama,Healthcare,Athletic Trainers,42570
 AZ,Arizona,Healthcare,Athletic Trainers,39630
 AR,Arkansas,Healthcare,Athletic Trainers,44010
@@ -2090,7 +2041,6 @@ WA,Washington,Healthcare,Athletic Trainers,44970
 WV,West Virginia,Healthcare,Athletic Trainers,45560
 WI,Wisconsin,Healthcare,Athletic Trainers,47120
 PR,Puerto Rico,Healthcare,Athletic Trainers,19890
-
 AL,Alabama,Government / Military,Atmospheric and Space Scientists,79140
 AK,Alaska,Government / Military,Atmospheric and Space Scientists,86380
 AZ,Arizona,Government / Military,Atmospheric and Space Scientists,86910
@@ -2174,7 +2124,6 @@ VA,Virginia,Education / Training,Atmospheric, Earth, Marine, and Space Sciences 
 WA,Washington,Education / Training,Atmospheric, Earth, Marine, and Space Sciences Teachers, Postsecondary,81850
 WI,Wisconsin,Education / Training,Atmospheric, Earth, Marine, and Space Sciences Teachers, Postsecondary,89840
 WY,Wyoming,Education / Training,Atmospheric, Earth, Marine, and Space Sciences Teachers, Postsecondary,0
-
 AL,Alabama,Arts / Publishing,Audio and Video Equipment Technicians,43170
 AK,Alaska,Arts / Publishing,Audio and Video Equipment Technicians,45270
 AZ,Arizona,Arts / Publishing,Audio and Video Equipment Technicians,46810
@@ -2228,7 +2177,6 @@ WI,Wisconsin,Arts / Publishing,Audio and Video Equipment Technicians,38720
 WY,Wyoming,Arts / Publishing,Audio and Video Equipment Technicians,43450
 GU,Guam,Arts / Publishing,Audio and Video Equipment Technicians,20730
 PR,Puerto Rico,Arts / Publishing,Audio and Video Equipment Technicians,25670
-
 AL,Alabama,Arts / Publishing,Audio-Visual and Multimedia Collections Specialists,30230
 AZ,Arizona,Arts / Publishing,Audio-Visual and Multimedia Collections Specialists,43040
 AR,Arkansas,Arts / Publishing,Audio-Visual and Multimedia Collections Specialists,43610
@@ -2265,7 +2213,6 @@ VA,Virginia,Arts / Publishing,Audio-Visual and Multimedia Collections Specialist
 WA,Washington,Arts / Publishing,Audio-Visual and Multimedia Collections Specialists,47380
 WI,Wisconsin,Arts / Publishing,Audio-Visual and Multimedia Collections Specialists,41300
 PR,Puerto Rico,Arts / Publishing,Audio-Visual and Multimedia Collections Specialists,35050
-
 AL,Alabama,Healthcare,Audiologists,59190
 AZ,Arizona,Healthcare,Audiologists,71840
 AR,Arkansas,Healthcare,Audiologists,67970
@@ -2314,7 +2261,6 @@ WA,Washington,Healthcare,Audiologists,88350
 WV,West Virginia,Healthcare,Audiologists,58010
 WI,Wisconsin,Healthcare,Audiologists,80340
 WY,Wyoming,Healthcare,Audiologists,73940
-
 AL,Alabama,Customer Service,Automotive and Watercraft Service Attendants,22260
 AK,Alaska,Customer Service,Automotive and Watercraft Service Attendants,25650
 AZ,Arizona,Customer Service,Automotive and Watercraft Service Attendants,23250
@@ -2367,7 +2313,6 @@ WY,Wyoming,Customer Service,Automotive and Watercraft Service Attendants,23090
 GU,Guam,Customer Service,Automotive and Watercraft Service Attendants,17000
 PR,Puerto Rico,Customer Service,Automotive and Watercraft Service Attendants,17420
 VI,Virgin Islands,Customer Service,Automotive and Watercraft Service Attendants,23440
-
 AL,Alabama,Transportation / Logistics,Automotive Body and Related Repairers,40390
 AK,Alaska,Transportation / Logistics,Automotive Body and Related Repairers,53610
 AZ,Arizona,Transportation / Logistics,Automotive Body and Related Repairers,48240
@@ -2421,7 +2366,6 @@ WI,Wisconsin,Transportation / Logistics,Automotive Body and Related Repairers,41
 WY,Wyoming,Transportation / Logistics,Automotive Body and Related Repairers,45790
 GU,Guam,Transportation / Logistics,Automotive Body and Related Repairers,24120
 PR,Puerto Rico,Transportation / Logistics,Automotive Body and Related Repairers,21060
-
 AL,Alabama,Transportation / Logistics,Automotive Glass Installers and Repairers,28930
 AK,Alaska,Transportation / Logistics,Automotive Glass Installers and Repairers,35750
 AZ,Arizona,Transportation / Logistics,Automotive Glass Installers and Repairers,33850
@@ -2467,7 +2411,6 @@ WA,Washington,Transportation / Logistics,Automotive Glass Installers and Repaire
 WV,West Virginia,Transportation / Logistics,Automotive Glass Installers and Repairers,31560
 WI,Wisconsin,Transportation / Logistics,Automotive Glass Installers and Repairers,34010
 WY,Wyoming,Transportation / Logistics,Automotive Glass Installers and Repairers,34040
-
 AL,Alabama,Transportation / Logistics,Automotive Service Technicians and Mechanics,37140
 AK,Alaska,Transportation / Logistics,Automotive Service Technicians and Mechanics,52050
 AZ,Arizona,Transportation / Logistics,Automotive Service Technicians and Mechanics,41800
@@ -2522,7 +2465,6 @@ WY,Wyoming,Transportation / Logistics,Automotive Service Technicians and Mechani
 GU,Guam,Transportation / Logistics,Automotive Service Technicians and Mechanics,28510
 PR,Puerto Rico,Transportation / Logistics,Automotive Service Technicians and Mechanics,20250
 VI,Virgin Islands,Transportation / Logistics,Automotive Service Technicians and Mechanics,36730
-
 AL,Alabama,Transportation / Logistics,Avionics Technicians,59950
 AK,Alaska,Transportation / Logistics,Avionics Technicians,68230
 AZ,Arizona,Transportation / Logistics,Avionics Technicians,51020
@@ -2564,7 +2506,6 @@ VA,Virginia,Transportation / Logistics,Avionics Technicians,54210
 WA,Washington,Transportation / Logistics,Avionics Technicians,74700
 WI,Wisconsin,Transportation / Logistics,Avionics Technicians,53530
 PR,Puerto Rico,Transportation / Logistics,Avionics Technicians,54350
-
 AL,Alabama,Customer Service,Baggage Porters and Bellhops,18650
 AK,Alaska,Customer Service,Baggage Porters and Bellhops,24060
 AZ,Arizona,Customer Service,Baggage Porters and Bellhops,21660
@@ -2618,7 +2559,6 @@ WY,Wyoming,Customer Service,Baggage Porters and Bellhops,22570
 GU,Guam,Customer Service,Baggage Porters and Bellhops,0
 PR,Puerto Rico,Customer Service,Baggage Porters and Bellhops,17520
 VI,Virgin Islands,Customer Service,Baggage Porters and Bellhops,24860
-
 AL,Alabama,Law Enforcement / Security.Bailiffs,30070
 AZ,Arizona,Law Enforcement / Security.Bailiffs,33390
 AR,Arkansas,Law Enforcement / Security.Bailiffs,31610
@@ -2662,7 +2602,6 @@ WA,Washington,Law Enforcement / Security.Bailiffs,46680
 WV,West Virginia,Law Enforcement / Security.Bailiffs,27930
 WI,Wisconsin,Law Enforcement / Security.Bailiffs,27440
 PR,Puerto Rico,Law Enforcement / Security.Bailiffs,29700
-
 AL,Alabama,Restaurant / Food Service,Bakers,20910
 AK,Alaska,Restaurant / Food Service,Bakers,32550
 AZ,Arizona,Restaurant / Food Service,Bakers,25330
@@ -2744,7 +2683,6 @@ TN,Tennessee,Customer Service,Barbers,23030
 TX,Texas,Customer Service,Barbers,28680
 WA,Washington,Customer Service,Barbers,29960
 WI,Wisconsin,Customer Service,Barbers,19890
-
 AL,Alabama,Restaurant / Food Service,Bartenders,19920
 AK,Alaska,Restaurant / Food Service,Bartenders,27170
 AZ,Arizona,Restaurant / Food Service,Bartenders,21830
@@ -2799,7 +2737,6 @@ WY,Wyoming,Restaurant / Food Service,Bartenders,19510
 GU,Guam,Restaurant / Food Service,Bartenders,17530
 PR,Puerto Rico,Restaurant / Food Service,Bartenders,17460
 VI,Virgin Islands,Restaurant / Food Service,Bartenders,22460
-
 AL,Alabama,Customer Service,Bicycle Repairers,27580
 AZ,Arizona,Customer Service,Bicycle Repairers,30740
 AR,Arkansas,Customer Service,Bicycle Repairers,22620
@@ -2841,7 +2778,6 @@ VT,Vermont,Customer Service,Bicycle Repairers,27750
 VA,Virginia,Customer Service,Bicycle Repairers,24580
 WA,Washington,Customer Service,Bicycle Repairers,29050
 WI,Wisconsin,Customer Service,Bicycle Repairers,22010
-
 AL,Alabama,Accounting / Finance,Bill and Account Collectors,30940
 AK,Alaska,Accounting / Finance,Bill and Account Collectors,42780
 AZ,Arizona,Accounting / Finance,Bill and Account Collectors,34500
@@ -2896,7 +2832,6 @@ WY,Wyoming,Accounting / Finance,Bill and Account Collectors,33180
 GU,Guam,Accounting / Finance,Bill and Account Collectors,24890
 PR,Puerto Rico,Accounting / Finance,Bill and Account Collectors,24140
 VI,Virgin Islands,Accounting / Finance,Bill and Account Collectors,32830
-
 AL,Alabama,Accounting / Finance,Billing and Posting Clerks,30990
 AK,Alaska,Accounting / Finance,Billing and Posting Clerks,42030
 AZ,Arizona,Accounting / Finance,Billing and Posting Clerks,34020
@@ -2951,7 +2886,6 @@ WY,Wyoming,Accounting / Finance,Billing and Posting Clerks,35010
 GU,Guam,Accounting / Finance,Billing and Posting Clerks,25390
 PR,Puerto Rico,Accounting / Finance,Billing and Posting Clerks,20710
 VI,Virgin Islands,Accounting / Finance,Billing and Posting Clerks,31110
-
 AL,Alabama,Pharmaceutical / Bio-tech,Biochemists and Biophysicists,88780
 AZ,Arizona,Pharmaceutical / Bio-tech,Biochemists and Biophysicists,59350
 AR,Arkansas,Pharmaceutical / Bio-tech,Biochemists and Biophysicists,70200
@@ -2992,7 +2926,6 @@ VA,Virginia,Pharmaceutical / Bio-tech,Biochemists and Biophysicists,98540
 WA,Washington,Pharmaceutical / Bio-tech,Biochemists and Biophysicists,83250
 WI,Wisconsin,Pharmaceutical / Bio-tech,Biochemists and Biophysicists,70390
 PR,Puerto Rico,Pharmaceutical / Bio-tech,Biochemists and Biophysicists,0
-
 AL,Alabama,Biological Science Teachers, Postsecondary,0
 AZ,Arizona,Biological Science Teachers, Postsecondary,87490
 AR,Arkansas,Biological Science Teachers, Postsecondary,58460
@@ -3276,7 +3209,6 @@ WY,Wyoming,Bookkeeping, Accounting, and Auditing Clerks,36820
 GU,Guam,Bookkeeping, Accounting, and Auditing Clerks,26790
 PR,Puerto Rico,Bookkeeping, Accounting, and Auditing Clerks,22840
 VI,Virgin Islands,Bookkeeping, Accounting, and Auditing Clerks,32590
-
 AL,Alabama,Construction / Facilities,Brickmasons and Blockmasons,37050
 AZ,Arizona,Construction / Facilities,Brickmasons and Blockmasons,38910
 AR,Arkansas,Construction / Facilities,Brickmasons and Blockmasons,35900
@@ -3328,7 +3260,6 @@ WI,Wisconsin,Construction / Facilities,Brickmasons and Blockmasons,54030
 WY,Wyoming,Construction / Facilities,Brickmasons and Blockmasons,47970
 PR,Puerto Rico,Construction / Facilities,Brickmasons and Blockmasons,29510
 VI,Virgin Islands,Construction / Facilities,Brickmasons and Blockmasons,38510
-
 CA,California,Customer Service,Bridge and Lock Tenders,49020
 FL,Florida,Customer Service,Bridge and Lock Tenders,34560
 IL,Illinois,Customer Service,Bridge and Lock Tenders,59260
@@ -3350,7 +3281,6 @@ VA,Virginia,Customer Service,Bridge and Lock Tenders,30580
 WA,Washington,Customer Service,Bridge and Lock Tenders,50810
 WV,West Virginia,Customer Service,Bridge and Lock Tenders,50680
 WI,Wisconsin,Customer Service,Bridge and Lock Tenders,46850
-
 AL,Alabama,Arts / Publishing,Broadcast News Analysts,80590
 AK,Alaska,Arts / Publishing,Broadcast News Analysts,0
 AZ,Arizona,Arts / Publishing,Broadcast News Analysts,104230
@@ -3383,7 +3313,6 @@ UT,Utah,Arts / Publishing,Broadcast News Analysts,71680
 VA,Virginia,Arts / Publishing,Broadcast News Analysts,85230
 WI,Wisconsin,Arts / Publishing,Broadcast News Analysts,65240
 PR,Puerto Rico,Arts / Publishing,Broadcast News Analysts,55240
-
 AL,Alabama,Telecommunications,Broadcast Technicians,37080
 AK,Alaska,Telecommunications,Broadcast Technicians,37530
 AZ,Arizona,Telecommunications,Broadcast Technicians,43810
@@ -3435,7 +3364,6 @@ WV,West Virginia,Telecommunications,Broadcast Technicians,31690
 WI,Wisconsin,Telecommunications,Broadcast Technicians,54000
 WY,Wyoming,Telecommunications,Broadcast Technicians,36280
 PR,Puerto Rico,Telecommunications,Broadcast Technicians,30350
-
 AL,Alabama,Administrative,Brokerage Clerks,46060
 AK,Alaska,Administrative,Brokerage Clerks,53540
 AZ,Arizona,Administrative,Brokerage Clerks,51180
@@ -3488,7 +3416,6 @@ WV,West Virginia,Administrative,Brokerage Clerks,44510
 WI,Wisconsin,Administrative,Brokerage Clerks,43330
 WY,Wyoming,Administrative,Brokerage Clerks,42560
 PR,Puerto Rico,Administrative,Brokerage Clerks,37910
-
 AL,Alabama,Accounting / Finance,Budget Analysts,70690
 AK,Alaska,Accounting / Finance,Budget Analysts,84290
 AZ,Arizona,Accounting / Finance,Budget Analysts,68800
@@ -3542,8 +3469,6 @@ WY,Wyoming,Accounting / Finance,Budget Analysts,64840
 GU,Guam,Accounting / Finance,Budget Analysts,50140
 PR,Puerto Rico,Accounting / Finance,Budget Analysts,45240
 VI,Virgin Islands,Accounting / Finance,Budget Analysts,53150
-
-AL,Alabama,Construction / Facilities,Building and Grounds Cleaning and Maintenance Occupations,22770
 AK,Alaska,Construction / Facilities,Building and Grounds Cleaning and Maintenance Occupations,29830
 AZ,Arizona,Construction / Facilities,Building and Grounds Cleaning and Maintenance Occupations,23920
 AR,Arkansas,Construction / Facilities,Building and Grounds Cleaning and Maintenance Occupations,21840
@@ -3597,7 +3522,6 @@ WY,Wyoming,Construction / Facilities,Building and Grounds Cleaning and Maintenan
 GU,Guam,Construction / Facilities,Building and Grounds Cleaning and Maintenance Occupations,18740
 PR,Puerto Rico,Construction / Facilities,Building and Grounds Cleaning and Maintenance Occupations,18580
 VI,Virgin Islands,Construction / Facilities,Building and Grounds Cleaning and Maintenance Occupations,23080
-
 AZ,Arizona,Construction / Facilities,Building Cleaning Workers, All Other,26480
 AR,Arkansas,Construction / Facilities,Building Cleaning Workers, All Other,22990
 CA,California,Construction / Facilities,Building Cleaning Workers, All Other,35160
@@ -3632,7 +3556,6 @@ VA,Virginia,Construction / Facilities,Building Cleaning Workers, All Other,28460
 WA,Washington,Construction / Facilities,Building Cleaning Workers, All Other,32060
 WV,West Virginia,Construction / Facilities,Building Cleaning Workers, All Other,22660
 WI,Wisconsin,Construction / Facilities,Building Cleaning Workers, All Other,32970
-
 AL,Alabama,Transportation / Logistics,Bus and Truck Mechanics and Diesel Engine Specialists,39770
 AK,Alaska,Transportation / Logistics,Bus and Truck Mechanics and Diesel Engine Specialists,59080
 AZ,Arizona,Transportation / Logistics,Bus and Truck Mechanics and Diesel Engine Specialists,44540
@@ -3687,7 +3610,6 @@ WY,Wyoming,Transportation / Logistics,Bus and Truck Mechanics and Diesel Engine 
 GU,Guam,Transportation / Logistics,Bus and Truck Mechanics and Diesel Engine Specialists,29490
 PR,Puerto Rico,Transportation / Logistics,Bus and Truck Mechanics and Diesel Engine Specialists,25560
 VI,Virgin Islands,Transportation / Logistics,Bus and Truck Mechanics and Diesel Engine Specialists,39480
-
 AL,Alabama,Transportation / Logistics,Bus Drivers, School or Special Client,18220
 AK,Alaska,Transportation / Logistics,Bus Drivers, School or Special Client,35720
 AZ,Arizona,Transportation / Logistics,Bus Drivers, School or Special Client,27830
@@ -3740,7 +3662,6 @@ WV,West Virginia,Transportation / Logistics,Bus Drivers, School or Special Clien
 WI,Wisconsin,Transportation / Logistics,Bus Drivers, School or Special Client,29780
 WY,Wyoming,Transportation / Logistics,Bus Drivers, School or Special Client,32240
 PR,Puerto Rico,Transportation / Logistics,Bus Drivers, School or Special Client,17290
-
 AL,Alabama,Transportation / Logistics,Bus Drivers, Transit and Intercity,26540
 AK,Alaska,Transportation / Logistics,Bus Drivers, Transit and Intercity,40790
 AZ,Arizona,Transportation / Logistics,Bus Drivers, Transit and Intercity,31550
@@ -3795,7 +3716,6 @@ WY,Wyoming,Transportation / Logistics,Bus Drivers, Transit and Intercity,33110
 GU,Guam,Transportation / Logistics,Bus Drivers, Transit and Intercity,19830
 PR,Puerto Rico,Transportation / Logistics,Bus Drivers, Transit and Intercity,27280
 VI,Virgin Islands,Transportation / Logistics,Bus Drivers, Transit and Intercity,25320
-
 AL,Alabama,Accounting / Finance,Business and Financial Operations Occupations,68130
 AK,Alaska,Accounting / Finance,Business and Financial Operations Occupations,75190
 AZ,Arizona,Accounting / Finance,Business and Financial Operations Occupations,64470
@@ -3850,7 +3770,6 @@ WY,Wyoming,Accounting / Finance,Business and Financial Operations Occupations,64
 GU,Guam,Accounting / Finance,Business and Financial Operations Occupations,47460
 PR,Puerto Rico,Accounting / Finance,Business and Financial Operations Occupations,38110
 VI,Virgin Islands,Accounting / Finance,Business and Financial Operations Occupations,50280
-
 AL,Alabama,Accounting / Finance,Business Operations Specialists, All Other,78820
 AK,Alaska,Accounting / Finance,Business Operations Specialists, All Other,79120
 AZ,Arizona,Accounting / Finance,Business Operations Specialists, All Other,71170
@@ -3957,7 +3876,6 @@ WV,West Virginia,Education / Training,Business Teachers, Postsecondary,61780
 WI,Wisconsin,Education / Training,Business Teachers, Postsecondary,86950
 WY,Wyoming,Education / Training,Business Teachers, Postsecondary,74410
 PR,Puerto Rico,Education / Training,Business Teachers, Postsecondary,54420
-
 AL,Alabama,Customer Service,Butchers and Meat Cutters,27370
 AK,Alaska,Customer Service,Butchers and Meat Cutters,41700
 AZ,Arizona,Customer Service,Butchers and Meat Cutters,29760
@@ -4012,7 +3930,6 @@ WY,Wyoming,Customer Service,Butchers and Meat Cutters,29900
 GU,Guam,Customer Service,Butchers and Meat Cutters,22270
 PR,Puerto Rico,Customer Service,Butchers and Meat Cutters,18790
 VI,Virgin Islands,Customer Service,Butchers and Meat Cutters,25580
-
 AL,Alabama,Sales,Buyers and Purchasing Agents, Farm Products,67530
 AZ,Arizona,Sales,Buyers and Purchasing Agents, Farm Products,77000
 AR,Arkansas,Sales,Buyers and Purchasing Agents, Farm Products,78400
@@ -4059,7 +3976,6 @@ VT,Vermont,Sales,Buyers and Purchasing Agents, Farm Products,57150
 WA,Washington,Sales,Buyers and Purchasing Agents, Farm Products,79200
 WI,Wisconsin,Sales,Buyers and Purchasing Agents, Farm Products,60930
 PR,Puerto Rico,Sales,Buyers and Purchasing Agents, Farm Products,35040
-
 AL,Alabama,Manufacturing / Mechanical,Cabinetmakers and Bench Carpenters,27450
 AK,Alaska,Manufacturing / Mechanical,Cabinetmakers and Bench Carpenters,37880
 AZ,Arizona,Manufacturing / Mechanical,Cabinetmakers and Bench Carpenters,26780
@@ -4112,7 +4028,6 @@ WV,West Virginia,Manufacturing / Mechanical,Cabinetmakers and Bench Carpenters,3
 WI,Wisconsin,Manufacturing / Mechanical,Cabinetmakers and Bench Carpenters,32930
 WY,Wyoming,Manufacturing / Mechanical,Cabinetmakers and Bench Carpenters,33300
 PR,Puerto Rico,Manufacturing / Mechanical,Cabinetmakers and Bench Carpenters,18040
-
 AL,Alabama,Arts / Publishing,Camera and Photographic Equipment Repairers,0
 AZ,Arizona,Arts / Publishing,Camera and Photographic Equipment Repairers,38240
 CA,California,Arts / Publishing,Camera and Photographic Equipment Repairers,44790
@@ -4136,7 +4051,6 @@ OK,Oklahoma,Arts / Publishing,Camera and Photographic Equipment Repairers,40190
 PA,Pennsylvania,Arts / Publishing,Camera and Photographic Equipment Repairers,32320
 TX,Texas,Arts / Publishing,Camera and Photographic Equipment Repairers,49320
 VA,Virginia,Arts / Publishing,Camera and Photographic Equipment Repairers,44590
-
 AL,Alabama,Arts / Publishing,Camera Operators, Television, Video, and Motion Picture,35370
 AK,Alaska,Arts / Publishing,Camera Operators, Television, Video, and Motion Picture,55210
 AZ,Arizona,Arts / Publishing,Camera Operators, Television, Video, and Motion Picture,44340
@@ -4187,7 +4101,6 @@ WI,Wisconsin,Arts / Publishing,Camera Operators, Television, Video, and Motion P
 WY,Wyoming,Arts / Publishing,Camera Operators, Television, Video, and Motion Picture,39040
 GU,Guam,Arts / Publishing,Camera Operators, Television, Video, and Motion Picture,23160
 PR,Puerto Rico,Arts / Publishing,Camera Operators, Television, Video, and Motion Picture,33160
-
 AL,Alabama,Transportation / Logistics,Captains, Mates, and Pilots of Water Vessels,85210
 AK,Alaska,Transportation / Logistics,Captains, Mates, and Pilots of Water Vessels,71520
 AZ,Arizona,Transportation / Logistics,Captains, Mates, and Pilots of Water Vessels,73920
@@ -4228,7 +4141,6 @@ WV,West Virginia,Transportation / Logistics,Captains, Mates, and Pilots of Water
 WI,Wisconsin,Transportation / Logistics,Captains, Mates, and Pilots of Water Vessels,57390
 PR,Puerto Rico,Transportation / Logistics,Captains, Mates, and Pilots of Water Vessels,43320
 VI,Virgin Islands,Transportation / Logistics,Captains, Mates, and Pilots of Water Vessels,44790
-
 AL,Alabama,Engineering / Architecture,Cardiovascular Technologists and Technicians,44890
 AK,Alaska,Engineering / Architecture,Cardiovascular Technologists and Technicians,75790
 AZ,Arizona,Engineering / Architecture,Cardiovascular Technologists and Technicians,61200
@@ -4282,7 +4194,6 @@ WI,Wisconsin,Engineering / Architecture,Cardiovascular Technologists and Technic
 WY,Wyoming,Engineering / Architecture,Cardiovascular Technologists and Technicians,48410
 GU,Guam,Engineering / Architecture,Cardiovascular Technologists and Technicians,36130
 PR,Puerto Rico,Engineering / Architecture,Cardiovascular Technologists and Technicians,23930
-
 AL,Alabama,Education / Training,Career/Technical Education Teachers, Middle School,50920
 AK,Alaska,Education / Training,Career/Technical Education Teachers, Middle School,62080
 AZ,Arizona,Education / Training,Career/Technical Education Teachers, Middle School,45690
@@ -4324,7 +4235,6 @@ VA,Virginia,Education / Training,Career/Technical Education Teachers, Middle Sch
 WA,Washington,Education / Training,Career/Technical Education Teachers, Middle School,64670
 WI,Wisconsin,Education / Training,Career/Technical Education Teachers, Middle School,58960
 WY,Wyoming,Education / Training,Career/Technical Education Teachers, Middle School,58350
-
 AL,Alabama,Education / Training,Career/Technical Education Teachers, Secondary School,52630
 AK,Alaska,Education / Training,Career/Technical Education Teachers, Secondary School,74460
 AZ,Arizona,Education / Training,Career/Technical Education Teachers, Secondary School,48460
@@ -4375,7 +4285,6 @@ WV,West Virginia,Education / Training,Career/Technical Education Teachers, Secon
 WI,Wisconsin,Education / Training,Career/Technical Education Teachers, Secondary School,52900
 WY,Wyoming,Education / Training,Career/Technical Education Teachers, Secondary School,60130
 PR,Puerto Rico,Education / Training,Career/Technical Education Teachers, Secondary School,35080
-
 AL,Alabama,Hospitality / Entertainment,Cargo and Freight Agents,49520
 AK,Alaska,Hospitality / Entertainment,Cargo and Freight Agents,37010
 AZ,Arizona,Hospitality / Entertainment,Cargo and Freight Agents,41680
@@ -4430,7 +4339,6 @@ WY,Wyoming,Hospitality / Entertainment,Cargo and Freight Agents,38830
 GU,Guam,Hospitality / Entertainment,Cargo and Freight Agents,34050
 PR,Puerto Rico,Hospitality / Entertainment,Cargo and Freight Agents,24250
 VI,Virgin Islands,Hospitality / Entertainment,Cargo and Freight Agents,31440
-
 AL,Alabama,Construction / Facilities,Carpenters,32440
 AK,Alaska,Construction / Facilities,Carpenters,66150
 AZ,Arizona,Construction / Facilities,Carpenters,39010
@@ -4485,7 +4393,6 @@ WY,Wyoming,Construction / Facilities,Carpenters,42860
 GU,Guam,Construction / Facilities,Carpenters,29530
 PR,Puerto Rico,Construction / Facilities,Carpenters,18950
 VI,Virgin Islands,Construction / Facilities,Carpenters,43610
-
 AL,Alabama,Construction / Facilities,Carpet Installers,31020
 AK,Alaska,Construction / Facilities,Carpet Installers,48800
 AZ,Arizona,Construction / Facilities,Carpet Installers,33210
@@ -4533,7 +4440,6 @@ WA,Washington,Construction / Facilities,Carpet Installers,41100
 WV,West Virginia,Construction / Facilities,Carpet Installers,30560
 WI,Wisconsin,Construction / Facilities,Carpet Installers,37880
 WY,Wyoming,Construction / Facilities,Carpet Installers,29520
-
 AL,Alabama,Arts / Publishing,Cartographers and Photogrammetrists,62370
 AK,Alaska,Arts / Publishing,Cartographers and Photogrammetrists,69110
 AZ,Arizona,Arts / Publishing,Cartographers and Photogrammetrists,61660
@@ -4581,7 +4487,6 @@ VA,Virginia,Arts / Publishing,Cartographers and Photogrammetrists,77330
 WA,Washington,Arts / Publishing,Cartographers and Photogrammetrists,74580
 WI,Wisconsin,Arts / Publishing,Cartographers and Photogrammetrists,56810
 WY,Wyoming,Arts / Publishing,Cartographers and Photogrammetrists,52730
-
 AL,Alabama,Customer Service,Cashiers,18470
 AK,Alaska,Customer Service,Cashiers,25170
 AZ,Arizona,Customer Service,Cashiers,21180
@@ -4636,7 +4541,6 @@ WY,Wyoming,Customer Service,Cashiers,21750
 GU,Guam,Customer Service,Cashiers,17940
 PR,Puerto Rico,Customer Service,Cashiers,17280
 VI,Virgin Islands,Customer Service,Cashiers,19160
-
 AL,Alabama,Construction / Facilities,Cement Masons and Concrete Finishers,35030
 AK,Alaska,Construction / Facilities,Cement Masons and Concrete Finishers,58050
 AZ,Arizona,Construction / Facilities,Cement Masons and Concrete Finishers,37170
@@ -4690,7 +4594,6 @@ WI,Wisconsin,Construction / Facilities,Cement Masons and Concrete Finishers,4548
 WY,Wyoming,Construction / Facilities,Cement Masons and Concrete Finishers,39440
 GU,Guam,Construction / Facilities,Cement Masons and Concrete Finishers,29800
 PR,Puerto Rico,Construction / Facilities,Cement Masons and Concrete Finishers,18470
-
 AL,Alabama,Restaurant / Food Service,Chefs and Head Cooks,46710
 AK,Alaska,Restaurant / Food Service,Chefs and Head Cooks,45870
 AZ,Arizona,Restaurant / Food Service,Chefs and Head Cooks,48700
@@ -4745,7 +4648,6 @@ WY,Wyoming,Restaurant / Food Service,Chefs and Head Cooks,44770
 GU,Guam,Restaurant / Food Service,Chefs and Head Cooks,28870
 PR,Puerto Rico,Restaurant / Food Service,Chefs and Head Cooks,27460
 VI,Virgin Islands,Restaurant / Food Service,Chefs and Head Cooks,39780
-
 AL,Alabama,Engineering / Architecture,Chemical Engineers,94880
 AK,Alaska,Engineering / Architecture,Chemical Engineers,117830
 AZ,Arizona,Engineering / Architecture,Chemical Engineers,104410
@@ -4793,7 +4695,6 @@ WV,West Virginia,Engineering / Architecture,Chemical Engineers,107240
 WI,Wisconsin,Engineering / Architecture,Chemical Engineers,72940
 WY,Wyoming,Engineering / Architecture,Chemical Engineers,86150
 PR,Puerto Rico,Engineering / Architecture,Chemical Engineers,59590
-
 AL,Alabama,Transportation / Logistics,Chemical Equipment Operators and Tenders,54390
 AZ,Arizona,Transportation / Logistics,Chemical Equipment Operators and Tenders,39670
 AR,Arkansas,Transportation / Logistics,Chemical Equipment Operators and Tenders,45820
@@ -4839,7 +4740,6 @@ WV,West Virginia,Transportation / Logistics,Chemical Equipment Operators and Ten
 WI,Wisconsin,Transportation / Logistics,Chemical Equipment Operators and Tenders,42830
 WY,Wyoming,Transportation / Logistics,Chemical Equipment Operators and Tenders,67590
 PR,Puerto Rico,Transportation / Logistics,Chemical Equipment Operators and Tenders,34430
-
 AL,Alabama,Engineering / Architecture,Chemical Plant and System Operators,57760
 AZ,Arizona,Engineering / Architecture,Chemical Plant and System Operators,41880
 AR,Arkansas,Engineering / Architecture,Chemical Plant and System Operators,46840
@@ -4885,7 +4785,6 @@ WV,West Virginia,Engineering / Architecture,Chemical Plant and System Operators,
 WI,Wisconsin,Engineering / Architecture,Chemical Plant and System Operators,51890
 WY,Wyoming,Engineering / Architecture,Chemical Plant and System Operators,60420
 PR,Puerto Rico,Engineering / Architecture,Chemical Plant and System Operators,30410
-
 AL,Alabama,Engineering / Architecture,Chemical Technicians,46830
 AK,Alaska,Engineering / Architecture,Chemical Technicians,61900
 AZ,Arizona,Engineering / Architecture,Chemical Technicians,45470
@@ -4937,7 +4836,6 @@ WV,West Virginia,Engineering / Architecture,Chemical Technicians,43670
 WI,Wisconsin,Engineering / Architecture,Chemical Technicians,43330
 WY,Wyoming,Engineering / Architecture,Chemical Technicians,46090
 PR,Puerto Rico,Engineering / Architecture,Chemical Technicians,32870
-
 AL,Alabama,Education / Training,Chemistry Teachers, Postsecondary,74190
 AZ,Arizona,Education / Training,Chemistry Teachers, Postsecondary,79730
 AR,Arkansas,Education / Training,Chemistry Teachers, Postsecondary,76780
@@ -4988,7 +4886,6 @@ WV,West Virginia,Education / Training,Chemistry Teachers, Postsecondary,67380
 WI,Wisconsin,Education / Training,Chemistry Teachers, Postsecondary,72670
 WY,Wyoming,Education / Training,Chemistry Teachers, Postsecondary,73550
 PR,Puerto Rico,Education / Training,Chemistry Teachers, Postsecondary,62910
-
 AL,Alabama,Engineering / Architecture,Chemists,74980
 AK,Alaska,Engineering / Architecture,Chemists,93640
 AZ,Arizona,Engineering / Architecture,Chemists,75720
