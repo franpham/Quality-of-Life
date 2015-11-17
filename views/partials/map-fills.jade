@@ -1,48 +1,164 @@
 script.
-  //Define Variables
-  //- var state = stateId;
-  //- var color = val; // ?
+  $("#"+ state).css("fill", color);
+  $("#CA").css("fill", "pink");
 
-    // state abb + color in hex
-    // $("#"+ state).css("fill", color);
-    $("#CA").css("fill", "pink");
+  // var state = stateId;
+  // var color = val; // ?
+
+  // $("#"+ state).css("fill", css);
+
+  // Make 6 shades of color, white default.
+
+  $.getJSON('http://localhost:3000/us/careers', function(data) {
+    // data is an array of objects; to get salary of each job category: var salary = data[i].salary;
+    // job_stats  schema (7 fields): time, cityCode, state, category, jobCounts, medianSalary, loc_quotient (density);
+
+    // salary, density, counts
+    for (var i = 0; i < data.length; i++) {
+      var salary = data[i].salary;
+      var state = data[i].state;
+      var density = data[i].density;
+      var counts = data[i].jobCounts;
+
+      if ( whateverUserPicks = salary) {
+        var css = getSalaryCss(salary);
+        var getSalaryCss = function(val) {
+          return val <= 40000 ? '#E0EEEE' :
+            (val <= 50000 ? '#D1EEEE' :
+            (val <= 60000 ? '#96CDCD' :
+            (val <= 70000 ? '#388E8E' :
+            (val <= 80000 ? '#008080' :
+            (val <= 90000 ? 'blue' :
+            '#FFF')))));
+        };
+      } else if ( whateverUserPicks = loc_quotient) {
+        css = getDensityCss(loc_quotient);
+        var getDensityCss = function(val) {
+          return val <= 40000 ? '#E0EEEE' :
+            (val <= 50000 ? '#D1EEEE' :
+            (val <= 60000 ? '#96CDCD' :
+            (val <= 70000 ? '#388E8E' :
+            (val <= 80000 ? '#008080' :
+            (val <= 90000 ? 'blue' :
+            '#FFF')))));
+        };
+      } else if ( whateverUserPicks = jobCounts) {
+        css = getJobCount(jobCounts);
+        var getJobCountCss = function(val) {
+          return val <= 40000 ? '#E0EEEE' :
+            (val <= 50000 ? '#D1EEEE' :
+            (val <= 60000 ? '#96CDCD' :
+            (val <= 70000 ? '#388E8E' :
+            (val <= 80000 ? '#008080' :
+            (val <= 90000 ? 'blue' :
+            '#FFF')))));
+        };
+      }
+    }
+  });
+
+  $.getJSON('http://localhost:3000/us/homes', function(data) {
+    // home_stats schema (7 fields): time, cityCode, state, homeCounts, medianPrice, averagePrice, usTraffic (popularity);
+    // data is an array of objects; to get medianPrice of each rental: var price data[i].medianPrice;
 
 
+  // price(medianPrice), counts, popularity
+  for ( var i = 0; i < data.length; i++) {
+    var price = data[i].medianPrice;
+    var state = data[i].state;
+    var css = getCss(price);
+  }
 
-  // //job cat states
-  // var stateId = stateies.map(function(obj) {
-  //   var val = obj.house;
-  // })
+  for (var i = 0; i < data.length; i++) {
+    var salary = data[i].salary;
+    var state = data[i].state;
+    if ( whateverUserPicks = salary) {
+      var css = getSalaryCss(salary);
+      var getSalaryCss = function(val) {
+        return val <= 40000 ? '#E0EEEE' :
+          (val <= 50000 ? '#D1EEEE' :
+          (val <= 60000 ? '#96CDCD' :
+          (val <= 70000 ? '#388E8E' :
+          (val <= 80000 ? '#008080' :
+          (val <= 90000 ? 'blue' :
+          '#FFF')))));
+      };
+    } else if ( whateverUserPicks = loc_quotient) {
+      css = getDensityCss(loc_quotient);
+      var getDensityCss = function(val) {
+        return val <= 40000 ? '#E0EEEE' :
+          (val <= 50000 ? '#D1EEEE' :
+          (val <= 60000 ? '#96CDCD' :
+          (val <= 70000 ? '#388E8E' :
+          (val <= 80000 ? '#008080' :
+          (val <= 90000 ? 'blue' :
+          '#FFF')))));
+      };
+    } else if ( whateverUserPicks = jobCounts) {
+      css = getJobCount(jobCounts);
+      var getJobCountCss = function(val) {
+        return val <= 40000 ? '#E0EEEE' :
+          (val <= 50000 ? '#D1EEEE' :
+          (val <= 60000 ? '#96CDCD' :
+          (val <= 70000 ? '#388E8E' :
+          (val <= 80000 ? '#008080' :
+          (val <= 90000 ? 'blue' :
+          '#FFF')))));
+      };
+    }
+  }
+  });
 
+  $.getJSON('http://localhost:3000/us/rentals', function(data) {
+    // rent_stats schema (7 fields): time, cityCode, state, rentCounts, medianPrice, rentRatio, usTraffic (popularity);
+    // for rentals PRR: larger values = cheaper renting; for rentals && homes usTraffic: larger values = more popular areas;
+    // data is an array of objects; to get jobtitle of each job: var title = data[i].jobtitle;
 
-  // //job cat salaries
-  // var salaryCss = salaries.map(function(obj) {
-  //   var val = obj.salary;
-  //   return val <= 30000 ? '#E0EEEE' :
-  //     (val <= 60000 ? '#D1EEEE' :
-  //     (val <= 90000 ? '#96CDCD' :
-  //     (val <= 120000 ? '#388E8E' :
-  //     (val <= 150000 ? '#008080' :
-  //     '#FFF'))));
-  // });
+    // counts, price, popularity
 
+    // Get data from db
+    for ( var i = 0; i < data.length; i++) {
+    var price = data[i].medianPrice;
+    var state = data[i].state;
+    var css = getCss(price);
+  }
 
-  // var salaries = [ sample data here ]
-
-
-  /**
-   * Job Cat
-   * 1. Salary
-   * 2. Counts
-   * 3. Popularity index
-   *
-   * Homes
-   * 1. Median Price
-   * 2. Counts
-   * 3. Popularity Index
-   *
-   * Rentals
-   * 1. Median Price
-   * 2. Counts
-   * 3. Popularity Index
-   */
+  for (var i = 0; i < data.length; i++) {
+    var salary = data[i].salary;
+    var state = data[i].state;
+    if ( whateverUserPicks = salary) {
+      var css = getSalaryCss(salary);
+      var getSalaryCss = function(val) {
+        return val <= 40000 ? '#E0EEEE' :
+          (val <= 50000 ? '#D1EEEE' :
+          (val <= 60000 ? '#96CDCD' :
+          (val <= 70000 ? '#388E8E' :
+          (val <= 80000 ? '#008080' :
+          (val <= 90000 ? 'blue' :
+          '#FFF')))));
+      };
+    } else if ( whateverUserPicks = loc_quotient) {
+      css = getDensityCss(loc_quotient);
+      var getDensityCss = function(val) {
+        return val <= 40000 ? '#E0EEEE' :
+          (val <= 50000 ? '#D1EEEE' :
+          (val <= 60000 ? '#96CDCD' :
+          (val <= 70000 ? '#388E8E' :
+          (val <= 80000 ? '#008080' :
+          (val <= 90000 ? 'blue' :
+          '#FFF')))));
+      };
+    } else if ( whateverUserPicks = jobCounts) {
+      css = getJobCount(jobCounts);
+      var getJobCountCss = function(val) {
+        return val <= 40000 ? '#E0EEEE' :
+          (val <= 50000 ? '#D1EEEE' :
+          (val <= 60000 ? '#96CDCD' :
+          (val <= 70000 ? '#388E8E' :
+          (val <= 80000 ? '#008080' :
+          (val <= 90000 ? 'blue' :
+          '#FFF')))));
+      };
+    }
+  }
+  });
