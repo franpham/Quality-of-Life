@@ -12,9 +12,7 @@ $("#map-container").load("Blank_US_Map.svg", function() {
 
 });
 
-// //job cat salaries
-var salaryCss = salaries.map(function(obj) {
-  var val = obj.salary;
+function getSalaryCss(val) {
   return val <= 30000 ? '#E0EEEE' :
     (val <= 60000 ? '#D1EEEE' :
     (val <= 90000 ? '#96CDCD' :
@@ -22,7 +20,7 @@ var salaryCss = salaries.map(function(obj) {
     (val <= 150000 ? '#008080' :
     (val <= 180000 ? 'blue' :
     'white')))));
-});
+};
 
 $.getJSON('http://localhost:3000/us/careers', function(data) {
     // data is an array of objects; to get salary of each job category: var salary = data[i].salary;
@@ -34,6 +32,11 @@ $.getJSON('http://localhost:3000/us/jobs', function(data) {
 
 $.getJSON('http://localhost:3000/us/homes', function(data) {
     // data is an array of objects; to get medianPrice of each rental: var price data[i].medianPrice;
+  for (var i = 0; i < data.length; i++) {
+    var price = data[i].medianPrice;
+    var state = data[i].state;
+    var css = getSalaryCss(price);
+  }
 });
 
 $.getJSON('http://localhost:3000/us/rentals', function(data) {

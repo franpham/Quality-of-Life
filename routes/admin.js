@@ -3,10 +3,9 @@
 var express = require('express');
 var router = express.Router();
 
-var jobCats = require('./api_data/Indeed_jobCats.js');
+var quandl= require('./api_data/Quandl_cityCodes.js');
 var jobs  = require('./api_data/job_listings.js');
 var homes = require('./api_data/home_data.js');
-var quandl= require('./api_data/Quandl_cityCodes.js');
 var rents = require('./api_data/rent_counts.js');
 var leases= require('./api_data/rent_prices.js');
 var ratio = require('./api_data/rent_ratio.js');
@@ -47,7 +46,6 @@ router.get('/dbInit', function(req, res) {
   res.send('Finished creating collections and indexes for rentals, homes, and jobs.');
 });
 // jobs_list schema (11 fields): time, cityCode, state, category, jobtitle, company, url, date, snippet, lat, lng;
-// job_stats  schema (7 fields): time, cityCode, state, category, jobCounts, medianSalary, loc_quotient (density);
 // rent_stats schema (7 fields): time, cityCode, state, rentCounts, medianPrice, rentRatio, usTraffic (popularity);
 // home_stats schema (7 fields): time, cityCode, state, homeCounts, medianPrice, averagePrice, usTraffic (popularity);
 // for rentals PRR: larger values = cheaper renting; for rentals && homes usTraffic: larger values = more popular areas;
