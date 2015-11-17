@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="959" height="593">
 
 <style type="text/css">
+.map
+{
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+  margin-bottom:50spx;
+  margin-top:50px;
+}
 .state
 {
-  fill:transparent;
+  fill:green;
   stroke:#646464;
   stroke-width:1;
   stroke-opacity:1;
@@ -36,15 +43,16 @@
   stroke-width:2;
 }
 
-<!-- .circle
+.circle
 {
    opacity:1;
-   fill:#E0E0E0;
-   stroke:#646464;
-   stroke-width:1;
-} -->
+   fill:transparent;
+   <!-- stroke:#646464;
+   stroke-width:1; -->
+}
 
 </style>
+<svg class="map" xmlns="http://www.w3.org/2000/svg" version="1.1" width="959" height="593">
 
 <g id="hi">
   <title>Hawaii</title>

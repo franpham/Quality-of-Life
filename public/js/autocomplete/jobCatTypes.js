@@ -34,6 +34,7 @@ $(function() {
       "Upper Management/Consulting"
     ],
     select: function( event , ui ){
+
       if(jobTitlesPerCat.length === 0){
         var jobtitle = jobCatAutoComp[ui.item.value].JobTitles;
         for(var i = 0; i < jobtitle.length; i++) {
@@ -52,6 +53,7 @@ $(function() {
           getJobList(jobtitle);
         }
       }
+
     }
   });
 
@@ -63,10 +65,17 @@ $(function() {
 
 function getJobList(jobtitle){
 
+
   // write an if statement to check array
   $("#jobtitleTypes").autocomplete({
     source: function(request, response) {
       var country = $("#jobCatTypes").val();
+
+  // $("#jobtitleTypes").autocomplete({
+  //   source: function(request, response) {
+  //     var country = $("#jobCatTypes").val();
+  //         console.log('HIHIHI', jobTitlesPerCat);
+
       var matcher = new RegExp($.ui.autocomplete.escapeRegex(request.term ), "i" );
       response($.grep(jobTitlesPerCat, function(value) {
           return matcher.test(value);
