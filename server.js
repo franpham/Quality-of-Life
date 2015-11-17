@@ -13,7 +13,7 @@ var monk = require('monk');
 var db = monk('localhost:27017/hire');    // set mongo to "use hire" database;
 var client = request.createClient('http://localhost:3003');    // use port different from server;
 
-var routes = require('./routes/admin');
+var routes = require('./routes/index');
 app.set ('view engine', 'jade');
 app.set('views', './views');
 
