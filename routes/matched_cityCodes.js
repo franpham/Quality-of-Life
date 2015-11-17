@@ -11,47 +11,47 @@ var matchedCities = [
     '00012'
   ],[
     'San Jose',
-    'San Jose-Sunnyvale-Santa Clara',
+    'San Jose-Sunnyvale-Santa Clara, CA ',
     '00008'
   ],[
     'San Francisco',
-    'San Francisco-Oakland-Fremont',
+    'San Francisco-Oakland-Fremont, CA',
     '00010'
   ],[
     'Washington',
-    'Washington-Arlington-Alexadria',
+    'Washington-Arlington-Alexadria, WA',
     '00018'
   ],[
     'Boston',
-    'Boston-Cambridge-Quincy',
+    'Boston-Cambridge-Quincy, MA',
     '00016'
   ],[
     'Miami',
-    'Miami-Fort Lauderdale-Pompano Beach',
+    'Miami-Fort Lauderdale-Pompano Beach, FL',
     '00033'
   ],[
     'New Orleans',
-    'New Orleans-Metairie-Kenner',
+    'New Orleans-Metairie-Kenner, LA',
     '09993'
   ],[
     'Seattle',
-    'Seattle-Tacoma-Bellevue',
+    'Seattle-Tacoma-Bellevue, WA',
     '00017'
   ],[
     'New York',
-    'New York-Northern New Jersey-Long Island',
+    'New York-Northern New Jersey-Long Island, NY',
     '00001'
   ],[
     'Dallas',
-    'Dallas-Fort Worth-Arlington',
+    'Dallas-Fort Worth-Arlington, TX',
     '10446'
   ],[
     'Philadelphia',
-    'Philadelphia-Camden-Wilmington',
+    'Philadelphia-Camden-Wilmington, PA',
     '00004'
   ],[
     'Chicago',
-    'Chicago-Joliet-Naperville',
+    'Chicago-Joliet-Naperville, IL',
     '00003'
   ]
  ];
