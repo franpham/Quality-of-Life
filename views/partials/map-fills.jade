@@ -31,26 +31,28 @@ script.
             (val <= 90000 ? 'blue' :
             '#FFF')))));
         };
-      } else if ( whateverUserPicks = loc_quotient) {
-        css = getDensityCss(loc_quotient);
+      } else if ( whateverUserPicks = density) {
+        css = getDensityCss(density);
         var getDensityCss = function(val) {
-          return val <= 40000 ? '#E0EEEE' :
-            (val <= 50000 ? '#D1EEEE' :
-            (val <= 60000 ? '#96CDCD' :
-            (val <= 70000 ? '#388E8E' :
-            (val <= 80000 ? '#008080' :
-            (val <= 90000 ? 'blue' :
+          return val <= 0.2 ? '#E0EEEE' :
+            (val <= 0.4 ? '#D1EEEE' :
+            (val <= 0.6 ? '#96CDCD' :
+            (val <= 0.8 ? '#388E8E' :
+            (val <= 0.10 ? '#008080' :
+            (val <= 0.12 ? 'blue' :
             '#FFF')))));
         };
       } else if ( whateverUserPicks = jobCounts) {
         css = getJobCount(jobCounts);
+        // IF DOING HOVER...
+        // Need to multiply values by 1k to reflect correct data to user
         var getJobCountCss = function(val) {
-          return val <= 40000 ? '#E0EEEE' :
-            (val <= 50000 ? '#D1EEEE' :
-            (val <= 60000 ? '#96CDCD' :
-            (val <= 70000 ? '#388E8E' :
-            (val <= 80000 ? '#008080' :
-            (val <= 90000 ? 'blue' :
+          return val <= 20000 ? '#E0EEEE' :
+            (val <= 25000 ? '#D1EEEE' :
+            (val <= 30000 ? '#96CDCD' :
+            (val <= 35000 ? '#388E8E' :
+            (val <= 40000 ? '#008080' :
+            (val <= 45000 ? 'blue' :
             '#FFF')))));
         };
       }
@@ -72,34 +74,34 @@ script.
     if ( whateverUserPicks = price) {
       var css = getPriceCss(price);
       var getSalaryCss = function(val) {
-        return val <= 40000 ? '#E0EEEE' :
-          (val <= 50000 ? '#D1EEEE' :
-          (val <= 60000 ? '#96CDCD' :
-          (val <= 70000 ? '#388E8E' :
-          (val <= 80000 ? '#008080' :
-          (val <= 90000 ? 'blue' :
+        return val <= 200000 ? '#E0EEEE' :
+          (val <= 300000 ? '#D1EEEE' :
+          (val <= 400000 ? '#96CDCD' :
+          (val <= 500000 ? '#388E8E' :
+          (val <= 600000 ? '#008080' :
+          (val <= 700000 ? 'blue' :
           '#FFF')))));
       };
     } else if ( whateverUserPicks = homeCounts) {
       css = getHomeCountsCss(homeCounts);
       var getHomecountsCss = function(val) {
-        return val <= 40000 ? '#E0EEEE' :
-          (val <= 50000 ? '#D1EEEE' :
-          (val <= 60000 ? '#96CDCD' :
-          (val <= 70000 ? '#388E8E' :
-          (val <= 80000 ? '#008080' :
-          (val <= 90000 ? 'blue' :
+        return val <= 500 ? '#E0EEEE' :
+          (val <= 1000 ? '#D1EEEE' :
+          (val <= 1500 ? '#96CDCD' :
+          (val <= 2000 ? '#388E8E' :
+          (val <= 2500 ? '#008080' :
+          (val <= 3000 ? 'blue' :
           '#FFF')))));
       };
     } else if ( whateverUserPicks = usTraffic) {
       css = getUsTrafficCss(usTraffic);
       var getUsTrafficCss = function(val) {
-        return val <= 40000 ? '#E0EEEE' :
-          (val <= 50000 ? '#D1EEEE' :
-          (val <= 60000 ? '#96CDCD' :
-          (val <= 70000 ? '#388E8E' :
-          (val <= 80000 ? '#008080' :
-          (val <= 90000 ? 'blue' :
+        return val <= 0.1 ? '#E0EEEE' :
+          (val <= 0.2 ? '#D1EEEE' :
+          (val <= 0.3 ? '#96CDCD' :
+          (val <= 0.4 ? '#388E8E' :
+          (val <= 0.5 ? '#008080' :
+          (val <= 0.6 ? 'blue' :
           '#FFF')))));
       };
     }
@@ -121,34 +123,34 @@ script.
     if ( whateverUserPicks = homeCounts) {
       var css = getHomeCountsCss(homeCounts);
       var getHomeCountsCss = function(val) {
-        return val <= 40000 ? '#E0EEEE' :
-          (val <= 50000 ? '#D1EEEE' :
-          (val <= 60000 ? '#96CDCD' :
-          (val <= 70000 ? '#388E8E' :
-          (val <= 80000 ? '#008080' :
-          (val <= 90000 ? 'blue' :
+        return val <= 200000 ? '#E0EEEE' :
+          (val <= 201000 ? '#D1EEEE' :
+          (val <= 202000 ? '#96CDCD' :
+          (val <= 203000 ? '#388E8E' :
+          (val <= 204000 ? '#008080' :
+          (val <= 205000 ? 'blue' :
           '#FFF')))));
       };
     } else if ( whateverUserPicks = medianPrice) {
       css = getPriceCss(medianPrice);
       var getPriceCss = function(val) {
-        return val <= 40000 ? '#E0EEEE' :
-          (val <= 50000 ? '#D1EEEE' :
-          (val <= 60000 ? '#96CDCD' :
-          (val <= 70000 ? '#388E8E' :
-          (val <= 80000 ? '#008080' :
-          (val <= 90000 ? 'blue' :
+        return val <= 1400 ? '#E0EEEE' :
+          (val <= 1600 ? '#D1EEEE' :
+          (val <= 1800 ? '#96CDCD' :
+          (val <= 2000 ? '#388E8E' :
+          (val <= 2200 ? '#008080' :
+          (val <= 2400 ? 'blue' :
           '#FFF')))));
       };
     } else if ( whateverUserPicks = usTraffic) {
       css = getJobCount(usTraffic);
       var getUsTrafficCss = function(val) {
-        return val <= 40000 ? '#E0EEEE' :
-          (val <= 50000 ? '#D1EEEE' :
-          (val <= 60000 ? '#96CDCD' :
-          (val <= 70000 ? '#388E8E' :
-          (val <= 80000 ? '#008080' :
-          (val <= 90000 ? 'blue' :
+        return val <= 0.1 ? '#E0EEEE' :
+          (val <= 0.2 ? '#D1EEEE' :
+          (val <= 0.3 ? '#96CDCD' :
+          (val <= 0.4 ? '#388E8E' :
+          (val <= 0.5 ? '#008080' :
+          (val <= 0.6 ? 'blue' :
           '#FFF')))));
       };
     }
