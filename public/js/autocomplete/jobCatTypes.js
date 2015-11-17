@@ -34,43 +34,51 @@ $(function() {
       "Upper Management/Consulting"
     ],
     select: function( event , ui ){
-
-      var jobtitle = autocomplete[ui.item.value].JobTitles;
-      for(var i = 0; i < jobtitle.length; i++) {
-    // console.log(jobtitle[i].name);
-    var titles = jobtitle[i].name;
-      console.log(titles);
-
-    jobTitlesPerCat.push(titles);
-    // console.log(jobtitle[0].salary);
-  }
-      getJobList(jobtitle);
+      if(jobTitlesPerCat.length === 0){
+        var jobtitle = jobCatAutoComp[ui.item.value].JobTitles;
+        for(var i = 0; i < jobtitle.length; i++) {
+          var titles = jobtitle[i].name;
+          jobTitlesPerCat.push(titles);
+          getJobList(jobtitle);
+        }
+      }else{
+        jobTitlesPerCat = [];
+        console.log($(jobtitleTypes));
+        $(jobtitleTypes)[0].value = "";
+        jobtitle = jobCatAutoComp[ui.item.value].JobTitles;
+        for(var i = 0; i < jobtitle.length; i++) {
+          titles = jobtitle[i].name;
+          jobTitlesPerCat.push(titles);
+          getJobList(jobtitle);
+        }
+      }
     }
   });
 
+// for(var i = 0; i < jobtitle.length; i++) {
+//           var titles = jobtitle[i].name;
+//           jobTitlesPerCat.push(titles);
+//           getJobList(jobtitle);
+//         }
 
 function getJobList(jobtitle){
 
-
+  // write an if statement to check array
   $("#jobtitleTypes").autocomplete({
     source: function(request, response) {
       var country = $("#jobCatTypes").val();
-          console.log(jobTitlesPerCat);
       var matcher = new RegExp($.ui.autocomplete.escapeRegex(request.term ), "i" );
       response($.grep(jobTitlesPerCat, function(value) {
           return matcher.test(value);
       }));
     }
   });
+
 }
-
-
-
-  $.cascadingAutocompletes(["#jobCatTypes", "#jobtitleTypes"]);
 
 });
 
-var autocomplete = {
+var jobCatAutoComp = {
   "Accounting/Finance Jobs": {
     "JobTitles": [
       {
@@ -1752,7 +1760,7 @@ var autocomplete = {
   ]
 },
 "Real Estate": {
-  "JobTitle": [
+  "JobTitles": [
     {
       name: "Assistant Property Manager",
       salary: 51000
