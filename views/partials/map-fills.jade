@@ -63,17 +63,14 @@ script.
 
 
   // price(medianPrice), counts, popularity
-  for ( var i = 0; i < data.length; i++) {
-    var price = data[i].medianPrice;
-    var state = data[i].state;
-    var css = getCss(price);
-  }
-
   for (var i = 0; i < data.length; i++) {
-    var salary = data[i].salary;
     var state = data[i].state;
-    if ( whateverUserPicks = salary) {
-      var css = getSalaryCss(salary);
+    var price = data[i].medianPrice;
+    var homeCounts = data[i].homeCounts;
+    var usTraffic = data[i].homeCounts;
+
+    if ( whateverUserPicks = price) {
+      var css = getPriceCss(price);
       var getSalaryCss = function(val) {
         return val <= 40000 ? '#E0EEEE' :
           (val <= 50000 ? '#D1EEEE' :
@@ -83,9 +80,9 @@ script.
           (val <= 90000 ? 'blue' :
           '#FFF')))));
       };
-    } else if ( whateverUserPicks = loc_quotient) {
-      css = getDensityCss(loc_quotient);
-      var getDensityCss = function(val) {
+    } else if ( whateverUserPicks = homeCounts) {
+      css = getHomeCountsCss(homeCounts);
+      var getHomecountsCss = function(val) {
         return val <= 40000 ? '#E0EEEE' :
           (val <= 50000 ? '#D1EEEE' :
           (val <= 60000 ? '#96CDCD' :
@@ -94,9 +91,9 @@ script.
           (val <= 90000 ? 'blue' :
           '#FFF')))));
       };
-    } else if ( whateverUserPicks = jobCounts) {
-      css = getJobCount(jobCounts);
-      var getJobCountCss = function(val) {
+    } else if ( whateverUserPicks = usTraffic) {
+      css = getUsTrafficCss(usTraffic);
+      var getUsTrafficCss = function(val) {
         return val <= 40000 ? '#E0EEEE' :
           (val <= 50000 ? '#D1EEEE' :
           (val <= 60000 ? '#96CDCD' :
@@ -115,20 +112,15 @@ script.
     // data is an array of objects; to get jobtitle of each job: var title = data[i].jobtitle;
 
     // counts, price, popularity
-
-    // Get data from db
-    for ( var i = 0; i < data.length; i++) {
-    var price = data[i].medianPrice;
-    var state = data[i].state;
-    var css = getCss(price);
-  }
-
   for (var i = 0; i < data.length; i++) {
-    var salary = data[i].salary;
     var state = data[i].state;
-    if ( whateverUserPicks = salary) {
-      var css = getSalaryCss(salary);
-      var getSalaryCss = function(val) {
+    var rentCounts = data[i].rentCounts;
+    var price = data[i].medianPrice;
+    var usTraffic = data[i].usTraffic;
+
+    if ( whateverUserPicks = homeCounts) {
+      var css = getHomeCountsCss(homeCounts);
+      var getHomeCountsCss = function(val) {
         return val <= 40000 ? '#E0EEEE' :
           (val <= 50000 ? '#D1EEEE' :
           (val <= 60000 ? '#96CDCD' :
@@ -137,9 +129,9 @@ script.
           (val <= 90000 ? 'blue' :
           '#FFF')))));
       };
-    } else if ( whateverUserPicks = loc_quotient) {
-      css = getDensityCss(loc_quotient);
-      var getDensityCss = function(val) {
+    } else if ( whateverUserPicks = medianPrice) {
+      css = getPriceCss(medianPrice);
+      var getPriceCss = function(val) {
         return val <= 40000 ? '#E0EEEE' :
           (val <= 50000 ? '#D1EEEE' :
           (val <= 60000 ? '#96CDCD' :
@@ -148,9 +140,9 @@ script.
           (val <= 90000 ? 'blue' :
           '#FFF')))));
       };
-    } else if ( whateverUserPicks = jobCounts) {
-      css = getJobCount(jobCounts);
-      var getJobCountCss = function(val) {
+    } else if ( whateverUserPicks = usTraffic) {
+      css = getJobCount(usTraffic);
+      var getUsTrafficCss = function(val) {
         return val <= 40000 ? '#E0EEEE' :
           (val <= 50000 ? '#D1EEEE' :
           (val <= 60000 ? '#96CDCD' :
