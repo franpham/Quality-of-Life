@@ -1,4 +1,4 @@
-PRIM_STATE,AREA_NAME,OCC_TITLE,JOBS_1000,LOC QUOTIENT,A_MEDIAN
+state,msa,jobtitle,capacity,density,medianSalary
 CA,"Los Angeles-Long Beach-Santa Ana, CA",All Occupations,1000.000,1.00,38290
 CA,"Los Angeles-Long Beach-Santa Ana, CA",Management Occupations,58.658,1.18,108740
 CA,"Los Angeles-Long Beach-Santa Ana, CA",Chief Executives,2.107,1.16,0
