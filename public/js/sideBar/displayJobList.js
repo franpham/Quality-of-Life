@@ -1,6 +1,5 @@
 $(document).ready(function(){
 
-
   for (var i = 0; i < jobs.length; i++) {
     var jTitle = (jobs[i].jobtitle);
     var comp = (jobs[i].company);
@@ -59,9 +58,7 @@ $(document).ready(function(){
     $( ".jobContainer" ).append( jobDetails );
 
     jobTitle.click(function(evt){
-      // jobTitle.next().show()
       $(evt.target).parent().next().toggle();
-      // console.log('something', $(evt.target).parent().next());
     });
   }
 
