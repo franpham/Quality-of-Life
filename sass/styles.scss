@@ -63,12 +63,13 @@ body::after {
   }
   p {
     display: block;
-    background: linear-gradient(#3E3E3E, #A4A4A4);
+    background: olive;
     border-top: 1px solid #484848;
     border-bottom: 1px solid #2E2E2E;
     color: white;
     text-decoration: none;
     padding: 15px;
+    margin-bottom: -16px;
   }
 }
 .close-menu {
@@ -96,38 +97,6 @@ body::after {
     left: 25%;
   }
 }
-#jobDetails{
-  display: none;
-    p {
-    display: block;
-    background: red;
-    border-top: 1px solid #484848;
-    border-bottom: 1px solid #2E2E2E;
-    color: white;
-    text-decoration: none;
-    padding: 15px;
-    margin-bottom: -17px;
-    }
-    button{
-      background: orange;
-    }
-}
-#jobDetails:target{
-  display: block;
-
-}
-.ui-autocomplete {
-  max-height: 100px;
-  overflow-y: auto;
-  /* prevent horizontal scrollbar */
-  overflow-x: hidden;
-}
-  /* IE 6 doesn't support max-height
-   * we use height instead, but this forces the menu to always be this tall
-   */
-* html .ui-autocomplete {
-  height: 100px;
-}
 #footer{
   background: #86A0B1;
 }
@@ -151,3 +120,12 @@ body::after {
   background: white;
   height: 850px;
 }
+.jobTitle{
+  background: gray;
+  padding-left: 5px;
+}
+// .comp, .city, .state, .snippet, .date, .apply{
+//   margin-bottom: -16px;
+//   background: whitespace;
+//   color: black;
+// }

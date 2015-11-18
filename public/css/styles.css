@@ -3391,99 +3391,70 @@ body::after {
   /* line 64, stdin */
   .main-nav p {
     display: block;
-    background: linear-gradient(#3E3E3E, #A4A4A4);
+    background: olive;
     border-top: 1px solid #484848;
     border-bottom: 1px solid #2E2E2E;
     color: white;
     text-decoration: none;
-    padding: 15px; }
+    padding: 15px;
+    margin-bottom: -16px; }
 
-/* line 74, stdin */
+/* line 75, stdin */
 .close-menu {
   display: none; }
 
-/* line 77, stdin */
+/* line 78, stdin */
 .page-wrap {
   float: right;
   width: 100%;
   transition: width 0.3s ease;
   height: 100%; }
 
-/* line 83, stdin */
+/* line 84, stdin */
 #main-nav:target {
   width: 25%; }
 
-/* line 86, stdin */
+/* line 87, stdin */
 #main-nav:target + .page-wrap {
   width: 75%; }
-  /* line 88, stdin */
+  /* line 89, stdin */
   #main-nav:target + .page-wrap .open-menu {
     display: none; }
-  /* line 91, stdin */
+  /* line 92, stdin */
   #main-nav:target + .page-wrap .close-menu {
     display: block; }
-  /* line 94, stdin */
+  /* line 95, stdin */
   #main-nav:target + .page-wrap .page-wrap {
     width: 75%;
     left: 25%; }
 
-/* line 99, stdin */
-#jobDetails {
-  display: none; }
-  /* line 101, stdin */
-  #jobDetails p {
-    display: block;
-    background: red;
-    border-top: 1px solid #484848;
-    border-bottom: 1px solid #2E2E2E;
-    color: white;
-    text-decoration: none;
-    padding: 15px;
-    margin-bottom: -17px; }
-  /* line 111, stdin */
-  #jobDetails button {
-    background: orange; }
-
-/* line 115, stdin */
-#jobDetails:target {
-  display: block; }
-
-/* line 119, stdin */
-.ui-autocomplete {
-  max-height: 100px;
-  overflow-y: auto;
-  /* prevent horizontal scrollbar */
-  overflow-x: hidden; }
-
-/* IE 6 doesn't support max-height
-   * we use height instead, but this forces the menu to always be this tall
-   */
-/* line 128, stdin */
-* html .ui-autocomplete {
-  height: 100px; }
-
-/* line 131, stdin */
+/* line 100, stdin */
 #footer {
   background: #86A0B1; }
 
-/* line 135, stdin */
+/* line 104, stdin */
 #filter-bar {
   padding-top: 30px;
   background: #86A0B1; }
 
-/* line 139, stdin */
+/* line 108, stdin */
 .jobCat {
   text-align: center; }
 
-/* line 143, stdin */
+/* line 112, stdin */
 * {
   box-sizing: border-box; }
 
-/* line 147, stdin */
+/* line 116, stdin */
 #apply {
   margin-top: 16px; }
 
-/* line 150, stdin */
+/* line 119, stdin */
 #map-container {
   background: white;
   height: 850px; }
+
+/* line 123, stdin */
+.jobTitle {
+  background: gray;
+  padding-left: 5px; }
