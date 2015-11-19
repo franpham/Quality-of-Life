@@ -5,38 +5,30 @@ $(function() {
   var jobTitlesPerCat = [];
   $( '#jobCatTypes' ).autocomplete({
     source: [
-      "Accounting/Finance Jobs",
-      "Administrative Jobs",
-      "Arts/Entertainment/Publishing",
-      "Banking/Loans",
-      "Construction/Facilities",
-      "Customer Service",
-      "Education/Training",
-      "Engineering/Architecture",
-      "Government/Military",
-      "Healthcare",
-      "Computer/Internet Jobs",
-      "Hospitality/Travel",
-      "Human Resources Jobs",
-      "Insurance",
-      "Law Enforcement/Security",
-      "Legal",
-      "Manufacturing/Mechanical",
-      "Marketing/Advertising/PR",
-      "Non-Profit/Volunteering",
-      "Pharmaceutical/Bio-tech",
-      "Real Estate",
-      "Restaurant/Food Service",
-      "Retail",
-      "Sales",
-      "Telecommunications",
-      "Transportation/Logistics",
-      "Upper Management/Consulting"
+      'Accounting / Finance',
+      'Healthcare',
+      'Non-Profit / Volunteering',
+      'Administrative',
+      'Computer / Internet',
+      'Arts / Publishing',
+      'Hospitality / Entertainment',
+      'Human Resources',
+      'Restaurant / Food Service',
+      'Construction / Facilities',
+      'Sales',
+      'Education / Training',
+      'Legal / Paralegal',
+      'Engineering / Architecture',
+      'Manufacturing / Mechanical',
+      'Transportation / Logistics',
+      'Upper Management / Consulting'
     ],
     select: function( event , ui ){
 
       if(jobTitlesPerCat.length === 0){
+
         var jobtitle = jobCatAutoComp[ui.item.value].JobTitles;
+        console.log(jobCatAutoComp);
         for(var i = 0; i < jobtitle.length; i++) {
           var titles = jobtitle[i].name;
           jobTitlesPerCat.push(titles);
@@ -48,7 +40,7 @@ $(function() {
         $(jobtitleTypes)[0].value = "";
         jobtitle = jobCatAutoComp[ui.item.value].JobTitles;
         for(var i = 0; i < jobtitle.length; i++) {
-          titles = jobtitle[i].name;
+          var titles = jobtitle[i].name;
           jobTitlesPerCat.push(titles);
           getJobList(jobtitle);
         }
@@ -56,6 +48,7 @@ $(function() {
 
     }
   });
+
 
 // for(var i = 0; i < jobtitle.length; i++) {
 //           var titles = jobtitle[i].name;
@@ -418,74 +411,6 @@ var jobCatAutoComp = {
     }
   ]
 },
-"Banking/Loans": {
-  "JobTitles": [
-    {
-      name: "Analyst",
-      salary:59000
-    },
-    {
-      name: "Investment Analyst",
-      salary:92000
-    },
-    {
-      name: "Underwriter",
-      salary:23000
-    },
-    {
-      name: "Bank Teller",
-      salary:23000
-    },
-    {
-      name: "Loan Consultant,",
-      salary:02000
-    },
-    {
-      name: "Underwriter Trainee",
-      salary:44000
-    },
-    {
-      name: "Banker",
-      salary:74000
-    },
-    {
-      name: "Loan Officer",
-      salary:73000
-    },
-    {
-      name: "Underwriting Assistant",
-      salary:31000
-    },
-    {
-      name: "Credit Analyst",
-      salary:61000
-    },
-    {
-      name: "Loan Processor",
-      salary:35000
-    },
-    {
-      name: "Universal Banker,",
-      salary:02000
-    },
-    {
-      name: "Escrow Assistant",
-      salary:35000
-    },
-    {
-      name: "Mortgage Loan Officer",
-      salary:92000
-    },
-    {
-      name: "In Store Banker",
-      salary:32000
-    },
-    {
-      name: "Teller",
-      salary:21000
-    }
-  ]
-},
 "Construction/Facilities": {
   "JobTitles": [
     {
@@ -607,122 +532,6 @@ var jobCatAutoComp = {
     {
       name: "Welder Fabricator",
       salary: 31000
-    }
-  ]
-},
-"Customer Service": {
-  "JobTitles": [
-    {
-      name: "Branch Customer Service Representative",
-      salary: 24000
-    },
-    {
-      name: "Field Service Representative",
-      salary: 35000
-    },
-    {
-      name: "Lot Attendent",
-      salary: 19000
-    },
-    {
-      name: "Customer Service Advisor",
-      salary: 41000
-    },
-    {
-      name: "Field Service Technician",
-      salary: 31000
-    },
-    {
-      name: "Relationship Manager",
-      salary: 50000
-    },
-    {
-      name: "Customer Service Associate",
-      salary: 26000
-    },
-    {
-      name: "Field Technician",
-      salary: 27000
-    },
-    {
-      name: "Retail Customer Support Representative",
-      salary: 65000
-    },
-    {
-      name: "Customer Service Manager",
-      salary: 45000
-    },
-    {
-      name: "Flight Attendant",
-      salary: 36000
-    },
-    {
-      name: "Sales Engineer",
-      salary: 82000
-    },
-    {
-      name: "Customer Service Representative",
-      salary: 44000
-    },
-    {
-      name: "Game Manager",
-      salary: 56000
-    },
-    {
-      name: "Service Manager",
-      salary: 45000
-    },
-    {
-      name: "Desktop Support",
-      salary: 45000
-    },
-    {
-      name: "General Service Technician",
-      salary: 37000
-    },
-    {
-      name: "Service Technician",
-      salary: 31000
-    },
-    {
-      name: "Desktop Support Technician",
-      salary: 39000
-    },
-    {
-      name: "Help Desk Analyst",
-      salary: 36000
-    },
-    {
-      name: "Universal Service Representative,",
-      salary: 02000
-    },
-    {
-      name: "Emergency Road Service Counselor",
-      salary: 38000
-    },
-    {
-      name: "Help Desk Specialist",
-      salary: 41000
-    },
-    {
-      name: "Valet Attendant",
-      salary: 17000
-    },
-    {
-      name: "Field Engineer",
-      salary: 84000
-    },
-    {
-      name: "Help Desk Technical Support",
-      salary: 45000
-    },
-    {
-      name: "Field Service Engineer",
-      salary: 76000
-    },
-    {
-      name: "Help Desk Technician",
-      salary: 38000
     }
   ]
 },
@@ -928,64 +737,6 @@ var jobCatAutoComp = {
       name: "VP Of Engineering",
       salary: 112000
     }
-  ]
-},
-"Government/Military": {
-  "JobTitles": [
-    {
-      name: "Environmental Scientist",
-      salary: 62000
-    },
-    {
-      name: "Lifeguard",
-      salary: 21000
-    },
-    {
-      name: "Zoning Manager",
-      salary: 73000
-    },
-    {
-      name: "Federal Government Worker",
-      salary: 48000
-    },
-    {
-      name: "USAR Unit Administrator",
-      salary: 46000
-    },
-    {
-      name: "Zoning Specialist",
-      salary: 66000
-    },
-    {
-      name: "Firefighter",
-      salary: 30000
-    },
-    {
-      name: "Wildlife Biologist",
-      salary: 56000
-    },
-    {
-      name: "Zoning Supervisor",
-      salary: 57000
-    },
-    {
-      name: "Grant Writer",
-      salary: 51000
-    },
-    {
-      name: "Zipsort Operator",
-      salary: 22000
-    },
-    {
-      name: "Intelligence Analyst",
-      salary: 76000
-    },
-    {
-      name: "Zoning Enforcement Inspector",
-      salary: 53000
-    },
-
-
   ]
 },
 "Healthcare": {
@@ -1352,98 +1103,6 @@ var jobCatAutoComp = {
     }
   ]
 },
-"Insurance": {
-  "JobTitles": [
-    {
-      name: "Benefits Administrator",
-      salary: 58000
-    },
-    {
-      name: "Fraud Investigator",
-      salary: 50000
-    },
-    {
-      name: "Investigator",
-      salary: 42000
-    },
-    {
-      name: "Benefits Manager",
-      salary: 48000
-    },
-    {
-      name: "Inspector",
-      salary: 27000
-    },
-    {
-      name: "Lead Asset Protection Associate",
-      salary: 102000
-    },
-    {
-      name: "Benefits Specialist",
-      salary: 40000
-    },
-    {
-      name: "Insurance Agent",
-      salary: 28000
-    },
-    {
-      name: "Field Investigator",
-      salary: 48000
-    },
-    {
-      name: "Insurance Sales Representative",
-      salary: 46000
-    }
-  ]
-},
-"Law Enforcement/Security": {
-  "JobTitles": [
-    {
-      name: "Criminal Investigator",
-      salary: 45000
-    },
-    {
-      name: "Loss Prevention Investigator",
-      salary: 34000
-    },
-    {
-      name: "Security Officer",
-      salary: 22000
-    },
-    {
-      name: "International Police Officer",
-      salary: 56000
-    },
-    {
-      name: "Loss Prevention Manager",
-      salary: 23000
-    },
-    {
-      name: "Transportation Security Officer",
-      salary: 22000
-    },
-    {
-      name: "Juvenile Detention Officer",
-      salary: 35000
-    },
-    {
-      name: "Police Officer",
-      salary: 28000
-    },
-    {
-      name: "Unarmed Security Guard",
-      salary: 22000
-    },
-    {
-      name: "Juvenile Probation Officer",
-      salary: 42000
-    },
-    {
-      name: "Security Guard",
-      salary: 22000
-    }
-  ]
-},
 "Legal": {
   "JobTitles": [
     {
@@ -1608,66 +1267,6 @@ var jobCatAutoComp = {
     }
   ]
 },
-"Marketing/Advertising/PR": {
-  "JobTitles": [
-    {
-      name: "Brand Manager",
-      salary: 66000
-    },
-    {
-      name: "Marketing Assistant",
-      salary: 48000
-    },
-    {
-      name: "Online Marketing Manager",
-      salary: 71000
-    },
-    {
-      name: "Copywriter",
-      salary: 57000
-    },
-    {
-      name: "Marketing Associate",
-      salary: 45000
-    },
-    {
-      name: "Product Marketing Manager",
-      salary: 79000
-    },
-    {
-      name: "Director Of Communication",
-      salary: 62000
-    },
-    {
-      name: "Marketing Coordinator",
-      salary: 41000
-    },
-    {
-      name: "Public Relations Manager",
-      salary: 64000
-    },
-    {
-      name: "Director Of Marketing",
-      salary: 74000
-    },
-    {
-      name: "Marketing Manager",
-      salary: 66000
-    },
-    {
-      name: "VP of Marketing",
-      salary: 102000
-    },
-    {
-      name: "Market Research Analyst",
-      salary: 70000
-    },
-    {
-      name: "Marketing Specialist",
-      salary: 49000
-    }
-  ]
-},
 "Non-Profit/Volunteering": {
   "Jobtitles": [
     {
@@ -1740,66 +1339,6 @@ var jobCatAutoComp = {
     }
   ]
 },
-"Pharmaceutical/Bio-tech": {
-  "JobTitles": [
-    {
-      name: "Analytical Chemist",
-      salary: 51000
-    },
-    {
-      name: "Lab Technician",
-      salary: 38000
-    },
-    {
-      name: "Pharmacist",
-      salary: 39000
-    },
-    {
-      name: "Lab Assistant",
-      salary: 27000
-    },
-    {
-      name: "Pharmaceutical Sales Representative",
-      salary: 64000
-    },
-    {
-      name: "Pharmacy Technician",
-      salary: 28000
-    }
-  ]
-},
-"Real Estate": {
-  "JobTitles": [
-    {
-      name: "Assistant Property Manager",
-      salary: 51000
-    },
-    {
-      name: "Leasing Agent",
-      salary: 17000
-    },
-    {
-      name: "Real Estate Appraiser",
-      salary: 51000
-    },
-    {
-      name: "Land Surveyor",
-      salary: 59000
-    },
-    {
-      name: "Leasing Consultant",
-      salary: 35000
-    },
-    {
-      name: "Lease Administrator",
-      salary: 51000
-    },
-    {
-      name: "Property Manager",
-      salary: 47000
-    }
-  ]
-},
 "Restaurant/Food Service": {
   "JobTitles": [
   {
@@ -1868,76 +1407,6 @@ var jobCatAutoComp = {
   }, {
     name: "Kitchen Worker",
     salary: 20000
-  }
-]},
-"Retail": {
-  "JobTitles": [
-  {
-    name: "Assistant Store Manager",
-    salary: 58000
-  }, {
-    name: "Hair Stylist",
-    salary: 19000
-  }, {
-    name: "Retail Sales Representative",
-    salary: 48000
-  }, {
-    name: "Buyer",
-    salary: 36000
-  }, {
-    name: "Head Cashier",
-    salary: 25000
-  }, {
-    name: "Retail Store Manager",
-    salary: 46000
-  }, {
-    name: "Buyer Planner",
-    salary: 54000
-  }, {
-    name: "Jeweler",
-    salary: 38000
-  }, {
-    name: "Sales Assistant",
-    salary: 41000
-  }, {
-    name: "Cashier",
-    salary: 20000
-  }, {
-    name: "Key Holder",
-    salary: 82000
-  }, {
-    name: "Store Manager",
-    salary: 45000
-  }, {
-    name: "Esthetician",
-    salary: 40000
-  }, {
-    name: "Kitchen Bath Sales Associate",
-    salary: 108000
-  }, {
-    name: "Visual Merchandiser",
-    salary: 24000
-  }, {
-    name: "Footwear Associate",
-    salary: 27000
-  }, {
-    name: "Night Manager",
-    salary: 46000
-  }, {
-    name: "Youth Department Sales Manager",
-    salary: 31000
-  }, {
-    name: "Garden Sales Associate",
-    salary: 38000
-  }, {
-    name: "Representative Retail Sales",
-    salary: 48000
-  }, {
-    name: "Grooming Salon Manager",
-    salary: 36000
-  }, {
-    name: "Retail Sales Associate",
-    salary: 41000
   }
 ]},
 "Sales" : {
@@ -2032,25 +1501,6 @@ var jobCatAutoComp = {
   }, {
     name: "Work Sales Representative",
     salary:45000
-  }
-]},
-"Telecommunications" : {
-  "JobTitles" : [
-  {
-    name: "Broadband Technician",
-    salary: 33000
-  }, {
-    name: "Telecommunications Specialist",
-    salary: 80000
-  }, {
-    name: "Wireless Consultant",
-    salary: 48000
-  }, {
-    name: "Communications Specialist",
-    salary: 38000
-  }, {
-    name: "Telecommunications Technician",
-    salary: 27000
   }
 ]},
 "Transportation/Logistics" : {

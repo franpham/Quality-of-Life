@@ -1,0 +1,69 @@
+
+/*css for sliding
+translate*/
+.box{
+  background : yellow;
+  transition: backgrou d 1s, transform 1s;
+  transform: translate(-150px);
+  &:hover{
+  background: blue;
+  trasform: translate(0) rotate(90)
+  }
+}
+
+
+/*kakaako agora
+fading button*/
+.button{
+  position: absolute;
+  display: block;
+  background: purple;
+  top: 50%;
+  left: 50%;
+  transform : translate(-50%, -50%);
+  display: block;
+  background: transparent;
+  padding: 10px 20px;
+  color: #fff;
+  border: 1px solid #fff;
+  z-index: 10;
+  overflow: hidden;
+  box-shadow: 0 4px 10px 0 rgba(#000, 0.4);
+
+  transition: border 0.5s ease-out, box-shadow 0.3, margin ;
+
+  &:before {
+    content: "";
+    width: 100%;
+    /*height: 100%;  // basic*/
+    height: 0;  /*making button like kakaako argo*/
+    background: purple;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    /*transition-property: background;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    transitions-delay: 1s; */
+
+    /*transition: background 1s ease-out 1s; // basic*/
+    transition: height 0.2s ease-out 1s;  /*// making button like kakaako argo*/
+    transform: translate(-50%,-50%) rotate(-45deg);  /*// making button like kakaako argo*/
+
+  }
+  &:hover {
+    /*border-color: purple;*/
+  box-shadow: 0 5px 10px 0 rgba(#000, 0.4);
+
+    $:before; {
+      /*background: orange;  //basic */
+      height: 250%;  /*// making button like kakaako argo*/
+
+    }
+}
+
+
+codepen emanuel pilate
+
+

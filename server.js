@@ -26,10 +26,11 @@ app.use(express.static('./public'));
 app.use('/', routes);
 
 app.use(function(req, res, next) {
-    var err = new Error('Not Found');
-    err.status = 404;   // path not found: must be AFTER ALL use() routes;
-    next(err);
+  var err = new Error('Not Found');
+  err.status = 404;   // path not found: must be AFTER ALL use() routes;
+  next(err);
 });
+
 app.use(function(err, req, res, next) {
   if (err) {
     res.status(err.status || 500);    // error handling: must be AFTER ALL use() middlewares;

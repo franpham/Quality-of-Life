@@ -1,0 +1,27 @@
+extends ./layouts/mainLayout
+
+block body
+  form( name='login' action='/login' method='POST' )
+    .row
+      .large-2.columns
+        .ui-widget#jobCategorySearch
+          label(for='jobCatTypes') Job Category:
+          input#jobCatTypes
+      .large-2.columns
+        .ui-widget.allTypes#jobtitleSearch
+          label(for='jobtitleTypes', value='Job Title') Job Title:
+          input#jobtitleTypes
+      .large-2.columns
+        .ui-widget#citySearch
+          label(for='cityTypes') City:
+          input#cityTypes
+      .large-2.columns
+        .ui-widget#salarySearch
+          label(for='salaryTypes') Salary:
+          input#salaryTypes
+      .large-2.columns
+        .ui-widget#houseSearch
+          label(for='houseTypes') House Type:
+          input#houseTypes
+      .large-12.columns
+        a.button(href="#")#saveSpecs Save
