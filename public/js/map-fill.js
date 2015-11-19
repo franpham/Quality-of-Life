@@ -1,4 +1,4 @@
-alert('hello world');
+console.log('hello from map-fill.js');
 
 // script.
   //- $("#"+ state).css("fill", color);
@@ -11,6 +11,8 @@ alert('hello world');
 
   // Make 6 shades of color, white default.
 
+function careers(){
+  console.log("hey the function thingy worked");
   $.getJSON('http://localhost:3000/us/careers', function(data) {
     // data is an array of objects; to get salary of each job category: var salary = data[i].salary;
     // job_stats  schema (7 fields): time, cityCode, state, category, jobCounts, medianSalary, loc_quotient (density);
@@ -60,6 +62,10 @@ alert('hello world');
       }
     }
   });
+}
+
+function homes(){
+  console.log('homes thingy works');
 
   $.getJSON('http://localhost:3000/us/homes', function(data) {
     // home_stats schema (7 fields): time, cityCode, state, homeCounts, medianPrice, averagePrice, usTraffic (popularity);
@@ -109,6 +115,10 @@ alert('hello world');
     }
   }
   });
+}
+
+function rentals(){
+  console.log('rental thingy');
 
   $.getJSON('http://localhost:3000/us/rentals', function(data) {
     // rent_stats schema (7 fields): time, cityCode, state, rentCounts, medianPrice, rentRatio, usTraffic (popularity);
@@ -158,3 +168,4 @@ alert('hello world');
     }
   }
   });
+}
