@@ -56,6 +56,18 @@ html
           a.button(href="#main-nav").open-menu#searchSubmit Submit
           a.button(href="#").close-menu#searchSubmit Submit
 
+      .row#mapSelector
+        .large-4.columns.firstDropDown
+          .ui-widget
+            .search
+
+        .large-4.columns.secondDropDown
+          .ui-widget
+            .jobCatSearchOptions
+            .housingSearchOptions
+
+        .large-4.columns.searchButton
+            button#toggle Show underlying select
 
        .row
         .large-12.columns#map-container
@@ -97,6 +109,8 @@ html
     script(src="/js/autocomplete/jobCatTypes.js")
     script(src="/js/sideBar/jobListData.js")
     script(src="/js/sideBar/displayJobList.js")
+    script(src="/js/dropDown/dropDown.js")
+
 
 
     script.

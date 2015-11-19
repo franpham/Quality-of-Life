@@ -3458,3 +3458,25 @@ body::after {
 .jobTitle {
   background: gray;
   padding-left: 5px; }
+
+/* line 127, stdin */
+.custom-combobox {
+  position: relative;
+  display: inline-block; }
+
+/* line 131, stdin */
+.custom-combobox-toggle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin-left: -1px;
+  padding: 0; }
+
+/* line 138, stdin */
+.custom-combobox-input {
+  margin: 0;
+  padding: 5px 10px; }
+
+/* line 142, stdin */
+#mapSelector {
+  background: #86A0B1; }
