@@ -1,30 +1,28 @@
 
-module.exports = [
+var list = [
   'Accounting / Finance',
-  'Healthcare',
+  'healthcare',
   'Non-Profit / Volunteering',
   'Administrative',
   'Computer / Internet',
   'Pharmaceutical / Bio-tech',
   'Arts / Publishing',
-  'Hospitality / Entertainment',
-  'Real Estate',
-  'Banking / Loans',
-  'Human Resources',
   'Restaurant / Food Service',
   'Construction / Facilities',
-  'Insurance',
-  'Retail',
   'Customer Service',
   'Law Enforcement / Security',
   'Sales',
   'Education / Training',
   'Legal / Paralegal',
-  'Telecommunications',
   'Engineering / Architecture',
   'Manufacturing / Mechanical',
   'Transportation / Logistics',
-  'Government / Military',
-  'Marketing / Advertising',
   'Upper Management / Consulting'
  ];
+
+var categories = {};
+for (var i = 0; i < list.length; i++) {
+  categories[list[i]] = true;
+}
+
+module.exports = categories;

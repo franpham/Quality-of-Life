@@ -4,14 +4,12 @@
 const PORT = process.env.PORT || 3000;
 var methodOverride = require('method-override');
 var parser = require('body-parser');
-var request = require('request-json');
 var express = require('express');
 var app = express();
 
 var mongo = require('mongodb');
 var monk = require('monk');
 var db = monk('localhost:27017/hire');    // set mongo to "use hire" database;
-var client = request.createClient('http://localhost:3003');    // use port different from server;
 
 var routes = require('./routes/index');
 app.set ('view engine', 'jade');
@@ -29,15 +27,16 @@ app.use('/', routes);
 
 app.use(function(req, res, next) {
     var err = new Error('Not Found');
-    err.status = 404;   // not found: must be AFTER ALL routes and use() paths;
+    err.status = 404;   // not found: must be AFTER ALL use() routes;
     next(err);
 });
 app.use(function(err, req, res, next) {
-  res.status(err.status || 500);    // error handling for middleware: must be AFTER ALL use() calls;
-  res.render('error', {
-    message : err.message,
-    error : (app.get('env') === 'development' ? err : {})
-  });
+  if (err) {
+    res.status(err.status || 500);    // error handling for middleware: must be AFTER ALL use() calls;
+    res.render('error', {
+      message : app.get('env') === 'development' ? err.message : 'Internal Server Error'
+    });
+  }
 });
 
 app.listen(PORT, function() {

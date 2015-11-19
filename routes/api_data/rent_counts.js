@@ -138,5 +138,5 @@ for (var i = 0; i < items.length; i++) {
 module.exports = countObj;
 
 // initialize the database with 2 yrs of data (-2 months), then search again every 1st Sat of month (-2 months) when month # changes; Quandl's data lags by 2 months;
-// http://www.quandl.com/api/v3/datasets/ZILL/C00033_HR.json?start_date=2013-09-01&end_date=2015-09-30
-// C00033 = city code for Miami, _HR = # of homes rented; https IS PREFERRED OVER http;
+// M00009 metro code for Miami, _HR = # of homes rented; https IS PREFERRED OVER http;
+// http://www.quandl.com/api/v3/datasets/ZILL/M00009_HR.json?start_date=2013-09-01&end_date=2015-09-30

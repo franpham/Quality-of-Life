@@ -10,12 +10,12 @@ $("#map-container").load("Blank_US_Map.svg", function() {
 
 function getSalaryCss(val) {
   return val <= 30000 ? '#E0EEEE' :
-    (val <= 60000 ? '#D1EEEE' :
-    (val <= 90000 ? '#96CDCD' :
-    (val <= 120000 ? '#388E8E' :
-    (val <= 150000 ? '#008080' :
-    (val <= 180000 ? 'blue' :
-    'white')))));
+    (val <= 45000 ? '#D1EEEE' :
+    (val <= 60000 ? '#96CDCD' :
+    (val <= 75000 ? '#388E8E' :
+    (val <= 90000 ? '#008080' :
+    (val <= 105000 ? 'blue' :
+    'purple')))));  // purple is > 105000, white is 0;
 };
 // for rentals PRR: larger values = cheaper renting; for rentals && homes usTraffic: larger values = more popular areas;
 // rent_stats schema (7 fields): time, cityCode, state, rentCounts, medianPrice, rentRatio, usTraffic (popularity);
