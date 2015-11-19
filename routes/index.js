@@ -25,17 +25,17 @@ var QUANDL_MONTH1 = '2015-09';  // Quandl rent stats lag by 2 months;
 // for rentals PRR: larger values = cheaper renting; for rentals && homes usTraffic: larger values = more popular areas;
 
 router.get('/rents/:cityCode', function(req, res) {
-  var rentStats = req.db.get('rent_stats');
   var cityCode = req.params.cityCode;
-  var rentals = [];
-  validateParams(cityCode);
-
   var thisDate = moment();
   thisDate.date(1);             // set to 1st date to normalize month;
   thisDate.isoWeekday(6);       // set to Saturday AFTER setting date;
   thisDate.subtract(1, 'months');           // -1 since Quandl lags by 2 months, but month() is 0-based;;
   var thisMonth = thisDate.month() + 1;     // +1 since Quandl month starts at 1;
   var time = thisDate.year() + '-' + (thisMonth < 10 ? '0' + thisMonth : thisMonth.toString());
+  validateParams(cityCode);
+
+  var rentals = [];
+  var rentStats = req.db.get('rent_stats');
   rentStats.find({ time: time, cityCode: cityCode }, function(err, docs) {
     rentals = docs;     // docs is an array;
 
@@ -86,7 +86,6 @@ router.get('/rents/:cityCode', function(req, res) {
             var time = keys[i];
             rentals[i] = { time: time, cityCode: cityCode, state: state, rentCounts: counts[time], medianPrice: prices[time], rentRatio: ratios[time] };
           }
-          var rentStats = req.db.get('rent_stats');
           rentStats.insert(rentals, { ordered: false }, function(dbError, doc) {
             if (dbError)
               throw dbError;
@@ -100,17 +99,17 @@ router.get('/rents/:cityCode', function(req, res) {
 });
 
 router.get('/homes/:cityCode', function(req, res) {
-  var homeStats = req.db.get('home_stats');
   var cityCode = req.params.cityCode;
-  var homes = [];
-  validateParams(cityCode);
-
   var thisDate = moment();
   thisDate.date(1);             // set to 1st date to normalize month;
   thisDate.isoWeekday(6);       // set to Saturday AFTER setting date;
   // Trulia lags by 1 month, but do not -1 since month() is 0-based;;
   var thisMonth = thisDate.month() + 1;       // +1 since Trulia month starts at 1;
   var time = thisDate.year() + '-' + (thisMonth < 10 ? '0' + thisMonth : thisMonth.toString());
+  validateParams(cityCode);
+
+  var homes = [];
+  var homeStats = req.db.get('home_stats');
   homeStats.find({ time: time, cityCode: cityCode }, function(err, docs) {
     homes = docs;     // docs is an array;
 
@@ -124,15 +123,14 @@ router.get('/homes/:cityCode', function(req, res) {
       var endDate = moment.min(lastDate, lastSat);
       var state = quandl.getState(cityCode);
 
-      var subquery = time === TRULIA_MONTH1 ? '&startDate=2013-09-01' : '&startDate=' + (time + '-01');   // -01 = 1st date;
-      subquery += '&endDate=' + (time + '-' + endDate.date()) + '&city=' + quandl.getCity(cityCode) + '&state=' + state;
+      var subquery = time === TRULIA_MONTH1 ? '&startDate=2013-09-01' : '&startDate=' + (time + '-01');     // -01 = 1st date;
+      subquery += '&endDate=' + (time + '-' + endDate.date()) + '&city=' + encodeURIComponent(quandl.getCity(cityCode)) + '&state=' + state;
       console.log('Trulia query: ' + subquery);
       request.get(url + subquery, function(error, response, body) {
         console.log('Retrieved homes xml from Trulia');
         if (error)
           throw error;
         homes = parseHomes(body, cityCode, state);
-        var homeStats = req.db.get('home_stats');
         homeStats.insert(homes, { ordered: false }, function(dbError, doc) {
           if (dbError)
             throw dbError;
@@ -149,16 +147,16 @@ router.get('/homes/:cityCode', function(req, res) {
 });
 
 router.get('/jobs/:cityCode/:category', function(req, res) {
-  var jobsList = req.db.get('jobs_list');
   var cityCode = req.params.cityCode;
   var category = req.params.category;
-  var jobs = [];
-  validateParams(cityCode, category);
-
   var thisDate = moment();
   thisDate.isoWeekday(1);   // set to Monday when week # changes;
   var thisWeek = thisDate.isoWeek();
   var time = thisDate.year() + '-' + thisWeek;
+  validateParams(cityCode, category);
+
+  var jobs = [];
+  var jobsList = req.db.get('jobs_list');
   jobsList.find({ time: time, cityCode: cityCode, category: category }, function(err, docs) {
     jobs = docs;    // docs is an array;
 
@@ -176,7 +174,6 @@ router.get('/jobs/:cityCode/:category', function(req, res) {
         if (error)
           throw error;
         jobs = parseJobs(body, time, cityCode, category);   // body is the API json;
-        var jobsList = req.db.get('jobs_list');
         jobsList.insert(jobs, { ordered: false }, function(dbError, doc) {
           if (dbError)
             throw dbError;
@@ -194,12 +191,12 @@ router.get('/jobs/:cityCode/:category', function(req, res) {
 
 router.get('/careers/:cityCode/:category', function(req, res) {
   var year = moment().year() - 1;       // BLS data lags by 1 yr;
-  var jobStats = req.db.get('job_stats_' + year);
   var cityCode = req.params.cityCode;
   var category = req.params.category;
   var stats = [];
   validateParams(cityCode, category);
 
+  var jobStats = req.db.get('job_stats_' + year);
   jobStats.find({ cityCode: cityCode, category: category }, function(dbError, docs) {
     stats = docs;           // docs is an array;
     if (dbError)
