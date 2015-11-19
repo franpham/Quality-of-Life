@@ -59,12 +59,13 @@ html
 
         .large-4.columns.searchButton
           .buttonSearch
-            //- button#toggle Search
 
        .row
         .large-12.columns#map-container
-         include ../partials/Blank_US_Map.svg
-         include ../partials/map-fills.jade
+          .textBox
+          a(href="#", title="this should hover") hover me
+          include ../partials/Blank_US_Map.svg
+          //- include ../partials/map-fills.jade
 
       //- footer
       footer.row
@@ -101,9 +102,11 @@ html
     script(src="/js/sideBar/jobListData.js")
     script(src="/js/sideBar/displayJobList.js")
     script(src="/js/dropDown/dropDown.js")
-    script(src="/js/test.js")
+    script(src="/js/map-fill.js")
 
 
 
     script.
       $(document).foundation();
+      $(document).tooltip();
+

@@ -3,6 +3,15 @@ console.log('hello from map-fill.js');
 // script.
   //- $("#"+ state).css("fill", color);
   $("#CA").css("fill", "pink");
+$( "path" ).hover(function(evt){
+  var stateAb = (evt.target).id;
+  var textBox = $("<a>", {
+    id : "textBox",
+    text : stateAb
+  });
+  $( ".textBox").append( textBox );
+
+});
 
   // var state = stateId;
   // var color = val; // ?
