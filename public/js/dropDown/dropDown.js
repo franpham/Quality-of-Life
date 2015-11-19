@@ -144,13 +144,10 @@
 
 
       if((evt.target).value === "JobCategory"){
-        console.log('hell yeah');
         $( ".jobCatSearchOptions" ).show();
       }else if((evt.target).value === "Home"){
-        console.log('get that');
         $( ".housingSearchOptions" ).show();
       }else if((evt.target).value === "Rental"){
-        console.log('Whoop');
         $( ".housingSearchOptions" ).show();
       }
 
@@ -237,3 +234,18 @@
   }));
 
   $( ".jobCatSearchOptions" ).append( jobCatSearchOptions ).hide();
+
+// =================================
+  var buttonSearch = $("<button>", {
+    id : "toggle",
+    text : "Search"
+  });
+
+  $( ".buttonSearch").append( buttonSearch );
+
+  $( ".buttonSearch" ).click(function(){
+    console.log('clicked me');
+    careers();
+    homes();
+    rentals();
+  });
