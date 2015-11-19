@@ -3294,11 +3294,50 @@ th.hide-for-touch {
       font-weight: bold;
       text-transform: uppercase; }
 
-/* line 9, stdin */
+/* line 132, bower_components/foundation/scss/foundation/components/_accordion.scss */
+.accordion {
+  margin-bottom: 0;
+  margin-left: 0; }
+  /* line 239, bower_components/foundation/scss/foundation/components/_global.scss */
+  .accordion:before, .accordion:after {
+    content: " ";
+    display: table; }
+  /* line 240, bower_components/foundation/scss/foundation/components/_global.scss */
+  .accordion:after {
+    clear: both; }
+  /* line 136, bower_components/foundation/scss/foundation/components/_accordion.scss */
+  .accordion .accordion-navigation, .accordion dd {
+    display: block;
+    margin-bottom: 0 !important; }
+    /* line 139, bower_components/foundation/scss/foundation/components/_accordion.scss */
+    .accordion .accordion-navigation.active > a, .accordion dd.active > a {
+      background: #e8e8e8;
+      color: #222222; }
+    /* line 140, bower_components/foundation/scss/foundation/components/_accordion.scss */
+    .accordion .accordion-navigation > a, .accordion dd > a {
+      background: #EFEFEF;
+      color: #222222;
+      display: block;
+      font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      font-size: 1rem;
+      padding: 1rem; }
+      /* line 147, bower_components/foundation/scss/foundation/components/_accordion.scss */
+      .accordion .accordion-navigation > a:hover, .accordion dd > a:hover {
+        background: #e3e3e3; }
+    /* line 150, bower_components/foundation/scss/foundation/components/_accordion.scss */
+    .accordion .accordion-navigation > .content, .accordion dd > .content {
+      display: none;
+      padding: 0.9375rem; }
+      /* line 153, bower_components/foundation/scss/foundation/components/_accordion.scss */
+      .accordion .accordion-navigation > .content.active, .accordion dd > .content.active {
+        background: #FFFFFF;
+        display: block; }
+
+/* line 11, stdin */
 body {
   background: white; }
 
-/* line 13, stdin */
+/* line 15, stdin */
 body::after {
   content: "";
   background: url(http://images.all-free-download.com/images/graphiclarge/ocean_waves_207578.jpg);
@@ -3311,15 +3350,15 @@ body::after {
   position: absolute;
   z-index: -1; }
 
-/* line 26, stdin */
+/* line 28, stdin */
 .main-header {
   background: blue; }
 
-/* line 29, stdin */
+/* line 31, stdin */
 .content {
   background: brown; }
 
-/* line 32, stdin */
+/* line 34, stdin */
 .main-nav {
   position: fixed;
   top: 0;
@@ -3328,7 +3367,7 @@ body::after {
   background: #3BAF58;
   overflow-y: auto;
   transition: width 0.3s ease; }
-  /* line 41, stdin */
+  /* line 43, stdin */
   .main-nav a {
     display: block;
     background: linear-gradient(#3E3E3E, #383838);
@@ -3337,10 +3376,10 @@ body::after {
     color: white;
     text-decoration: none;
     padding: 15px; }
-    /* line 49, stdin */
+    /* line 51, stdin */
     .main-nav a:hover, .main-nav a:focus {
       background: linear-gradient(#484848, #383838); }
-  /* line 53, stdin */
+  /* line 55, stdin */
   .main-nav:after {
     content: "";
     position: absolute;
@@ -3349,102 +3388,95 @@ body::after {
     height: 100%;
     width: 34px;
     background: linear-gradient(left, transparent, rgba(0, 0, 0, 0.4)); }
-  /* line 62, stdin */
+  /* line 64, stdin */
   .main-nav p {
     display: block;
-    background: linear-gradient(#3E3E3E, #A4A4A4);
+    background: olive;
     border-top: 1px solid #484848;
     border-bottom: 1px solid #2E2E2E;
     color: white;
     text-decoration: none;
-    padding: 15px; }
+    padding: 15px;
+    margin-bottom: -16px; }
 
-/* line 72, stdin */
+/* line 75, stdin */
 .close-menu {
   display: none; }
 
-/* line 75, stdin */
+/* line 78, stdin */
 .page-wrap {
   float: right;
   width: 100%;
   transition: width 0.3s ease;
   height: 100%; }
 
-/* line 81, stdin */
+/* line 84, stdin */
 #main-nav:target {
   width: 25%; }
 
-/* line 84, stdin */
+/* line 87, stdin */
 #main-nav:target + .page-wrap {
   width: 75%; }
-  /* line 86, stdin */
+  /* line 89, stdin */
   #main-nav:target + .page-wrap .open-menu {
     display: none; }
-  /* line 89, stdin */
+  /* line 92, stdin */
   #main-nav:target + .page-wrap .close-menu {
     display: block; }
-  /* line 92, stdin */
+  /* line 95, stdin */
   #main-nav:target + .page-wrap .page-wrap {
     width: 75%;
     left: 25%; }
 
-/* line 97, stdin */
-#jobDetails {
-  display: none; }
-  /* line 99, stdin */
-  #jobDetails p {
-    display: block;
-    background: red;
-    border-top: 1px solid #484848;
-    border-bottom: 1px solid #2E2E2E;
-    color: white;
-    text-decoration: none;
-    padding: 15px;
-    margin-bottom: -17px; }
-  /* line 109, stdin */
-  #jobDetails button {
-    background: orange; }
-
-/* line 113, stdin */
-#jobDetails:target {
-  display: block; }
-
-/* line 117, stdin */
-.ui-autocomplete {
-  max-height: 100px;
-  overflow-y: auto;
-  /* prevent horizontal scrollbar */
-  overflow-x: hidden; }
-
-/* IE 6 doesn't support max-height
-   * we use height instead, but this forces the menu to always be this tall
-   */
-/* line 126, stdin */
-* html .ui-autocomplete {
-  height: 100px; }
-
-/* line 129, stdin */
+/* line 100, stdin */
 #footer {
   background: #86A0B1; }
 
-/* line 133, stdin */
+/* line 104, stdin */
 #filter-bar {
   padding-top: 30px;
   background: #86A0B1; }
 
-/* line 137, stdin */
+/* line 108, stdin */
 .jobCat {
   text-align: center; }
 
-/* line 141, stdin */
+/* line 112, stdin */
 * {
   box-sizing: border-box; }
 
-/* line 145, stdin */
+/* line 116, stdin */
 #apply {
   margin-top: 16px; }
 
-/* line 148, stdin */
+/* line 119, stdin */
 #map-container {
   background: white;
   height: 850px; }
+
+/* line 123, stdin */
+.jobTitle {
+  background: gray;
+  padding-left: 5px; }
+
+/* line 127, stdin */
+.custom-combobox {
+  position: relative;
+  display: inline-block; }
+
+/* line 131, stdin */
+.custom-combobox-toggle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin-left: -1px;
+  padding: 0; }
+
+/* line 138, stdin */
+.custom-combobox-input {
+  margin: 0;
+  padding: 5px 10px; }
+
+/* line 142, stdin */
+#mapSelector {
+  background: #86A0B1; }

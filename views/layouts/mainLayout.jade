@@ -12,25 +12,11 @@ html
       a.button(href="#")#searchSubmit Close
       .jobCat
         h2
-          a(href='#main-nav') Transportation
-      .jobTitle#jobTitle
-        h3
-          p CDL Driver
+          a(href='#main-nav') Job Category
 
-      .jobDetails#jobDetails
+      .jobContainer
 
-        #comp
-          p YHata
-        #cityState
-          p Honolulu, HI
-        #snippet
-          p.
-            It’s all about playing four quarters# I think we played well but the other team played well too# They took advantage of certain circumstances that arose# It’s a physical game#
-        #date-apply
-          .date
-            p Nov. 13, 2015
-          .apply
-            a.button(href="#")#apply Apply
+
 
     .page-wrap
       //- .row.main-header
@@ -67,6 +53,18 @@ html
           a.button(href="#main-nav").open-menu#searchSubmit Submit
           a.button(href="#").close-menu#searchSubmit Submit
 
+      .row#mapSelector
+        .large-4.columns.firstDropDown
+          .ui-widget
+            .search
+
+        .large-4.columns.secondDropDown
+          .ui-widget
+            .jobCatSearchOptions
+            .housingSearchOptions
+
+        .large-4.columns.searchButton
+            button#toggle Show underlying select
 
        .row
         .large-12.columns#map-container
@@ -104,5 +102,12 @@ html
     script(src="/js/autocomplete/salaryTypes.js")
     script(src="/js/autocomplete/houseTypes.js")
     script(src="/js/autocomplete/jobCatTypes.js")
+    script(src="/js/autocomplete/jobCatTypes.js")
+    script(src="/js/sideBar/jobListData.js")
+    script(src="/js/sideBar/displayJobList.js")
+    script(src="/js/dropDown/dropDown.js")
+
+
+
     script.
       $(document).foundation();
