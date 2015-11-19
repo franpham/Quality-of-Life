@@ -5,10 +5,10 @@ mixin listDetails(data)
   -var values = Object.keys(data).reduce(function(prev, curr) { return fields.indexOf(curr) >= 0 ? prev : (prev + ' - ' + curr + ' : ' + data[curr]); }, '');
   div= values
 
-//- jobs_list schema (11 fields): time, cityCode, state, category, jobtitle, company, url, date, snippet, lat, lng;
-//- job_stats  schema (7 fields): time, cityCode, state, category, jobCounts, medianSalary, loc_quotient (density);
-//- rent_stats schema (7 fields): time, cityCode, state, rentCounts, medianPrice, rentRatio, usTraffic;
-//- home_stats schema (7 fields): time, cityCode, state, homeCounts, medianPrice, averagePrice, usTraffic;
+//- jobs_list schema (11 fields): time, cityCode, city, category, jobtitle, company, url, date, snippet, lat, lng;
+//- job_stats_2014 schema (6 fields):   cityCode, state, category, medianSalary (A_MEDIAN), density (loc_quotient), capacity (JOBS_1000);
+//- rent_stats schema (6 fields): time, cityCode, state, rentCounts, medianPrice, rentRatio;
+//- home_stats schema (7 fields): time, cityCode, state, homeCounts, medianPrice, averagePrice, usTraffic (popularity);
 
 mixin listDocuments(data)
   each obj in data
@@ -18,12 +18,12 @@ mixin listDocuments(data)
 
 mixin listJobs(data)
   each obj in data
-    -var title = obj['time'];
+    -var title = obj['time'] + ' - ';
     li= title
+      a(href="#{obj['url']}") Apply
     -var job = obj['category'] + ' : ' + obj['jobtitle'] + ' - ' + obj['company'];
     li= job
     -var info = obj['date'] + ' geolocation: ' + obj['lat'] + ' / ' + obj['lng'];
     li= info
     li
-      a(href="#{obj['url']}") Apply
       div!= obj['snippet']

@@ -11,7 +11,7 @@ var mongo = require('mongodb');
 var monk = require('monk');
 var db = monk('localhost:27017/hire');    // set mongo to "use hire" database;
 
-var routes = require('./routes/index');
+var routes = require('./routes/index');   // change to admin to initialize DB;
 app.set ('view engine', 'jade');
 app.set('views', './views');
 
@@ -27,12 +27,12 @@ app.use('/', routes);
 
 app.use(function(req, res, next) {
     var err = new Error('Not Found');
-    err.status = 404;   // not found: must be AFTER ALL use() routes;
+    err.status = 404;   // path not found: must be AFTER ALL use() routes;
     next(err);
 });
 app.use(function(err, req, res, next) {
   if (err) {
-    res.status(err.status || 500);    // error handling for middleware: must be AFTER ALL use() calls;
+    res.status(err.status || 500);    // error handling: must be AFTER ALL use() middlewares;
     res.render('error', {
       message : app.get('env') === 'development' ? err.message : 'Internal Server Error'
     });
@@ -43,5 +43,6 @@ app.listen(PORT, function() {
   console.log('App is listening on port:', PORT);
 });
 
-// START MONGO AT TERMINAL: mongod --dbpath ./data/
-// START NODE  AT TERMINAL: nodemon server.js
+// START MONGOD AT TERMINAL: mongod --dbpath ./data/
+// START MONGO dbName AT TERMINAL: mongo hire
+// START NODEMON AT TERMINAL: nodemon server.js

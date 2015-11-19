@@ -1,23 +1,23 @@
 
 var list = [
-  'Accounting / Finance',
+  'accounting / finance',
   'healthcare',
-  'Non-Profit / Volunteering',
-  'Administrative',
-  'Computer / Internet',
-  'Pharmaceutical / Bio-tech',
-  'Arts / Publishing',
-  'Restaurant / Food Service',
-  'Construction / Facilities',
-  'Customer Service',
-  'Law Enforcement / Security',
-  'Sales',
-  'Education / Training',
-  'Legal / Paralegal',
-  'Engineering / Architecture',
-  'Manufacturing / Mechanical',
-  'Transportation / Logistics',
-  'Upper Management / Consulting'
+  'nonprofit / volunteering',
+  'administrative',
+  'computer / internet',
+  'pharmaceutical / biotech',
+  'arts / publishing',
+  'restaurant / food service',
+  'construction / facilities',
+  'customer service',
+  'law enforcement / security',
+  'sales',
+  'education / training',
+  'legal / paralegal',
+  'engineering / architecture',
+  'manufacturing / mechanical',
+  'transportation / logistics',
+  'upper management / consulting'
  ];
 
 var categories = {};

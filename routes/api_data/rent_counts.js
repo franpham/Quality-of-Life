@@ -128,15 +128,10 @@ var json = { "dataset": {
 "database_id": 13018
 }};
 
-var items = json.dataset.data;
-var countObj = {};
-for (var i = 0; i < items.length; i++) {
-  var num = items[i][0].substring(0, 7);
-  var val = items[i][1];
-  countObj[num] = val;
-}
-module.exports = countObj;
+var quandl = require('./Quandl_utils.js');
+var counts = quandl.parseRents(json);
+module.exports = counts;
 
 // initialize the database with 2 yrs of data (-2 months), then search again every 1st Sat of month (-2 months) when month # changes; Quandl's data lags by 2 months;
-// M00009 metro code for Miami, _HR = # of homes rented; https IS PREFERRED OVER http;
-// http://www.quandl.com/api/v3/datasets/ZILL/M00009_HR.json?start_date=2013-09-01&end_date=2015-09-30
+// M00009 metro code for Miami, _HR = # of homes rented;
+// https://www.quandl.com/api/v3/datasets/ZILL/M00009_HR.json?start_date=2013-09-01&end_date=2015-09-30

@@ -52,4 +52,30 @@ for (var i = 0; i < data.length; i++) {
   cities[code] = city;
 }
 
-module.exports = { cities: cities, codes: codes };
+function getState(cityCode) {
+  var city = cities[cityCode];
+  return city.substring(city.length - 2);
+}
+
+function getCity(cityCode) {
+  var city = cities[cityCode];   // -4: 2 for state && 2 for ', ';
+  return city.substring(0, city.length - 4);
+}
+
+function getQuandlCode(cityCode) {
+  var code = parseInt(cityCode);                    // C = city, M = metro;
+  return (code ===  37 || code === 44 || code === 128) ? 'C' + cityCode : 'M' + cityCode;
+}
+
+function parseRents(json) {
+  var items = json.dataset.data;
+  var rents = {};
+  for (var i = 0; i < items.length; i++) {
+    var num = items[i][0].substring(0, 7);
+    var val = items[i][1];
+    rents[num] = val;
+  }
+  return rents;
+}
+
+module.exports = { cities: cities, codes: codes, getState: getState, getCity: getCity, getQuandlCode: getQuandlCode, parseRents: parseRents };

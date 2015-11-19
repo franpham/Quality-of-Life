@@ -1,6 +1,6 @@
 "use strict";
 
-var quandl = require('./Quandl_metroCodes.js');
+var quandl = require('./Quandl_utils.js');
 var parseXML = require('xml2js').parseString;
 var TESTCITY = 'Miami, FL';
 var CITYCODE = quandl.codes[TESTCITY];
