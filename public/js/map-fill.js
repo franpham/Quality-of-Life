@@ -163,7 +163,7 @@ function rentals(){
           (val <= 2400 ? '220A37' :
           '#FFF')))));
       };
-      } else if ( whateverUserPicks = usTraffic) {
+      } else if ( whateverUserPicks = usTraffic) { //  <------------- change to Price to Rent Ratio
         css = getJobCount(usTraffic);
         var getUsTrafficCss = function(val) {
         return val <= 0.1 ? '#AA8CC5' :
