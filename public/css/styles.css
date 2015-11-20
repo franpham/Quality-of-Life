@@ -3480,3 +3480,11 @@ body::after {
 /* line 142, stdin */
 #mapSelector {
   background: #86A0B1; }
+
+/* line 145, stdin */
+#filter-bar {
+  background: black; }
+
+/* line 148, stdin */
+#citySelect {
+  background: #86A0B1; }
