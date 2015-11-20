@@ -22,7 +22,7 @@ $( "path" ).hover(function(evt){
 
 function careers(){
   console.log("hey the function thingy worked");
-  $.getJSON('http://localhost:3000/careers', function(data) {
+  $.getJSON('http://localhost:3000/allCareers', function(data) {
     // data is an array of objects; to get salary of each job category: var salary = data[i].salary;
     // job_stats  schema (7 fields): time, cityCode, state, category, jobCounts, medianSalary, loc_quotient (density);
 
@@ -76,7 +76,7 @@ function careers(){
 function homes() {
   console.log('homes thingy works');
 
-  $.getJSON('http://localhost:3000/homes', function(data) {
+  $.getJSON('http://localhost:3000/allHomes', function(data) {
     // home_stats schema (7 fields): time, cityCode, state, homeCounts, medianPrice, averagePrice, usTraffic (popularity);
     // data is an array of objects; to get medianPrice of each rental: var price data[i].medianPrice;
 
@@ -129,7 +129,7 @@ function homes() {
 function rentals(){
   console.log('rental thingy');
 
-  $.getJSON('http://localhost:3000/rentals', function(data) {
+  $.getJSON('http://localhost:3000/allRentals', function(data) {
     // rent_stats schema (7 fields): time, cityCode, state, rentCounts, medianPrice, rentRatio, usTraffic (popularity);
     // for rentals PRR: larger values = cheaper renting; for rentals && homes usTraffic: larger values = more popular areas;
     // data is an array of objects; to get jobtitle of each job: var title = data[i].jobtitle;
