@@ -20,6 +20,18 @@ $( "path" ).hover(function(evt){
 
   // Make 6 shades of color, white default.
 
+
+var city = $('#cityTypes').value;
+console.log('testing city',city);
+var datatype = $('#combobox1').value
+if (inMultiCityState(city)) {
+  if (datatype === 'rents') {
+    var cityJson = $.json('http://localhost:3000/rents' + city);
+    // use this new data to update the color of the state
+  }
+}
+
+
 function careers(){
   console.log("hey the function thingy worked");
   $.getJSON('http://localhost:3000/us/careers', function(data) {

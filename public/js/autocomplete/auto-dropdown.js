@@ -25,3 +25,23 @@ var jobCats =       ["Accounting/Finance Jobs",
       "Telecommunications",
       "Transportation/Logistics",
       "Upper Management/Consulting"];
+
+        source: [
+      'Accounting / Finance',
+      'Healthcare',
+      'Non-Profit / Volunteering',
+      'Administrative',
+      'Computer / Internet',
+      'Arts / Publishing',
+      'Hospitality / Entertainment',
+      'Human Resources',
+      'Restaurant / Food Service',
+      'Construction / Facilities',
+      'Sales',
+      'Education / Training',
+      'Legal / Paralegal',
+      'Engineering / Architecture',
+      'Manufacturing / Mechanical',
+      'Transportation / Logistics',
+      'Upper Management / Consulting'
+    ],
