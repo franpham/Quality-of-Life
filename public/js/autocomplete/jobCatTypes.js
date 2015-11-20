@@ -11,8 +11,8 @@ $(function() {
       'Administrative',
       'Computer / Internet',
       'Arts / Publishing',
-      'Hospitality / Entertainment',
-      'Human Resources',
+      // 'Hospitality / Entertainment',
+      // 'Human Resources',
       'Restaurant / Food Service',
       'Construction / Facilities',
       'Sales',
@@ -987,122 +987,122 @@ var jobCatAutoComp = {
     }
   ]
 },
-"Hospitality/Travel": {
-  "JobTitles": [
-    {
-      name: "Banquet Manager",
-      salary: 38000
-    },
-    {
-      name:"Greeter",
-      salary: 19000
-    },
-    {
-      name:"Kennel Attendant",
-      salary: 22000
-    },
-    {
-      name:"Event Manager",
-      salary: 46000
-    },
-    {
-      name:"Guest Service Agent",
-      salary: 22000
-    },
-    {
-      name:"Kennel Technician",
-      salary: 27000
-    },
-    {
-      name:"Event Planner",
-      salary: 50000
-    },
-    {
-      name:"Housekeeper",
-      salary: 21000
-    },
-    {
-      name:"Travel Agent",
-      salary: 56000
-    },
-    {
-      name:"Floral Designer",
-      salary: 24000
-    },
-    {
-      name:"Kennel Assistant",
-      salary: 21000
-    }
-  ]
-},
-"Human Resources Jobs": {
-  "JobTitles": [
-    {
-      name: "Director Of Human Resources",
-      salary: 44000
-    },
-    {
-      name: "HR Manager",
-      salary: 44000
-    },
-    {
-      name: "Recruiting Coordinator",
-      salary: 40000
-    },
-    {
-      name: "Executive Recruiter",
-      salary: 71000
-    },
-    {
-      name: "HR Recruiter",
-      salary: 45000
-    },
-    {
-      name: "Recruiting Manager",
-      salary: 71000
-    },
-    {
-      name: "HR Administrator",
-      salary: 44000
-    },
-    {
-      name: "HR Representative",
-      salary: 30000
-    },
-    {
-      name: "Technical Recruiter",
-      salary: 78000
-    },
-    {
-      name: "HR Consultant",
-      salary: 69000
-    },
-    {
-      name: "HR Specialist",
-      salary: 34000
-    },
-    {
-      name: "VP of Human Resources",
-      salary: 82000
-    },
-    {
-      name: "HR Coordinator",
-      salary: 35000
-    },
-    {
-      name: "Job Coach",
-      salary: 42000
-    },
-    {
-      name: "HR Generalist",
-      salary: 58000
-    },
-    {
-      name: "Recruiter",
-      salary: 43000
-    }
-  ]
-},
+// "Hospitality/Travel": {
+//   "JobTitles": [
+//     {
+//       name: "Banquet Manager",
+//       salary: 38000
+//     },
+//     {
+//       name:"Greeter",
+//       salary: 19000
+//     },
+//     {
+//       name:"Kennel Attendant",
+//       salary: 22000
+//     },
+//     {
+//       name:"Event Manager",
+//       salary: 46000
+//     },
+//     {
+//       name:"Guest Service Agent",
+//       salary: 22000
+//     },
+//     {
+//       name:"Kennel Technician",
+//       salary: 27000
+//     },
+//     {
+//       name:"Event Planner",
+//       salary: 50000
+//     },
+//     {
+//       name:"Housekeeper",
+//       salary: 21000
+//     },
+//     {
+//       name:"Travel Agent",
+//       salary: 56000
+//     },
+//     {
+//       name:"Floral Designer",
+//       salary: 24000
+//     },
+//     {
+//       name:"Kennel Assistant",
+//       salary: 21000
+//     }
+//   ]
+// },
+// "Human Resources Jobs": {
+//   "JobTitles": [
+//     {
+//       name: "Director Of Human Resources",
+//       salary: 44000
+//     },
+//     {
+//       name: "HR Manager",
+//       salary: 44000
+//     },
+//     {
+//       name: "Recruiting Coordinator",
+//       salary: 40000
+//     },
+//     {
+//       name: "Executive Recruiter",
+//       salary: 71000
+//     },
+//     {
+//       name: "HR Recruiter",
+//       salary: 45000
+//     },
+//     {
+//       name: "Recruiting Manager",
+//       salary: 71000
+//     },
+//     {
+//       name: "HR Administrator",
+//       salary: 44000
+//     },
+//     {
+//       name: "HR Representative",
+//       salary: 30000
+//     },
+//     {
+//       name: "Technical Recruiter",
+//       salary: 78000
+//     },
+//     {
+//       name: "HR Consultant",
+//       salary: 69000
+//     },
+//     {
+//       name: "HR Specialist",
+//       salary: 34000
+//     },
+//     {
+//       name: "VP of Human Resources",
+//       salary: 82000
+//     },
+//     {
+//       name: "HR Coordinator",
+//       salary: 35000
+//     },
+//     {
+//       name: "Job Coach",
+//       salary: 42000
+//     },
+//     {
+//       name: "HR Generalist",
+//       salary: 58000
+//     },
+//     {
+//       name: "Recruiter",
+//       salary: 43000
+//     }
+//   ]
+// },
 "Legal": {
   "JobTitles": [
     {
