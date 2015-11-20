@@ -1,8 +1,8 @@
 console.log('hello from map-fill.js');
 
 // script.
-  //- $("#"+ state).css("fill", color);
-  $("#CA").css("fill", "pink");
+//- $("#"+ state).css("fill", color);
+$("#CA").css("fill", "pink");
 $( "path" ).hover(function(evt){
   var stateAb = (evt.target).id;
   var textBox = $("<a>", {
@@ -13,16 +13,16 @@ $( "path" ).hover(function(evt){
 
 });
 
-  // var state = stateId;
-  // var color = val; // ?
+// var state = stateId;
+// var color = val; // ?
 
-  // $("#"+ state).css("fill", css);
+// $("#"+ state).css("fill", css);
 
-  // Make 6 shades of color, white default.
+// Make 6 shades of color, white default.
 
 function careers(){
   console.log("hey the function thingy worked");
-  $.getJSON('http://localhost:3000/us/careers', function(data) {
+  $.getJSON('http://localhost:3000/careers', function(data) {
     // data is an array of objects; to get salary of each job category: var salary = data[i].salary;
     // job_stats  schema (7 fields): time, cityCode, state, category, jobCounts, medianSalary, loc_quotient (density);
 
@@ -73,24 +73,24 @@ function careers(){
   });
 }
 
-function homes(){
+function homes() {
   console.log('homes thingy works');
 
-  $.getJSON('http://localhost:3000/us/homes', function(data) {
+  $.getJSON('http://localhost:3000/homes', function(data) {
     // home_stats schema (7 fields): time, cityCode, state, homeCounts, medianPrice, averagePrice, usTraffic (popularity);
     // data is an array of objects; to get medianPrice of each rental: var price data[i].medianPrice;
 
 
-  // price(medianPrice), counts, popularity
-  for (var i = 0; i < data.length; i++) {
-    var state = data[i].state;
-    var price = data[i].medianPrice;
-    var homeCounts = data[i].homeCounts;
-    var usTraffic = data[i].homeCounts;
+    // price(medianPrice), counts, popularity
+    for (var i = 0; i < data.length; i++) {
+      var state = data[i].state;
+      var price = data[i].medianPrice;
+      var homeCounts = data[i].homeCounts;
+      var usTraffic = data[i].homeCounts;
 
-    if ( whateverUserPicks = price) {
-      var css = getPriceCss(price);
-      var getSalaryCss = function(val) {
+      if ( whateverUserPicks = price) {
+        var css = getPriceCss(price);
+        var getSalaryCss = function(val) {
         return val <= 200000 ? '#99ff99' :
           (val <= 300000 ? '#7fff7f' :
           (val <= 400000 ? '#66ff66' :
@@ -99,9 +99,9 @@ function homes(){
           (val <= 700000 ? '007f00' :
           '#FFF')))));
       };
-    } else if ( whateverUserPicks = homeCounts) {
-      css = getHomeCountsCss(homeCounts);
-      var getHomecountsCss = function(val) {
+      } else if ( whateverUserPicks = homeCounts) {
+        css = getHomeCountsCss(homeCounts);
+        var getHomecountsCss = function(val) {
         return val <= 500 ? '#99ff99' :
           (val <= 1000 ? '#7fff7f' :
           (val <= 1500 ? '#66ff66' :
@@ -110,9 +110,9 @@ function homes(){
           (val <= 3000 ? '007f00' :
           '#FFF')))));
       };
-    } else if ( whateverUserPicks = usTraffic) {
+      } else if ( whateverUserPicks = usTraffic) {
       css = getUsTrafficCss(usTraffic);
-      var getUsTrafficCss = function(val) {
+        var getUsTrafficCss = function(val) {
         return val <= 0.1 ? '#99ff99' :
           (val <= 0.2 ? '#7fff7f' :
           (val <= 0.3 ? '#66ff66' :
@@ -121,29 +121,29 @@ function homes(){
           (val <= 0.6 ? '007f00' :
           '#FFF')))));
       };
+      }
     }
-  }
   });
 }
 
 function rentals(){
   console.log('rental thingy');
 
-  $.getJSON('http://localhost:3000/us/rentals', function(data) {
+  $.getJSON('http://localhost:3000/rentals', function(data) {
     // rent_stats schema (7 fields): time, cityCode, state, rentCounts, medianPrice, rentRatio, usTraffic (popularity);
     // for rentals PRR: larger values = cheaper renting; for rentals && homes usTraffic: larger values = more popular areas;
     // data is an array of objects; to get jobtitle of each job: var title = data[i].jobtitle;
 
     // counts, price, popularity
-  for (var i = 0; i < data.length; i++) {
-    var state = data[i].state;
-    var rentCounts = data[i].rentCounts;
-    var price = data[i].medianPrice;
-    var usTraffic = data[i].usTraffic;
+    for (var i = 0; i < data.length; i++) {
+      var state = data[i].state;
+      var rentCounts = data[i].rentCounts;
+      var price = data[i].medianPrice;
+      var usTraffic = data[i].usTraffic;
 
-    if ( whateverUserPicks = homeCounts) {
-      var css = getHomeCountsCss(homeCounts);
-      var getHomeCountsCss = function(val) {
+      if ( whateverUserPicks = homeCounts) {
+        var css = getHomeCountsCss(homeCounts);
+        var getHomeCountsCss = function(val) {
         return val <= 200000 ? '#AA8CC5' :
           (val <= 201000 ? '#885EAD' :
           (val <= 202000 ? '#663096' :
@@ -152,9 +152,9 @@ function rentals(){
           (val <= 205000 ? '220A37' :
           '#FFF')))));
       };
-    } else if ( whateverUserPicks = medianPrice) {
-      css = getPriceCss(medianPrice);
-      var getPriceCss = function(val) {
+      } else if ( whateverUserPicks = medianPrice) {
+        css = getPriceCss(medianPrice);
+        var getPriceCss = function(val) {
         return val <= 1400 ? '#AA8CC5' :
           (val <= 1600 ? '#885EAD' :
           (val <= 1800 ? '#663096' :
@@ -163,9 +163,9 @@ function rentals(){
           (val <= 2400 ? '220A37' :
           '#FFF')))));
       };
-    } else if ( whateverUserPicks = usTraffic) {
-      css = getJobCount(usTraffic);
-      var getUsTrafficCss = function(val) {
+      } else if ( whateverUserPicks = usTraffic) {
+        css = getJobCount(usTraffic);
+        var getUsTrafficCss = function(val) {
         return val <= 0.1 ? '#AA8CC5' :
           (val <= 0.2 ? '#885EAD' :
           (val <= 0.3 ? '#663096' :
@@ -174,7 +174,7 @@ function rentals(){
           (val <= 0.6 ? '220A37' :
           '#FFF')))));
       };
-    }
-  }
+     }
+   }
   });
 }
