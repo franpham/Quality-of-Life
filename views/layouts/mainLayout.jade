@@ -6,7 +6,7 @@ html
     script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.9/d3.min.js")
     meta(charset="UTF-8")
-    include ../html/header.html
+    include ../partials/header.jade
     script(src="/js/jquery.js")
     script(src="/js/d3.js")
   body
@@ -32,13 +32,29 @@ html
             .jobCats
         .large-4.columns
           .jobTitles
-            .trans
-            .management
+          .accounting
+          .healthcare
+          .nonprofit
+          .admin
+          .computer
+          .arts
+          .restaurant
+          .construction
+          .sales
+          .education
+          .legal
+          .engineering
+          .manufacturing
+          .trans
+          .management
+
         .large-4.columns.searchButton
           .buttonSearch
 
        .row
         .large-12.columns#map-container
+          include ../partials/Blank_US_Map.svg
+          //- include ../partials/map-fills.jade
 
       //- footer
       footer.row
@@ -79,15 +95,25 @@ html
     script(src="/js/map-fill.js")
     script(src="/js/autocomplete/autoComplete.js")
 
+    script(src="/js/dropDown/jobTitleBreakdown/accounting.js")
+    script(src="/js/dropDown/jobTitleBreakdown/admin.js")
+    script(src="/js/dropDown/jobTitleBreakdown/arts.js")
+    script(src="/js/dropDown/jobTitleBreakdown/computer.js")
+    script(src="/js/dropDown/jobTitleBreakdown/healthcare.js")
+    script(src="/js/dropDown/jobTitleBreakdown/nonprofit.js")
+    script(src="/js/dropDown/jobTitleBreakdown/restaurant.js")
+    script(src="/js/dropDown/jobTitleBreakdown/construction.js")
+    script(src="/js/dropDown/jobTitleBreakdown/sales.js")
+    script(src="/js/dropDown/jobTitleBreakdown/education.js")
+    script(src="/js/dropDown/jobTitleBreakdown/legal.js")
+    script(src="/js/dropDown/jobTitleBreakdown/engineering.js")
+    script(src="/js/dropDown/jobTitleBreakdown/manufacturing.js")
+    script(src="/js/dropDown/jobTitleBreakdown/trans.js")
+    script(src="/js/dropDown/jobTitleBreakdown/management.js")
+
 
 
     script.
       $(document).foundation();
       $(document).tooltip();
 
-    //- script(src="/js/autocomplete/cityTypes.js")
-    //- script(src="/js/autocomplete/jobTypes.js")
-    //- script(src="/js/autocomplete/salaryTypes.js")
-    //- script(src="/js/autocomplete/houseTypes.js")
-    //- script(src="/js/autocomplete/jobCatTypes.js")
-    //- script(src="/js/autocomplete/jobCatTypes.js")
