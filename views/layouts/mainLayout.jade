@@ -10,28 +10,18 @@ html
   body
     block content
 
-    .main-nav#main-nav
-      a.button(href="#")#searchSubmit Close
-      .jobCat
-        h2
-          a(href='#main-nav') Job Category
-
+    .sideBar#sideBar.left
       .jobContainer
 
-
-
-    .page-wrap
-
+    .page-wrap.right
       //- filter bar
       .row#mapSelector
         .large-4.columns
           .search
-
         .large-4.columns
           .jobCatSearchOptions
           .housingSearchOptions
           .rentalSearchOptions
-
         .large-4.columns
           .citySelect
 
@@ -48,10 +38,8 @@ html
        .row
         .large-12.columns#map-container
           .textBox
-          a(href="#", title="this should hover") hover me
           include ../partials/Blank_US_Map.svg
           //- include ../partials/map-fills.jade
-
       //- footer
       footer.row
         .large-12.columns#footer
@@ -86,7 +74,7 @@ html
     script(src="/js/dropDown/jobCategory.js")
     script(src="/js/dropDown/jobTitles.js")
 
-    //- script(src="/routes/index.js")
+    script(src="/routes/index.js")
 
     script(src="/js/map-fill.js")
     script(src="/js/autocomplete/autoComplete.js")

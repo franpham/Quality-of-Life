@@ -1,4 +1,4 @@
-console.log('hello from map-fill.js');
+
 
 // script.
 //- $("#"+ state).css("fill", color);
@@ -9,7 +9,7 @@ $( "path" ).hover(function(evt){
     id : "textBox",
     text : stateAb
   });
-  $( ".textBox").append( textBox );
+  // $( ".textBox").append( textBox );
 
 });
 
@@ -40,13 +40,10 @@ if(cityCode === '00046' || cityCode === '00057'){
 
 function careers(){
     var careerSearch = ('http://localhost:3000/jobs/' + cityCode + '/' + category);
-    console.log('what is the Json ', careerSearch);
-
 
   $.getJSON('http://localhost:3000/allCareers', function(data) {
     // data is an array of objects; to get salary of each job category: var salary = data[i].salary;
     // job_stats  schema (7 fields): time, cityCode, state, category, jobCounts, medianSalary, loc_quotient (density);
-   console.log("kasi's map", work);
     // salary, density, counts
     for (var i = 0; i < data.length; i++) {
       var salary = data[i].salary;
@@ -95,8 +92,6 @@ function careers(){
 }
 
 function homes() {
-  console.log('homes thingy works');
-
   $.getJSON('http://localhost:3000/allHomes', function(data) {
     // home_stats schema (7 fields): time, cityCode, state, homeCounts, medianPrice, averagePrice, usTraffic (popularity);
     // data is an array of objects; to get medianPrice of each rental: var price data[i].medianPrice;
@@ -148,8 +143,6 @@ function homes() {
 }
 
 function rentals(){
-  console.log('rental thingy');
-
   $.getJSON('http://localhost:3000/allRentals', function(data) {
     // rent_stats schema (7 fields): time, cityCode, state, rentCounts, medianPrice, rentRatio, usTraffic (popularity);
     // for rentals PRR: larger values = cheaper renting; for rentals && homes usTraffic: larger values = more popular areas;

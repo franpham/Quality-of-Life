@@ -1,7 +1,6 @@
 var citySelect = $("<select>", {
   id : "citySelect"
 });
-
 citySelect.append($("<option>", {
   value : '',
   text : 'Choose a City'

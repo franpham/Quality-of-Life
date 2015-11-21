@@ -54,5 +54,7 @@ $( ".buttonSearch" ).click(function(evt){
   careers();
   homes();
   rentals();
+  console.log("FJFJFJF", category);
+
 });
 

@@ -50,7 +50,7 @@ housingSearchOptions.append($("<option>", {
   text : 'Popularity Index'
 }));
 
-$( ".housingSearchOptions" ).append( housingSearchOptions ).hide();
+$( ".housingSearchOptions" ).append( housingSearchOptions );
 
 // ==========================================
 

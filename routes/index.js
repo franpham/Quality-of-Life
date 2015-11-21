@@ -195,6 +195,7 @@ router.get('/allJobs/:category', function(req, res) {
   var jobsList = req.db.get('jobs_list');
   var cityCodes = quandl.codeSet;
   var data = [];
+  console.log('RHRHRH', cityCode);
 
   for (var i = cityCodes.length - 1; i >= 0; i--) {
     var promise = jobsList.find({ time: time, cityCode: cityCodes[i], category: category });

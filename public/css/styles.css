@@ -153,7 +153,7 @@ select {
 /* line 223, bower_components/foundation/scss/foundation/components/_grid.scss */
 .row {
   margin: 0 auto;
-  max-width: 93.75rem;
+  max-width: rem-calc(1500);
   width: 100%; }
   /* line 239, bower_components/foundation/scss/foundation/components/_global.scss */
   .row:before, .row:after {
@@ -2670,7 +2670,7 @@ meta.foundation-mq-topbar {
   .contain-to-grid .top-bar {
     margin: 0 auto;
     margin-bottom: 0;
-    max-width: 93.75rem; }
+    max-width: rem-calc(1500); }
   /* line 536, bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section {
     transition: none 0 0;
@@ -3338,153 +3338,69 @@ body {
   background: white; }
 
 /* line 15, stdin */
-body::after {
-  content: "";
-  background: url(http://images.all-free-download.com/images/graphiclarge/ocean_waves_207578.jpg);
-  background-size: cover;
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1; }
-
-/* line 28, stdin */
 .main-header {
   background: blue; }
 
-/* line 31, stdin */
+/* line 18, stdin */
 .content {
   background: brown; }
 
-/* line 34, stdin */
-.main-nav {
-  position: fixed;
-  top: 0;
-  width: 0;
-  height: 100%;
-  background: #3BAF58;
-  overflow-y: auto;
-  transition: width 0.3s ease; }
-  /* line 43, stdin */
-  .main-nav a {
-    display: block;
-    background: linear-gradient(#3E3E3E, #383838);
-    border-top: 1px solid #484848;
-    border-bottom: 1px solid #2E2E2E;
-    color: white;
-    text-decoration: none;
-    padding: 15px; }
-    /* line 51, stdin */
-    .main-nav a:hover, .main-nav a:focus {
-      background: linear-gradient(#484848, #383838); }
-  /* line 55, stdin */
-  .main-nav:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 34px;
-    background: linear-gradient(left, transparent, rgba(0, 0, 0, 0.4)); }
-  /* line 64, stdin */
-  .main-nav p {
-    display: block;
-    background: olive;
-    border-top: 1px solid #484848;
-    border-bottom: 1px solid #2E2E2E;
-    color: white;
-    text-decoration: none;
-    padding: 15px;
-    margin-bottom: -16px; }
-
-/* line 75, stdin */
-.close-menu {
-  display: none; }
-
-/* line 78, stdin */
+/* line 21, stdin */
 .page-wrap {
-  float: right;
-  width: 100%;
-  transition: width 0.3s ease;
-  height: 100%; }
+  width: 75%; }
 
-/* line 84, stdin */
-#main-nav:target {
+/* line 25, stdin */
+.sideBar {
+  background: #F0F0F0;
   width: 25%; }
 
-/* line 87, stdin */
-#main-nav:target + .page-wrap {
-  width: 75%; }
-  /* line 89, stdin */
-  #main-nav:target + .page-wrap .open-menu {
-    display: none; }
-  /* line 92, stdin */
-  #main-nav:target + .page-wrap .close-menu {
-    display: block; }
-  /* line 95, stdin */
-  #main-nav:target + .page-wrap .page-wrap {
-    width: 75%;
-    left: 25%; }
+/* line 29, stdin */
+#sideBar:target {
+  width: 25%; }
 
-/* line 100, stdin */
+/* line 32, stdin */
+#sideBar:target + .page-wrap {
+  width: 75%; }
+
+/* line 35, stdin */
 #footer {
   background: #86A0B1; }
 
-/* line 104, stdin */
+/* line 39, stdin */
 #filter-bar {
   padding-top: 30px;
   background: #86A0B1; }
 
-/* line 108, stdin */
+/* line 43, stdin */
 .jobCat {
   text-align: center; }
 
-/* line 112, stdin */
+/* line 47, stdin */
 * {
   box-sizing: border-box; }
 
-/* line 116, stdin */
+/* line 51, stdin */
 #apply {
   margin-top: 16px; }
 
-/* line 119, stdin */
+/* line 54, stdin */
 #map-container {
   background: white;
   height: 850px; }
 
-/* line 123, stdin */
+/* line 58, stdin */
 .jobTitle {
   background: gray;
   padding-left: 5px; }
 
-/* line 127, stdin */
-.custom-combobox {
-  position: relative;
-  display: inline-block; }
-
-/* line 131, stdin */
-.custom-combobox-toggle {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin-left: -1px;
-  padding: 0; }
-
-/* line 138, stdin */
-.custom-combobox-input {
-  margin: 0;
-  padding: 5px 10px; }
-
-/* line 142, stdin */
+/* line 62, stdin */
 #mapSelector {
   background: #86A0B1; }
 
-/* line 145, stdin */
+/* line 65, stdin */
 #filter-bar {
-  background: black; }
-
-/* line 148, stdin */
-#citySelect {
   background: #86A0B1; }
+
+/* line 68, stdin */
+.jobDetails {
+  background: #C0C0C0; }

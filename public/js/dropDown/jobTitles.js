@@ -2697,4 +2697,4 @@ value : "VP",
 salary : 102000
 }));
 
-  $( ".jobTitles" ).append( jobSelect ).hide();
+  $( ".jobTitles" ).append( jobSelect );

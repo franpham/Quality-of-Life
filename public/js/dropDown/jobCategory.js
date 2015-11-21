@@ -67,5 +67,5 @@
     text : 'Upper Management / Consulting'
   }));
 
-  $( ".jobCats" ).append( jobCat ).hide();
+  $( ".jobCats" ).append( jobCat );
 
