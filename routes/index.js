@@ -13,6 +13,7 @@ var indeed = require('./api_data/Indeed_jobCats.js');
 var INDEED_ISOWEEK = 47;        // Indeed job listings lag by 1 week (47 = 11-16-15);
 var TRULIA_MONTH1 = '2015-10';  // Trulia home stats lag by 1 month;
 var QUANDL_MONTH1 = '2015-09';  // Quandl rent stats lag by 2 months;
+var truliaLastCall = new Date();
 
 // Before moment 2.1.0, if a moment changed months and the new month did not have enough days to keep the current day of month, it would overflow to the next month.
 // As of version 2.1.0, this was changed to be clamped to the end of the target month.
@@ -99,96 +100,170 @@ router.get('/rents/:cityCode', function(req, res) {
   });
 });
 
+function getAPIHomes(cityCode, homeStats, time, lastDate, apiKey, callback) {   // IMPORTANT: Trulia limits API calls to 2 per sec per key;
+  // IMPORTANT: endDate MUST BE ON SAT TO AVOID EXTRA WEEKS; to get the latest percentNationalTraffic, endDate must be specified and startDate must be 2013-09-01 or later;
+  var url = 'http://api.trulia.com/webservices.php?library=TruliaStats&function=getCityStats&apikey=' + apiKey;
+  lastDate.date(lastDate.daysInMonth());  // set to last date;
+  var lastSat = lastDate.clone();         // NOT thisDate;
+  lastSat.isoWeekday(6);                  // set to Saturday;
+  var endDate = moment.min(lastDate, lastSat);
+  var state = quandl.getState(cityCode);
+
+  var subquery = time === TRULIA_MONTH1 ? '&startDate=2013-09-01' : '&startDate=' + (time + '-01');     // -01 = 1st date;
+  subquery += '&endDate=' + (time + '-' + endDate.date()) + '&city=' + encodeURIComponent(quandl.getCity(cityCode)) + '&state=' + state;
+  console.log('Trulia query: ' + subquery);
+  setTimeout(function() {
+    request.get(url + subquery, function(error, response, body) {
+      var homes = [];
+      if (!error) {
+        console.log('Retrieved homes xml from Trulia for ', cityCode);
+        homes = parseHomes(body, cityCode, state);
+        homeStats.insert(homes, { ordered: false }, function(err, docs) {
+          console.log((err ? err + ': ' : 'Inserted homes into collection for '), cityCode);
+        });
+      }
+      callback(homes);
+    });
+  }, 10000);    // failed at 6000 ms;
+}
+
 router.get('/homes/:cityCode', function(req, res) {
   var cityCode = req.params.cityCode;
+  validateParams(cityCode);
   var thisDate = moment();
   thisDate.date(1);             // set to 1st date to normalize month;
   thisDate.isoWeekday(6);       // set to Saturday AFTER setting date;
   // Trulia lags by 1 month, but do not -1 since month() is 0-based;;
   var thisMonth = thisDate.month() + 1;       // +1 since Trulia month starts at 1;
   var time = thisDate.year() + '-' + (thisMonth < 10 ? '0' + thisMonth : thisMonth.toString());
-  validateParams(cityCode);
-
-  var homes = [];
   var homeStats = req.db.get('home_stats');
-  homeStats.find({ time: time, cityCode: cityCode }, function(err, docs) {
-    homes = docs;     // docs is an array;
 
-    if (homes.length === 0) {
-      // IMPORTANT: endDate MUST BE ON SAT TO AVOID EXTRA WEEKS; to get the latest percentNationalTraffic, endDate must be specified and startDate must be 2013-09-01 or later;
-      var url = 'http://api.trulia.com/webservices.php?library=TruliaStats&function=getCityStats&apikey=vb8fwj79vknntzqeva4fm93u';
-      var lastDate = thisDate.clone();
-      lastDate.date(lastDate.daysInMonth());  // set to last date;
-      var lastSat = lastDate.clone();         // NOT thisDate;
-      lastSat.isoWeekday(6);                  // set to Saturday;
-      var endDate = moment.min(lastDate, lastSat);
-      var state = quandl.getState(cityCode);
-
-      var subquery = time === TRULIA_MONTH1 ? '&startDate=2013-09-01' : '&startDate=' + (time + '-01');     // -01 = 1st date;
-      subquery += '&endDate=' + (time + '-' + endDate.date()) + '&city=' + encodeURIComponent(quandl.getCity(cityCode)) + '&state=' + state;
-      console.log('Trulia query: ' + subquery);
-      request.get(url + subquery, function(error, response, body) {
-        console.log('Retrieved homes xml from Trulia');
-        if (error)
-          throw error;
-        homes = parseHomes(body, cityCode, state);
-        homeStats.insert(homes, { ordered: false }, function(dbError, doc) {
-          if (dbError)
-            throw dbError;
-          console.log('Inserted homes into home_stats collection');
-          res.json(homes);    // NOT response!
-        });
-      });
+  var promise = homeStats.find({ time: time, cityCode: cityCode });
+  promise.success(function(docs1) {
+    if (docs1 && docs1.length > 0) {
+      console.log('Found homes in DB for ', cityCode);
+      res.json(docs1);
     }
     else {
-      console.log('Found homes in DB');
-      res.json(homes);
+      getAPIHomes(cityCode, homeStats, time, thisDate.clone(), 'vb8fwj79vknntzqeva4fm93u', function(docs2) {
+        res.json(docs2);
+      });
     }
   });
+});
+
+router.get('/allHomes', function(req, res) {
+  var apiKeys = ['vb8fwj79vknntzqeva4fm93u', 'uu8aegnvahes5apu5za6tq8j', 'dp9wj9hu3ts6z49jvnnydqp4'];
+  var keySize = apiKeys.length;
+  var thisDate = moment();
+  thisDate.date(1);             // set to 1st date to normalize month;
+  thisDate.isoWeekday(6);       // set to Saturday AFTER setting date;
+  // Trulia lags by 1 month, but do not -1 since month() is 0-based;;
+  var thisMonth = thisDate.month() + 1;       // +1 since Trulia month starts at 1;
+  var time = thisDate.year() + '-' + (thisMonth < 10 ? '0' + thisMonth : thisMonth.toString());
+  var homeStats = req.db.get('home_stats');
+  var cityCodes = quandl.codeSet;
+  var data = [];
+
+  for (var i = cityCodes.length - 1; i >= 0; i--) {
+    var promise = homeStats.find({ time: time, cityCode: cityCodes[i] });
+    (function(cityCode, index) {
+      promise.success(function(docs1) {
+        if (docs1 && docs1.length > 0) {
+          console.log('Found homes in DB for ', cityCode);
+          data.push(docs1);
+        }
+        else {
+          getAPIHomes(cityCode, homeStats, time, thisDate.clone(), apiKeys[index % keySize], function(docs2) {
+            data.push(docs2);
+            if (data.length === quandl.codeSet.length)
+              res.json(data);
+          });
+        }
+      });   // MUST pass cityCode since i == -1 when success is called;
+    })(cityCodes[i], i);
+  }
+});
+
+router.get('/allJobs/:category', function(req, res) {
+  var category = req.params.category;
+  validateParams(null, category);
+  var thisDate = moment();
+  thisDate.isoWeekday(1);   // set to Monday when week # changes;
+  var thisWeek = thisDate.isoWeek();
+  var time = thisDate.year() + '-' + thisWeek;
+  var jobsList = req.db.get('jobs_list');
+  var cityCodes = quandl.codeSet;
+  var data = [];
+
+  for (var i = cityCodes.length - 1; i >= 0; i--) {
+    var promise = jobsList.find({ time: time, cityCode: cityCodes[i], category: category });
+    (function(cityCode) {
+      promise.success(function(docs1) {
+        if (docs1 && docs1.length > 0) {
+          console.log('Found jobs in DB for ', cityCode, ': ', category);
+          data.push(docs1);
+        }
+        else {
+          getAPIJobs(cityCode, category, jobsList, function(docs2) {
+            data.push(docs2);
+            if (data.length === quandl.codeSet.length)
+              res.json(data);
+          });
+        }
+      });   // MUST pass cityCode since i == -1 when success is called;
+    })(cityCodes[i]);
+  }
 });
 
 router.get('/jobs/:cityCode/:category', function(req, res) {
   var cityCode = req.params.cityCode;
   var category = req.params.category;
+  validateParams(cityCode, category);
   var thisDate = moment();
   thisDate.isoWeekday(1);   // set to Monday when week # changes;
   var thisWeek = thisDate.isoWeek();
   var time = thisDate.year() + '-' + thisWeek;
-  validateParams(cityCode, category);
-
-  var jobs = [];
   var jobsList = req.db.get('jobs_list');
-  jobsList.find({ time: time, cityCode: cityCode, category: category }, function(err, docs) {
-    jobs = docs;    // docs is an array;
 
-    if (jobs.length === 0) {
-      var city = quandl.cities[cityCode];
-      // initialize DB with 91 days of data, then search again every Monday when week # changes; &useragent=&userip=0.0.0.0
-      // set st=employer for employer-listed jobs so map markers don't overlap; "limit" of 25 is returned, so see "totalResults" for total listings;
-      var query = 'ads/apisearch?publisher=1588917421720308&format=json&start=0&jt=fulltime&st=employer&latlong=1&limit=50&radius=50&v=2';
-      var subquery = thisWeek === INDEED_ISOWEEK ? '&fromage=91' : '&fromage=7';
-      subquery += '&l=' + encodeURIComponent(city) + '&q=' + encodeURIComponent(category);
-
-      var client = requestJson.createClient('http://api.indeed.com/');
-      client.get(query + subquery, function(error, response, body) {
-        console.log('Retrieved jobs json from Indeed');
-        if (error)
-          throw error;
-        jobs = parseJobs(body, time, cityCode, category);   // body is the API json;
-        jobsList.insert(jobs, { ordered: false }, function(dbError, doc) {
-          if (dbError)
-            throw dbError;
-          console.log('Inserted jobs into jobs_list collection');
-          res.json(jobs);   // NOT response!
-        });
-      });
+  var promise = jobsList.find({ time: time, cityCode: cityCode, category: category });
+  promise.success(function(docs1) {
+    if (docs1 && docs1.length > 0) {
+      console.log('Found jobs in DB for ', cityCode, ': ', category);
+      res.json(docs1);
     }
     else {
-      console.log('Found jobs in DB');
-      res.json(jobs);
+      getAPIJobs(cityCode, category, jobsList, function(docs2) {
+        res.json(docs2);
+      });
     }
   });
 });
+
+function getAPIJobs(cityCode, category, jobsList, callback) {
+  var thisDate = moment();
+  thisDate.isoWeekday(1);   // set to Monday when week # changes;
+  var thisWeek = thisDate.isoWeek();
+  var time = thisDate.year() + '-' + thisWeek;
+  // initialize DB with 91 days of data, then search again every Monday when week # changes; &useragent=&userip=0.0.0.0
+  // set st=employer for employer-listed jobs so map markers don't overlap; "limit" of 25 is returned, so see "totalResults" for total listings;
+  var query = 'ads/apisearch?publisher=1588917421720308&format=json&start=0&jt=fulltime&st=employer&latlong=1&limit=50&radius=50&v=2';
+  var subquery = thisWeek === INDEED_ISOWEEK ? '&fromage=91' : '&fromage=7';
+  subquery += '&l=' + encodeURIComponent(quandl.cities[cityCode]) + '&q=' + encodeURIComponent(category);
+
+  var client = requestJson.createClient('http://api.indeed.com/');
+  client.get(query + subquery, function(error, response, body) {
+    var jobs = [];
+    if (!error) {
+      console.log('Retrieved jobs json from Indeed for ', cityCode, ': ', category);
+      jobs = parseJobs(body, time, cityCode, category);   // body is the API json;
+      jobsList.insert(jobs, { ordered: false }, function(err, docs) {
+        console.log((err ? err + ': ' : 'Inserted jobs into collection for '), cityCode, ': ', category);
+      });
+    }
+    callback(jobs);
+  });
+}
 
 router.get('/careers/:cityCode/:category', function(req, res) {
   var year = moment().year() - 1;       // BLS data lags by 1 yr;
@@ -203,14 +278,14 @@ router.get('/careers/:cityCode/:category', function(req, res) {
     if (dbError)
       throw dbError;
     else if (stats.length === 0)
-      throw new Error('No job stats found for: ', year, cityCode, category);
+      throw new Error('No job stats found for: ' + cityCode + ': ' + category);
     res.json(stats);
   });
 });
 
 function validateParams(cityCode, category) {
   if ((category && !indeed[category.toLowerCase()]) || (cityCode && !quandl.cities[cityCode]))
-    throw new Error('Invalid query paramaters: ', cityCode, category);
+    throw new Error('Invalid query parameters: ' + cityCode + ': ' + category);
 }
 
-module.exports = router;    // 2nd goals: validate parameters!
+module.exports = router;
