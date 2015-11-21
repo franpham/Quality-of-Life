@@ -70,32 +70,32 @@
   $( ".jobCats" ).append( jobCat ).hide();
 
 
-  var trans = $("<select>", {
-    id : "trans"
-  });
-  trans.append($("<option>", {
-    value : '',
-    text : 'Choose a Job Title'
-  }));
-  trans.append($("<option>", {
-    value : 'TruckDriver',
-    text : 'Truck Driver'
-  }));
+  // var trans = $("<select>", {
+  //   id : "trans"
+  // });
+  // trans.append($("<option>", {
+  //   value : '',
+  //   text : 'Choose a Job Title'
+  // }));
+  // trans.append($("<option>", {
+  //   value : 'TruckDriver',
+  //   text : 'Truck Driver'
+  // }));
 
-  $( ".trans" ).append( trans ).hide();
+  // $( ".jobTitles" ).append( trans ).hide();
 
-  var management = $("<select>", {
-    id : "management"
-  });
-  management.append($("<option>", {
-    value : '',
-    text : 'Choose a Job Title'
-  }));
-  management.append($("<option>", {
-    value : 'DABoss',
-    text : 'DA Boss'
-  }));
+  // var management = $("<select>", {
+  //   id : "management"
+  // });
+  // management.append($("<option>", {
+  //   value : '',
+  //   text : 'Choose a Job Title'
+  // }));
+  // management.append($("<option>", {
+  //   value : 'DABoss',
+  //   text : 'DA Boss'
+  // }));
 
-  $( ".management" ).append( management ).hide();
+  // $( ".jobTitles" ).append( management ).hide();
 
 

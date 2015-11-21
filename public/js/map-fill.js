@@ -21,23 +21,25 @@ $( "path" ).hover(function(evt){
 // Make 6 shades of color, white default.
 
 
-var city = $('#cityTypes').value;
-console.log('testing city',city);
-var datatype = $('#combobox1').value
-if (inMultiCityState(city)) {
-  if (datatype === 'rents') {
-    var cityJson = $.json('http://localhost:3000/rents' + city);
-    // use this new data to update the color of the state
-  }
-}
+
+// if (inMultiCityState(city)) {
+//   if (datatype === 'rents') {
+//     // use this new data to update the color of the state
+//   }
+// }
+
+    console.log('citycode', citycode );
+    console.log('cat', category);
+
+function careers(jobSelected){
+    var careerSearch = ('http://localhost:3000/jobs/' + citycode + '/' + category);
+    console.log('what is the Json ', careerSearch);
 
 
-function careers(){
-  console.log("hey the function thingy worked");
   $.getJSON('http://localhost:3000/allCareers', function(data) {
     // data is an array of objects; to get salary of each job category: var salary = data[i].salary;
     // job_stats  schema (7 fields): time, cityCode, state, category, jobCounts, medianSalary, loc_quotient (density);
-
+   console.log("kasi's map", work);
     // salary, density, counts
     for (var i = 0; i < data.length; i++) {
       var salary = data[i].salary;
