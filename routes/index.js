@@ -8,8 +8,8 @@ var requestJson = require('request-json');
 
 var parseJobs  = require('./api_data/job_listings.js');
 var parseHomes = require('./api_data/home_stats.js');
-var quandl = require('./api_data/Quandl_utils.js');
 var indeed = require('./api_data/Indeed_jobCats.js');
+var quandl = require('./api_data/Quandl_utils.js');
 var INDEED_ISOWEEK = 47;        // Indeed job listings lag by 1 week (47 = 11-16-15);
 var TRULIA_MONTH1 = '2015-10';  // Trulia home stats lag by 1 month;
 var QUANDL_MONTH1 = '2015-09';  // Quandl rent stats lag by 2 months;

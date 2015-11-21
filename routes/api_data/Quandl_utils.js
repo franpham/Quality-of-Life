@@ -4,7 +4,7 @@ var codeSet = ['00003',  // Los Angeles is default city for CA;
               '00009',  // Miami is default city for FL;
               '00047', '00015', '00046',  // default cities for LA, AZ, CT;
               '00011', '00010', '00022', '00035', '00043', '00050',   // codes for states with 1 city;
-              '00054', '00088', '00075', '10453', '00008', '00004',
+              '00054', '00088', '00075', '00302', '00008', '00004',
               '00013', '00002', '00006', '00005', '00016', '00473'];
 
 var states = [
@@ -22,7 +22,7 @@ var states = [
   { 'HI' : '00054' },
   { 'IA' : '00088' },
   { 'AR' : '00075' },
-  { 'KS' : '10453' },
+  { 'WI' : '00302' },
   { 'DC' : '00008' },
   { 'IL' : '00004' },
   { 'MI' : '00013' },
@@ -54,11 +54,11 @@ function isMultiCityState(cityCode) {
 var data = [
   {'Atlanta, GA' : '00010'},
   {'Phoenix, AZ' : '00015'},
+  {'Santa Ana, CA' : '00044'},        // city code
   {'Denver, CO' : '00022'},
   {'San Diego, CA' : '00018'},
   {'Riverside, CA' : '00014'},
   {'Tampa, FL' : '00020'},
-  {'Santa Ana, CA' : '00044'},        // city code
   {'San Francisco, CA' : '00012'},
   {'Orlando, FL' : '00027'},
   {'Oakland, CA' : '00037'},          // city code
@@ -78,11 +78,11 @@ var data = [
   {'Baton Rouge, LA' : '00066'},    // 2ND LA
   {'Tucson, AZ' : '00053'},         // 2ND AZ
   {'Stamford, CT' : '00057'},       // 2ND CT
-  {'Des Moines, IA' : '00088'},
+  {'West Palm Beach, FL' : '00254'},    // city code
   {'Little Rock, AR' : '00075'},
   {'Fresno, CA' : '00056'},
-  {'West Palm Beach' : '00254'},    // city code
-  {'Wichita, KS' : '10453'},        // city code; metro code does not work;
+  {'Des Moines, IA' : '00088'},
+  {'Kenosha, WI' : '00302'},            // city code;
   {'Los Angeles, CA' : '00003'},
   {'Washington, DC' : '00008'},
   {'Chicago, IL' : '00004'},
@@ -115,7 +115,7 @@ function getCity(cityCode) {
 
 function getQuandlCode(cityCode) {
   var code = parseInt(cityCode);                      // C = city, M = metro;
-  return (code == 37 || code == 44 || code == 128 || code == 254 || code == 473 || code == 10453) ? 'C' + cityCode : 'M' + cityCode;
+  return (code == 37 || code == 44 || code == 128 || code == 254 || code == 302 || code == 473) ? 'C' + cityCode : 'M' + cityCode;
 }
 
 function parseRents(json) {
