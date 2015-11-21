@@ -20,24 +20,33 @@ $( "path" ).hover(function(evt){
 
 // Make 6 shades of color, white default.
 
-
-var city = $('#cityTypes').value;
-console.log('testing city',city);
-var datatype = $('#combobox1').value
-if (inMultiCityState(city)) {
-  if (datatype === 'rents') {
-    var cityJson = $.json('http://localhost:3000/rents' + city);
-    // use this new data to update the color of the state
-  }
+if(cityCode === '00053' || cityCode === '00015'){
+  stateAb = "AZ";
 }
-
+if(cityCode === '00018' || cityCode === '00015' || cityCode === '00044' || cityCode === '00012' || cityCode === '00037' || cityCode === '00032' || cityCode === '00025' || cityCode === '00064' || cityCode === '00056' || cityCode === '00003'){
+  stateAb = "CA";
+}
+if(cityCode === '00020' || cityCode === '00027' || cityCode === '00009' || cityCode === '00128' || cityCode === '00041' || cityCode === '00254'){
+  stateAb = "FL";
+}
+if(cityCode === '00046' || cityCode === '00057'){
+  stateAb = "CT";
+}
+// if (inMultiCityState(city)) {
+//   if (datatype === 'rents') {
+//     // use this new data to update the color of the state
+//   }
+// }
 
 function careers(){
-  console.log("hey the function thingy worked");
+    var careerSearch = ('http://localhost:3000/jobs/' + cityCode + '/' + category);
+    console.log('what is the Json ', careerSearch);
+
+
   $.getJSON('http://localhost:3000/allCareers', function(data) {
     // data is an array of objects; to get salary of each job category: var salary = data[i].salary;
     // job_stats  schema (7 fields): time, cityCode, state, category, jobCounts, medianSalary, loc_quotient (density);
-
+   console.log("kasi's map", work);
     // salary, density, counts
     for (var i = 0; i < data.length; i++) {
       var salary = data[i].salary;

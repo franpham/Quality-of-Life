@@ -1,9 +1,9 @@
 "use strict";
 
-var codeSet= ['00018', '00014', '00044', '00012', '00032', '00037', '00025', '00064', '00056', '00003',
-              '00020', '00027', '00009', '00128', '00041', '00254',
-              '00066', '00047', '00015', '00053', '00057', '00046',
-              '00011', '00010', '00022', '00035', '00043', '00050',
+var codeSet = ['00003',  // Los Angeles is default city for CA;
+              '00009',  // Miami is default city for FL;
+              '00047', '00015', '00046',  // default cities for LA, AZ, CT;
+              '00011', '00010', '00022', '00035', '00043', '00050',   // codes for states with 1 city;
               '00054', '00088', '00075', '00590', '00008', '00004',
               '00013', '00002', '00006', '00005', '00016', '00473'];
 
@@ -130,4 +130,4 @@ function parseRents(json) {
 }
 
 module.exports = { states: states, cities: cities, codes: codes, codeSet: codeSet, getState: getState, getCity: getCity,
-               getQuandlCode: getQuandlCode, parseRents: parseRents, isMultiCityState: isMultiCityState };
+                  getQuandlCode: getQuandlCode, parseRents: parseRents, isMultiCityState: isMultiCityState };
