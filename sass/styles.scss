@@ -12,90 +12,25 @@ body{
   background: white;
 }
 
-body::after {
-  content: "";
-  background: url(http://images.all-free-download.com/images/graphiclarge/ocean_waves_207578.jpg);
-  background-size: cover;
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
-}
-
 .main-header{
   background: blue;
 }
 .content{
   background: brown;
 }
-.main-nav{
-  position: fixed;
-  top: 0;
-  width: 0;
-  height: 100%;
-  background: #3BAF58;
-  overflow-y: auto;
-  transition: width 0.3s ease;
+.page-wrap{
+  width: 75%;
+}
 
-  a {
-    display: block;
-    background: linear-gradient(#3E3E3E, #383838);
-    border-top: 1px solid #484848;
-    border-bottom: 1px solid #2E2E2E;
-    color: white;
-    text-decoration: none;
-    padding: 15px;
-    &:hover, &:focus {
-      background: linear-gradient(#484848, #383838);
-    }
-  }
-  &:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 34px;
-    background: linear-gradient(left, rgba(black, 0), rgba(black, 0.4));
-  }
-  p {
-    display: block;
-    background: olive;
-    border-top: 1px solid #484848;
-    border-bottom: 1px solid #2E2E2E;
-    color: white;
-    text-decoration: none;
-    padding: 15px;
-    margin-bottom: -16px;
-  }
-}
-.close-menu {
-  display: none;
-}
-.page-wrap {
-  float: right;
-  width: 100%;
-  transition: width 0.3s ease;
-  height: 100%;
-}
-#main-nav:target {
+.sideBar{
+  background: #F0F0F0;
   width: 25%;
 }
-#main-nav:target + .page-wrap {
-  width: 75%;
-  .open-menu {
-     display: none;
-  }
-  .close-menu {
-     display: block;
-  }
-  .page-wrap {
-    width: 75%;
-    left: 25%;
-  }
+#sideBar:target{
+  width: 25%;
+}
+#sideBar:target + .page-wrap{
+  width:75%;
 }
 #footer{
   background: #86A0B1;
@@ -117,34 +52,18 @@ body::after {
   margin-top: 16px;
 }
 #map-container{
-  background: white;
   height: 850px;
 }
 .jobTitle{
   background: gray;
   padding-left: 5px;
 }
-.custom-combobox {
-  position: relative;
-  display: inline-block;
-}
-.custom-combobox-toggle {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin-left: -1px;
-  padding: 0;
-}
-.custom-combobox-input {
-  margin: 0;
-  padding: 5px 10px;
-}
 #mapSelector{
   background: #86A0B1;
 }
 #filter-bar{
-  background: black;
-}
-#citySelect{
   background: #86A0B1;
+}
+.jobDetails{
+  background: #C0C0C0;
 }

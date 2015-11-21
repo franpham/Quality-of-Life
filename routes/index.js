@@ -109,10 +109,10 @@ function getAPIRents(cityCode, rentStats, time, lastDate, callback) {
   var subquery = 'api_key=wRYrEk3ghXR3tKwA37ew';
   subquery += time === QUANDL_MONTH1 ? '&start_date=2013-09-01' : '&start_date=' + (time + '-01');   // -01 = 1st date;
   var quandlCode = quandl.getQuandlCode(cityCode);
+  // console.log('Quandl subquery: ' + subquery);
 
-  var query = 'api/v3/datasets/ZILL/' + quandlCode + '_HR.json?';
-  console.log(query + subquery);
   var client = requestJson.createClient('https://www.quandl.com/');
+  var query = 'api/v3/datasets/ZILL/' + quandlCode + '_HR.json?';
   client.get(query + subquery, function(err1, resp1, body1) {
     console.log('Retrieved rental counts from Quandl');
     counts = quandl.parseRents(body1);
@@ -154,7 +154,7 @@ function getAPIHomes(cityCode, homeStats, time, lastDate, apiKey, callback) {
 
   var subquery = time === TRULIA_MONTH1 ? '&startDate=2013-09-01' : '&startDate=' + (time + '-01');     // -01 = 1st date;
   subquery += '&endDate=' + (time + '-' + endDate.date()) + '&city=' + encodeURIComponent(quandl.getCity(cityCode)) + '&state=' + state;
-  // console.log('Trulia query: ' + subquery);
+  // console.log('Trulia subquery: ' + subquery);
   setTimeout(function() {
     request.get(url + subquery, function(error, response, body) {
       var homes = [];

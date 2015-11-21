@@ -17,9 +17,7 @@ $(document).ready(function(){
       })
     });
 
-
     $( ".jobContainer" ).append( jobTitle );
-
 
     var jobDetails = $("<div>", {
       class : 'jobDetails hide'

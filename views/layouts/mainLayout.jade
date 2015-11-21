@@ -4,55 +4,41 @@ html
   head
     link(rel="stylesheet", href="/css/styles.css")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.9/d3.min.js")
     meta(charset="UTF-8")
     include ../html/header.html
     script(src="/js/jquery.js")
+    script(src="/js/d3.js")
   body
     block content
 
-    .main-nav#main-nav
-      a.button(href="#")#searchSubmit Close
-      .jobCat
-        h2
-          a(href='#main-nav') Job Category
-
+    .sideBar#sideBar.left
       .jobContainer
 
-
-
-    .page-wrap
-
+    .page-wrap.right
       //- filter bar
       .row#mapSelector
-        .large-4.columns.firstDropDown
-          .ui-widget
-            .search
-
-        .large-4.columns.secondDropDown
-          .ui-widget
-            .jobCatSearchOptions
-            .housingSearchOptions
-            .rentalSearchOptions
-        .large-4.columns.thirdDropDown
-          .ui-widget
-            .citySelect
+        .large-4.columns
+          .search
+        .large-4.columns
+          .jobCatSearchOptions
+          .housingSearchOptions
+          .rentalSearchOptions
+        .large-4.columns
+          .citySelect
 
       .row#filter-bar
         .large-4.columns
             .jobCats
         .large-4.columns
           .jobTitles
-          .trans
-          .management
+            .trans
+            .management
         .large-4.columns.searchButton
           .buttonSearch
 
        .row
         .large-12.columns#map-container
-          .textBox
-          a(href="#", title="this should hover") hover me
-          include ../partials/Blank_US_Map.svg
-          //- include ../partials/map-fills.jade
 
       //- footer
       footer.row
@@ -79,16 +65,16 @@ html
     script(src="/js/modernizr.js")
     script(src="/js/foundation.min.js")
     script(src='//code.jquery.com/ui/1.11.4/jquery-ui.js')
-    script(src="/js/autocomplete/cityTypes.js")
-    script(src="/js/autocomplete/jobTypes.js")
-    script(src="/js/autocomplete/salaryTypes.js")
-    script(src="/js/autocomplete/houseTypes.js")
-    script(src="/js/autocomplete/jobCatTypes.js")
-    script(src="/js/autocomplete/jobCatTypes.js")
     script(src="/js/sideBar/jobListData.js")
     script(src="/js/sideBar/displayJobList.js")
-    script(src="/js/dropDown/dropDown.js")
+
     script(src="/js/dropDown/citySelect.js")
+    script(src="/js/dropDown/dropDown.js")
+    script(src="/js/dropDown/filterBarDropDown.js")
+    script(src="/js/dropDown/jobCategory.js")
+    script(src="/js/dropDown/jobTitles.js")
+
+    script(src="/routes/index.js")
 
     script(src="/js/map-fill.js")
     script(src="/js/autocomplete/autoComplete.js")
@@ -99,3 +85,9 @@ html
       $(document).foundation();
       $(document).tooltip();
 
+    //- script(src="/js/autocomplete/cityTypes.js")
+    //- script(src="/js/autocomplete/jobTypes.js")
+    //- script(src="/js/autocomplete/salaryTypes.js")
+    //- script(src="/js/autocomplete/houseTypes.js")
+    //- script(src="/js/autocomplete/jobCatTypes.js")
+    //- script(src="/js/autocomplete/jobCatTypes.js")

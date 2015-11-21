@@ -67,35 +67,5 @@
     text : 'Upper Management / Consulting'
   }));
 
-  $( ".jobCats" ).append( jobCat ).hide();
-
-
-  var trans = $("<select>", {
-    id : "trans"
-  });
-  trans.append($("<option>", {
-    value : '',
-    text : 'Choose a Job Title'
-  }));
-  trans.append($("<option>", {
-    value : 'TruckDriver',
-    text : 'Truck Driver'
-  }));
-
-  $( ".trans" ).append( trans ).hide();
-
-  var management = $("<select>", {
-    id : "management"
-  });
-  management.append($("<option>", {
-    value : '',
-    text : 'Choose a Job Title'
-  }));
-  management.append($("<option>", {
-    value : 'DABoss',
-    text : 'DA Boss'
-  }));
-
-  $( ".management" ).append( management ).hide();
-
+  $( ".jobCats" ).append( jobCat );
 
