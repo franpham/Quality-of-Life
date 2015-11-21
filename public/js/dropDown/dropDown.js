@@ -12,8 +12,6 @@ $(function(){
 
     if((evt.target).value === "JobCategory"){
       $( ".jobCatSearchOptions" ).show();
-      $( ".jobCats" ).show();
-      $( ".jobTitles").show();
     }else if((evt.target).value === "Home"){
       $( ".housingSearchOptions" ).show();
     }else if((evt.target).value === "Rental"){
@@ -22,23 +20,45 @@ $(function(){
   });
 
   $( "#careers").change(function(evt){
+    var pickedCareer = false;
 
+    if(evt){
+      userEvent = true;
+      $( ".jobTitles" ).hide();
+      $( ".accounting" ).hide();
+      $( ".healthcare" ).hide();
+      $( ".nonprofit" ).hide();
+      $( ".admin" ).hide();
+      $( ".computer" ).hide();
+
+
+
+
+    }
     category = (evt.target).value;
 
-    var jobChanged = false;
-    if(evt){
-      jobChanged = true;
-      $( ".jobSelect" ).hide();
+    if(category === 'Accounting / Finance'){
+      $( ".accounting" ).show();
+    }else if(category === 'Healthcare'){
+      $( ".healthcare" ).show();
+    }else if(category === 'Non-Profit / Volunteering'){
+      $( ".nonprofit" ).show();
+    }else if(category === 'Administrative'){
+      $( ".admin" ).show();
+    }else if(category === 'Computer / Internet'){
+      $( ".computer" ).show();
+    }else{
+      $( ".jobTitles" ).show();
     }
+
+
   });
 
   $( "#citySelect" ).change(function(evt){
     cityCode = (evt.target).value;
   });
 
-  $( "#jobSelect" ).change(function(evt){
-    jobTitleSelected = (evt.target).value;
-  });
+
 
 });
 
