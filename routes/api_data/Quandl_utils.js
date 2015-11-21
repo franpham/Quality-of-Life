@@ -130,4 +130,4 @@ function parseRents(json) {
 }
 
 module.exports = { states: states, cities: cities, codes: codes, codeSet: codeSet, getState: getState, getCity: getCity,
-               getQuandlCode: getQuandlCode, parseRents: parseRents, isMultiCityState: isMultiCityState };
+                  getQuandlCode: getQuandlCode, parseRents: parseRents, isMultiCityState: isMultiCityState };

@@ -23,31 +23,6 @@ html
     .page-wrap
 
       //- filter bar
-      .row#filter-bar
-        .large-2.columns
-          .ui-widget#jobCategorySearch
-            label(for='jobCatTypes') Job Category:
-            input#jobCatTypes
-        .large-2.columns
-          .ui-widget.allTypes#jobtitleSearch
-            label(for='jobtitleTypes', value='Job Title') Job Title:
-            input#jobtitleTypes
-        .large-2.columns
-          .ui-widget#citySearch
-            label(for='cityTypes') City:
-            input#cityTypes
-        .large-2.columns
-          .ui-widget#salarySearch
-            label(for='salaryTypes') Salary:
-            input#salaryTypes
-        .large-2.columns
-          .ui-widget#houseSearch
-            label(for='houseTypes') House Type:
-            input#houseTypes
-        .large-2.columns
-          a.button(href="#main-nav").open-menu#searchSubmit Submit
-          a.button(href="#").close-menu#searchSubmit Submit
-
       .row#mapSelector
         .large-4.columns.firstDropDown
           .ui-widget
@@ -57,7 +32,18 @@ html
           .ui-widget
             .jobCatSearchOptions
             .housingSearchOptions
+            .rentalSearchOptions
+        .large-4.columns.thirdDropDown
+          .ui-widget
+            .citySelect
 
+      .row#filter-bar
+        .large-4.columns
+            .jobCats
+        .large-4.columns
+          .jobTitles
+          .trans
+          .management
         .large-4.columns.searchButton
           .buttonSearch
 
@@ -102,7 +88,10 @@ html
     script(src="/js/sideBar/jobListData.js")
     script(src="/js/sideBar/displayJobList.js")
     script(src="/js/dropDown/dropDown.js")
+    script(src="/js/dropDown/citySelect.js")
+
     script(src="/js/map-fill.js")
+    script(src="/js/autocomplete/autoComplete.js")
 
 
 
