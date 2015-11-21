@@ -4,9 +4,11 @@ html
   head
     link(rel="stylesheet", href="/css/styles.css")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.9/d3.min.js")
     meta(charset="UTF-8")
     include ../html/header.html
     script(src="/js/jquery.js")
+    script(src="/js/d3.js")
   body
     block content
 
@@ -37,9 +39,7 @@ html
 
        .row
         .large-12.columns#map-container
-          .textBox
-          include ../partials/Blank_US_Map.svg
-          //- include ../partials/map-fills.jade
+
       //- footer
       footer.row
         .large-12.columns#footer

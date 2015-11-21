@@ -6,6 +6,7 @@ var methodOverride = require('method-override');
 var parser = require('body-parser');
 var express = require('express');
 var app = express();
+var d3 = require("d3");
 
 var mongo = require('mongodb');
 var monk = require('monk');

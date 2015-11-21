@@ -3385,22 +3385,21 @@ body {
 
 /* line 54, stdin */
 #map-container {
-  background: white;
   height: 850px; }
 
-/* line 58, stdin */
+/* line 57, stdin */
 .jobTitle {
   background: gray;
   padding-left: 5px; }
 
-/* line 62, stdin */
+/* line 61, stdin */
 #mapSelector {
   background: #86A0B1; }
 
-/* line 65, stdin */
+/* line 64, stdin */
 #filter-bar {
   background: #86A0B1; }
 
-/* line 68, stdin */
+/* line 67, stdin */
 .jobDetails {
   background: #C0C0C0; }
