@@ -4,7 +4,7 @@ var codeSet = ['00003',  // Los Angeles is default city for CA;
               '00009',  // Miami is default city for FL;
               '00047', '00015', '00046',  // default cities for LA, AZ, CT;
               '00011', '00010', '00022', '00035', '00043', '00050',   // codes for states with 1 city;
-              '00054', '00088', '00075', '00590', '00008', '00004',
+              '00054', '00088', '00075', '10453', '00008', '00004',
               '00013', '00002', '00006', '00005', '00016', '00473'];
 
 var states = [
@@ -22,7 +22,7 @@ var states = [
   { 'HI' : '00054' },
   { 'IA' : '00088' },
   { 'AR' : '00075' },
-  { 'KS' : '00590' },
+  { 'KS' : '10453' },
   { 'DC' : '00008' },
   { 'IL' : '00004' },
   { 'MI' : '00013' },
@@ -82,7 +82,7 @@ var data = [
   {'Little Rock, AR' : '00075'},
   {'Fresno, CA' : '00056'},
   {'West Palm Beach' : '00254'},    // city code
-  {'Wichita, KS' : '00590'},
+  {'Wichita, KS' : '10453'},        // city code; metro code does not work;
   {'Los Angeles, CA' : '00003'},
   {'Washington, DC' : '00008'},
   {'Chicago, IL' : '00004'},
@@ -115,7 +115,7 @@ function getCity(cityCode) {
 
 function getQuandlCode(cityCode) {
   var code = parseInt(cityCode);                      // C = city, M = metro;
-  return (code == 37 || code == 44 || code == 128 || code == 254 || code == 473) ? 'C' + cityCode : 'M' + cityCode;
+  return (code == 37 || code == 44 || code == 128 || code == 254 || code == 473 || code == 10453) ? 'C' + cityCode : 'M' + cityCode;
 }
 
 function parseRents(json) {

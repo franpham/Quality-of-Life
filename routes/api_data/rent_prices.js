@@ -133,5 +133,5 @@ var prices = quandl.parseRents(json);
 module.exports = prices;
 
 // initialize the database with 2 yrs of data (-2 months), then search again every 1st Sat of month (-2 months) when month # changes; Quandl's data lags by 2 months;
-// M00009 metro code for Miami, _RAH = estimated median rent;
-// https://www.quandl.com/api/v3/datasets/ZILL/M00009_RAH.json?start_date=2013-09-01&end_date=2015-09-30
+// M00009 metro code for Miami, _RAH = estimated median rent; to get latest month data, do not specify end date since data is given monthly;
+// https://www.quandl.com/api/v3/datasets/ZILL/M00009_RAH.json?api_key=wRYrEk3ghXR3tKwA37ew&start_date=2013-09-01
