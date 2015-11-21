@@ -24,6 +24,7 @@ var QUANDL_MONTH1 = '2015-09';  // Quandl rent stats lag by 2 months;
 // home_stats schema (7 fields): time, cityCode, state, homeCounts, medianPrice, averagePrice, usTraffic (popularity);
 // for rentals PRR: larger values = cheaper renting; for rentals && homes usTraffic: larger values = more popular areas;
 
+
 router.get('/rents/:cityCode', function(req, res) {
   var cityCode = req.params.cityCode;
   var thisDate = moment();

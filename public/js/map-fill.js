@@ -20,19 +20,26 @@ $( "path" ).hover(function(evt){
 
 // Make 6 shades of color, white default.
 
-
-
+if(cityCode === '00053' || cityCode === '00015'){
+  stateAb = "AZ";
+}
+if(cityCode === '00018' || cityCode === '00015' || cityCode === '00044' || cityCode === '00012' || cityCode === '00037' || cityCode === '00032' || cityCode === '00025' || cityCode === '00064' || cityCode === '00056' || cityCode === '00003'){
+  stateAb = "CA";
+}
+if(cityCode === '00020' || cityCode === '00027' || cityCode === '00009' || cityCode === '00128' || cityCode === '00041' || cityCode === '00254'){
+  stateAb = "FL";
+}
+if(cityCode === '00046' || cityCode === '00057'){
+  stateAb = "CT";
+}
 // if (inMultiCityState(city)) {
 //   if (datatype === 'rents') {
 //     // use this new data to update the color of the state
 //   }
 // }
 
-    console.log('citycode', citycode );
-    console.log('cat', category);
-
-function careers(jobSelected){
-    var careerSearch = ('http://localhost:3000/jobs/' + citycode + '/' + category);
+function careers(){
+    var careerSearch = ('http://localhost:3000/jobs/' + cityCode + '/' + category);
     console.log('what is the Json ', careerSearch);
 
 

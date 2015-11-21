@@ -51,10 +51,6 @@ citySelect.append($("<option>", {
   text : 'San Jose, CA'
 }));
 citySelect.append($("<option>", {
-  value : '00035',
-  text : 'Indianapolis, IN'
-}));
-citySelect.append($("<option>", {
   value : '00025',
   text : 'Sacramento, CA'
 }));
@@ -124,7 +120,7 @@ citySelect.append($("<option>", {
 }));
 citySelect.append($("<option>", {
   value : '00254',
-  text : 'West Palm Beach'
+  text : 'West Palm Beach, FL'
 }));
 citySelect.append($("<option>", {
   value : '00590',

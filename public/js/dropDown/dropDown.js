@@ -1,8 +1,3 @@
-var category = "";
-var citycode = "";
-var jobTitleSelected = "";
-var salary = "";
-
 $(function(){
 
   $( "#combobox1" ).change(function(evt){
@@ -34,25 +29,15 @@ $(function(){
     if(evt){
       jobChanged = true;
       $( ".jobSelect" ).hide();
-      $( ".management").hide();
-    }
-
-    if((evt.target).value === "Transportation / Logistics"){
-      $( ".trans" ).show();
-    }else if((evt.target).value === "Upper Management / Consulting"){
-      $( ".management" ).show();
     }
   });
 
   $( "#citySelect" ).change(function(evt){
-    citycode = (evt.target).value;
+    cityCode = (evt.target).value;
   });
 
   $( "#jobSelect" ).change(function(evt){
-    shit = (evt.target).salary;
-    console.log('salary', shit);
-    jobtit = (evt.target).value;
-    console.log('RYRYRYRY', jobtit);
+    jobTitleSelected = (evt.target).value;
   });
 
 });
@@ -66,8 +51,7 @@ var buttonSearch = $("<button>", {
 $( ".buttonSearch").append( buttonSearch );
 
 $( ".buttonSearch" ).click(function(evt){
-  console.log('from Button', citycode);
-  careers(category);
+  careers();
   homes();
   rentals();
 });
