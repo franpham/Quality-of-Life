@@ -143,7 +143,7 @@ function getAPIRents(cityCode, rentStats, time, lastDate, callback) {
   });
 }
 
-function getAPIHomes(cityCode, homeStats, time, lastDate, apiKey, callback) {
+function getAPIHomes(cityCode, homeStats, time, lastDate, apiKey, timeout, callback) {
   // IMPORTANT: endDate MUST BE ON SAT TO AVOID EXTRA WEEKS; to get the latest percentNationalTraffic, endDate must be specified and startDate must be 2013-09-01 or later;
   var url = 'http://api.trulia.com/webservices.php?library=TruliaStats&function=getCityStats&apikey=' + apiKey;
   lastDate.date(lastDate.daysInMonth());  // set to last date;
@@ -167,11 +167,12 @@ function getAPIHomes(cityCode, homeStats, time, lastDate, apiKey, callback) {
       }
       callback(homes);
     });
-  }, 12000);    // IMPORTANT: failed at 6000 ms; Trulia limits API calls to 2 per sec per key
+  }, timeout);    // IMPORTANT: Trulia limits API calls to 2 per sec per key
 }
 
-router.get('/allHomes', function(req, res) {  // , 'yg2239csx7v9xcapsew6xrmm', 'sv2e997pr7k7ryhq7q8y4b37', 'ynr9a8wxjcnkfrskyqqvqyd7'
-  var apiKeys = ['vb8fwj79vknntzqeva4fm93u', 'uu8aegnvahes5apu5za6tq8j', 'dp9wj9hu3ts6z49jvnnydqp4'];
+router.get('/allHomes', function(req, res) {    // cannot use anonymous emails to get Trulia keys;
+  var apiKeys = ['dp9wj9hu3ts6z49jvnnydqp4', 'vb8fwj79vknntzqeva4fm93u', 'uu8aegnvahes5apu5za6tq8j',
+                 'smjucwpjtqhpwrrdh3c5esn9', '6c5z8gauq7t4uc7x7udp8h48', '2wb33xp7xg32xrx4bwv2rt7s'];
   var keySize = apiKeys.length;
   var thisDate = moment();
   thisDate.date(1);             // set to 1st date to normalize month;
@@ -194,7 +195,8 @@ router.get('/allHomes', function(req, res) {  // , 'yg2239csx7v9xcapsew6xrmm', '
             res.json(data);
         }
         else {
-          getAPIHomes(cityCode, homeStats, time, thisDate.clone(), apiKeys[index % keySize], function(docs2) {
+          var timeout = index < keySize ? 1 : 2000;
+          getAPIHomes(cityCode, homeStats, time, thisDate.clone(), apiKeys[index % keySize], timeout, function(docs2) {
             data.push(docs2);
             if (data.length === quandl.codeSet.length)    // MUST be inside callback;
               res.json(data);
@@ -223,7 +225,7 @@ router.get('/homes/:cityCode', function(req, res) {
       res.json(docs1);
     }
     else {
-      getAPIHomes(cityCode, homeStats, time, thisDate.clone(), 'vb8fwj79vknntzqeva4fm93u', function(docs2) {
+      getAPIHomes(cityCode, homeStats, time, thisDate.clone(), 'vb8fwj79vknntzqeva4fm93u', 1, function(docs2) {
         res.json(docs2);
       });
     }

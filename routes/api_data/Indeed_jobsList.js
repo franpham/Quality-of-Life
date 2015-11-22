@@ -1,3 +1,11 @@
+// Indeed deactivated job keys:
+                 // 'sv2e997pr7k7ryhq7q8y4b37', 'ynr9a8wxjcnkfrskyqqvqyd7', '6vfrr4kudkn8dz4cuwau63gr', 'qjjpmdnpbu5w2qmtq2w3a7ab', 'yg2239csx7v9xcapsew6xrmm',
+                 // 'k5gpn7xs8pkj2t5xc3yypygg', '3gxyp6rdbgj4kp2zb5zh8p77', 'nkqw6b69wvhzngnzvev8khf5', 'jnxce3jdcefd6zmnf5ygh4sa',
+                 // 'aubzvcvtmv4ugurzss9wbe2c', 'x222kkr293hqa3j5f5ze9g6x', 'jusk7z34b9ebjwbrce72nvbd', '4rgtv6mbevf6g7qqjbp2vtsh',
+                 // 'n7ydpbfdhr57pc29etu853aj', 'zjrgexbtmp7n6jzk8m9nshvt', 'bcjzgyy78q8u9xq5hnry9bw3', 'tnpvzq9m4bk99w7ymqea22w8',
+                 // 'k9vj9hjkchfdd73vfth75ar4', 'pt826dbgvgmuh4rgr52qttmx', 'aunbba5g5fj3gwyntggqkv3f', '7t3u2322a53m685v24hce4g7'];
+
+
 module.exports = {
   "version" : 2,
   "query" : "web developer",
